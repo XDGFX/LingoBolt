@@ -1,0 +1,23 @@
+I am going to send you some of words in French. I want you to respond exactly with the following message for each word:
+"{"word":"<word>","translation":"<translation>","example":"<example>","example_en":"<example_en>","emoji":"<emoji>","tags":"[<tags>]","difficulty":"<difficulty>","part_of_speech":"<part_of_speech>","gender":<gender>,"plural":<plural>,"synonyms":[<synonyms>],"antonyms":[<antonyms>]},"
+
+Where <word> is the word in French
+<translation> is the translation of the word in English
+<example> is an example sentence in French
+<example_en> is the English translation of the example sentence
+<emoji> is an emoji that could be associated with the word
+<tags> is a comma separated list of tags (categorical groupings for the word)
+<difficulty> is the difficulty of the word from 1-4, with 1 being the easiest
+<part_of_speech> is where the word could be used in speech (noun, verb, adjectives, adverbs, etc.)
+<gender> is the gender of the word (if applicable)
+<plural> is the plural form of the word (if applicable)
+<synonyms> is a comma separated list of synonyms (similar words that mean the same thing)
+<antonyms> is a comma separated list of antonyms (words that mean the opposite of the word)
+
+The example sentence should be short, varied, and interesting in each case.
+
+For example, if the prompt  was "votre maison", the response could be:
+{"word":"votre","translation":"your (singular, formal)","example":"Votre chapeauest très élégant.","example_en":"Your hat is veryelegant.","emoji":"🎩","tags":["possession","formal"],"difficulty":1,"part_of_speech":"determiner","gender":"masculine/feminine","plural":"vos","synonyms":["ton","ta"],"antonyms":["mon", "ma"]},
+{"word":"maison","translation":"house","example":"J'ai acheté une nouvelle maison.","example_en":"I bought a new house.","emoji":"🏡","tags":["home","building","dwelling"],"difficulty":1,"part_of_speech":"noun","gender":"feminine","plural":"maisons","synonyms":["domicile", "demeure"],"antonyms":["appartement"]},
+
+Do you understand this?

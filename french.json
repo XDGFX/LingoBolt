@@ -5,18 +5,12 @@
         "example": "Il parle comme un professeur.",
         "example_en": "He speaks like a professor.",
         "emoji": "🤓",
-        "tags": [
-            "comparison",
-            "manner"
-        ],
+        "tags": ["comparison", "manner"],
         "difficulty": 1,
         "part_of_speech": "conjunction",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "tels que",
-            "tel que"
-        ],
+        "synonyms": ["tels que", "tel que"],
         "antonyms": []
     },
     {
@@ -25,9 +19,7 @@
         "example": "Je suis étudiant.",
         "example_en": "I am a student.",
         "emoji": "🧑",
-        "tags": [
-            "personal pronoun"
-        ],
+        "tags": ["personal pronoun"],
         "difficulty": 1,
         "part_of_speech": "pronoun",
         "gender": null,
@@ -41,26 +33,13 @@
         "example": "Son livre est sur la table.",
         "example_en": "His book is on the table.",
         "emoji": "📚",
-        "tags": [
-            "possession",
-            "3rd person singular"
-        ],
+        "tags": ["possession", "3rd person singular"],
         "difficulty": 1,
         "part_of_speech": "determiner",
         "gender": "masculine",
         "plural": "ses",
-        "synonyms": [
-            "sa"
-        ],
-        "antonyms": [
-            "ma",
-            "ta",
-            "mon",
-            "ton",
-            "notre",
-            "votre",
-            "leur"
-        ]
+        "synonyms": ["sa"],
+        "antonyms": ["ma", "ta", "mon", "ton", "notre", "votre", "leur"]
     },
     {
         "word": "que",
@@ -68,17 +47,12 @@
         "example": "Je sais que tu as raison.",
         "example_en": "I know that you are right.",
         "emoji": "🤔",
-        "tags": [
-            "relative pronoun",
-            "subordinating conjunction"
-        ],
+        "tags": ["relative pronoun", "subordinating conjunction"],
         "difficulty": 1,
         "part_of_speech": "conjunction",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "quoi"
-        ],
+        "synonyms": ["quoi"],
         "antonyms": []
     },
     {
@@ -87,20 +61,13 @@
         "example": "Il aime le football.",
         "example_en": "He likes football.",
         "emoji": "⚽",
-        "tags": [
-            "personal pronoun",
-            "3rd person singular"
-        ],
+        "tags": ["personal pronoun", "3rd person singular"],
         "difficulty": 1,
         "part_of_speech": "pronoun",
         "gender": "masculine",
         "plural": "ils",
         "synonyms": [],
-        "antonyms": [
-            "elle",
-            "elle-même",
-            "on"
-        ]
+        "antonyms": ["elle", "elle-même", "on"]
     },
     {
         "word": "était",
@@ -108,21 +75,13 @@
         "example": "Il était très fatigué hier soir.",
         "example_en": "He was very tired last night.",
         "emoji": "😴",
-        "tags": [
-            "past tense",
-            "auxiliary verb"
-        ],
+        "tags": ["past tense", "auxiliary verb"],
         "difficulty": 2,
         "part_of_speech": "verb",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "était en train d'être",
-            "était devenu"
-        ],
-        "antonyms": [
-            "est"
-        ]
+        "synonyms": ["était en train d'être", "était devenu"],
+        "antonyms": ["est"]
     },
     {
         "word": "pour",
@@ -130,21 +89,13 @@
         "example": "Je fais du shopping pour ma mère.",
         "example_en": "I am shopping for my mother.",
         "emoji": "🛒",
-        "tags": [
-            "purpose",
-            "reason"
-        ],
+        "tags": ["purpose", "reason"],
         "difficulty": 1,
         "part_of_speech": "preposition",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "afin de",
-            "dans l'objectif de"
-        ],
-        "antonyms": [
-            "contre"
-        ]
+        "synonyms": ["afin de", "dans l'objectif de"],
+        "antonyms": ["contre"]
     },
     {
         "word": "sur",
@@ -152,21 +103,13 @@
         "example": "Le chat est sur le toit.",
         "example_en": "The cat is on the roof.",
         "emoji": "🐱",
-        "tags": [
-            "position",
-            "surface"
-        ],
+        "tags": ["position", "surface"],
         "difficulty": 1,
         "part_of_speech": "preposition",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "sur le dessus de",
-            "sur la surface de"
-        ],
-        "antonyms": [
-            "sous"
-        ]
+        "synonyms": ["sur le dessus de", "sur la surface de"],
+        "antonyms": ["sous"]
     },
     {
         "word": "sont",
@@ -174,21 +117,13 @@
         "example": "Ils sont très heureux.",
         "example_en": "They are very happy.",
         "emoji": "😊",
-        "tags": [
-            "plural",
-            "present tense"
-        ],
+        "tags": ["plural", "present tense"],
         "difficulty": 1,
         "part_of_speech": "verb",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "sont en train d'être",
-            "sont devenus"
-        ],
-        "antonyms": [
-            "est"
-        ]
+        "synonyms": ["sont en train d'être", "sont devenus"],
+        "antonyms": ["est"]
     },
     {
         "word": "avec",
@@ -196,18 +131,12 @@
         "example": "Je vais au cinéma avec mes amis.",
         "example_en": "I am going to the cinema with my friends.",
         "emoji": "🎬",
-        "tags": [
-            "companion",
-            "association"
-        ],
+        "tags": ["companion", "association"],
         "difficulty": 1,
         "part_of_speech": "preposition",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "en compagnie de",
-            "accompagné de"
-        ],
+        "synonyms": ["en compagnie de", "accompagné de"],
         "antonyms": []
     },
     {
@@ -216,20 +145,13 @@
         "example": "Ils mangent de la pizza ce soir.",
         "example_en": "They are eating pizza tonight.",
         "emoji": "🍕",
-        "tags": [
-            "personal pronoun",
-            "3rd person plural"
-        ],
+        "tags": ["personal pronoun", "3rd person plural"],
         "difficulty": 1,
         "part_of_speech": "pronoun",
         "gender": "masculine/mixed",
         "plural": "ils",
         "synonyms": [],
-        "antonyms": [
-            "elle",
-            "elle-même",
-            "on"
-        ]
+        "antonyms": ["elle", "elle-même", "on"]
     },
     {
         "word": "être",
@@ -237,21 +159,13 @@
         "example": "Je suis étudiant.",
         "example_en": "I am a student.",
         "emoji": "🎓",
-        "tags": [
-            "auxiliary verb",
-            "link verb"
-        ],
+        "tags": ["auxiliary verb", "link verb"],
         "difficulty": 1,
         "part_of_speech": "verb",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "exister",
-            "constituer"
-        ],
-        "antonyms": [
-            "avoir"
-        ]
+        "synonyms": ["exister", "constituer"],
+        "antonyms": ["avoir"]
     },
     {
         "word": "à",
@@ -259,18 +173,12 @@
         "example": "Je vais à la plage demain.",
         "example_en": "I am going to the beach tomorrow.",
         "emoji": "🏖",
-        "tags": [
-            "direction",
-            "location"
-        ],
+        "tags": ["direction", "location"],
         "difficulty": 1,
         "part_of_speech": "preposition",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "au",
-            "en"
-        ],
+        "synonyms": ["au", "en"],
         "antonyms": []
     },
     {
@@ -279,20 +187,13 @@
         "example": "Un chat noir est sur le toit.",
         "example_en": "A black cat is on the roof.",
         "emoji": "🐱",
-        "tags": [
-            "indefinite article",
-            "masculine singular"
-        ],
+        "tags": ["indefinite article", "masculine singular"],
         "difficulty": 1,
         "part_of_speech": "determiner",
         "gender": "masculine",
         "plural": "des",
-        "synonyms": [
-            "un certain"
-        ],
-        "antonyms": [
-            "une"
-        ]
+        "synonyms": ["un certain"],
+        "antonyms": ["une"]
     },
     {
         "word": "avoir",
@@ -300,21 +201,13 @@
         "example": "J'ai un chat.",
         "example_en": "I have a cat.",
         "emoji": "🐱",
-        "tags": [
-            "auxiliary verb",
-            "possession",
-            "transitive verb"
-        ],
+        "tags": ["auxiliary verb", "possession", "transitive verb"],
         "difficulty": 1,
         "part_of_speech": "verb",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "posséder"
-        ],
-        "antonyms": [
-            "être"
-        ]
+        "synonyms": ["posséder"],
+        "antonyms": ["être"]
     },
     {
         "word": "ce",
@@ -322,20 +215,13 @@
         "example": "Ce livre est intéressant.",
         "example_en": "This book is interesting.",
         "emoji": "📚",
-        "tags": [
-            "demonstrative pronoun",
-            "singular"
-        ],
+        "tags": ["demonstrative pronoun", "singular"],
         "difficulty": 1,
         "part_of_speech": "pronoun",
         "gender": "masculine/mixed",
         "plural": "ces",
-        "synonyms": [
-            "cet"
-        ],
-        "antonyms": [
-            "cette"
-        ]
+        "synonyms": ["cet"],
+        "antonyms": ["cette"]
     },
     {
         "word": "à partir de",
@@ -343,18 +229,12 @@
         "example": "Je vais voyager à partir de demain.",
         "example_en": "I am going to travel from tomorrow.",
         "emoji": "🧳",
-        "tags": [
-            "starting point",
-            "time"
-        ],
+        "tags": ["starting point", "time"],
         "difficulty": 2,
         "part_of_speech": "preposition",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "depuis",
-            "à compter de"
-        ],
+        "synonyms": ["depuis", "à compter de"],
         "antonyms": []
     },
     {
@@ -363,18 +243,12 @@
         "example": "Je vais voyager par avion.",
         "example_en": "I am going to travel by plane.",
         "emoji": "✈️",
-        "tags": [
-            "means",
-            "method"
-        ],
+        "tags": ["means", "method"],
         "difficulty": 1,
         "part_of_speech": "preposition",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "par l'intermédiaire de",
-            "grâce à"
-        ],
+        "synonyms": ["par l'intermédiaire de", "grâce à"],
         "antonyms": []
     },
     {
@@ -383,21 +257,13 @@
         "example": "Il fait très chaud aujourd'hui.",
         "example_en": "It is very hot today.",
         "emoji": "🔥",
-        "tags": [
-            "temperature",
-            "weather"
-        ],
+        "tags": ["temperature", "weather"],
         "difficulty": 1,
         "part_of_speech": "adjective",
         "gender": "masculine/feminine",
         "plural": "chauds",
-        "synonyms": [
-            "brûlant",
-            "étouffant"
-        ],
-        "antonyms": [
-            "froid"
-        ]
+        "synonyms": ["brûlant", "étouffant"],
+        "antonyms": ["froid"]
     },
     {
         "word": "mot",
@@ -405,18 +271,12 @@
         "example": "Le mot 'amour' est très romantique.",
         "example_en": "The word 'love' is very romantic.",
         "emoji": "❤️",
-        "tags": [
-            "language",
-            "communication"
-        ],
+        "tags": ["language", "communication"],
         "difficulty": 1,
         "part_of_speech": "noun",
         "gender": "masculine",
         "plural": "mots",
-        "synonyms": [
-            "terme",
-            "expression"
-        ],
+        "synonyms": ["terme", "expression"],
         "antonyms": []
     },
     {
@@ -425,18 +285,12 @@
         "example": "Il aime le football, mais il préfère le basket-ball.",
         "example_en": "He likes football, but he prefers basketball.",
         "emoji": "⚽🏀",
-        "tags": [
-            "conjunction",
-            "opposition"
-        ],
+        "tags": ["conjunction", "opposition"],
         "difficulty": 1,
         "part_of_speech": "conjunction",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "toutefois",
-            "cependant"
-        ],
+        "synonyms": ["toutefois", "cependant"],
         "antonyms": []
     },
     {
@@ -445,18 +299,12 @@
         "example": "Certains livres sont très intéressants.",
         "example_en": "Certain books are very interesting.",
         "emoji": "📚",
-        "tags": [
-            "indefinite pronoun",
-            "quantifier"
-        ],
+        "tags": ["indefinite pronoun", "quantifier"],
         "difficulty": 2,
         "part_of_speech": "pronoun",
         "gender": "masculine/feminine",
         "plural": "certains",
-        "synonyms": [
-            "quelques",
-            "des"
-        ],
+        "synonyms": ["quelques", "des"],
         "antonyms": []
     },
     {
@@ -465,21 +313,13 @@
         "example": "Il est étudiant.",
         "example_en": "He is a student.",
         "emoji": "🎓",
-        "tags": [
-            "present tense",
-            "auxiliary verb"
-        ],
+        "tags": ["present tense", "auxiliary verb"],
         "difficulty": 1,
         "part_of_speech": "verb",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "est en train d'être",
-            "est devenu"
-        ],
-        "antonyms": [
-            "était"
-        ]
+        "synonyms": ["est en train d'être", "est devenu"],
+        "antonyms": ["était"]
     },
     {
         "word": "vous",
@@ -487,19 +327,13 @@
         "example": "Vous êtes très gentils.",
         "example_en": "You are very kind.",
         "emoji": "😊",
-        "tags": [
-            "personal pronoun",
-            "2nd person plural",
-            "formal singular"
-        ],
+        "tags": ["personal pronoun", "2nd person plural", "formal singular"],
         "difficulty": 1,
         "part_of_speech": "pronoun",
         "gender": null,
         "plural": "vous",
         "synonyms": [],
-        "antonyms": [
-            "tu"
-        ]
+        "antonyms": ["tu"]
     },
     {
         "word": "ou",
@@ -507,17 +341,12 @@
         "example": "Veux-tu du thé ou du café?",
         "example_en": "Do you want tea or coffee?",
         "emoji": "🍵☕",
-        "tags": [
-            "conjunction",
-            "alternative"
-        ],
+        "tags": ["conjunction", "alternative"],
         "difficulty": 1,
         "part_of_speech": "conjunction",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "ou bien"
-        ],
+        "synonyms": ["ou bien"],
         "antonyms": []
     },
     {
@@ -526,21 +355,13 @@
         "example": "Il avait déjà vu ce film.",
         "example_en": "He had already seen that movie.",
         "emoji": "🎬",
-        "tags": [
-            "past tense",
-            "auxiliary verb"
-        ],
+        "tags": ["past tense", "auxiliary verb"],
         "difficulty": 2,
         "part_of_speech": "verb",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "eu en possession",
-            "eu la possession de"
-        ],
-        "antonyms": [
-            "a"
-        ]
+        "synonyms": ["eu en possession", "eu la possession de"],
+        "antonyms": ["a"]
     },
     {
         "word": "la",
@@ -548,20 +369,13 @@
         "example": "La chatte est sur le toit.",
         "example_en": "The female cat is on the roof.",
         "emoji": "🐱",
-        "tags": [
-            "definite article",
-            "feminine singular"
-        ],
+        "tags": ["definite article", "feminine singular"],
         "difficulty": 1,
         "part_of_speech": "determiner",
         "gender": "feminine",
         "plural": "les",
-        "synonyms": [
-            "l'"
-        ],
-        "antonyms": [
-            "le"
-        ]
+        "synonyms": ["l'"],
+        "antonyms": ["le"]
     },
     {
         "word": "de",
@@ -569,18 +383,12 @@
         "example": "Je suis de France.",
         "example_en": "I am from France.",
         "emoji": "🇫🇷",
-        "tags": [
-            "origin",
-            "possession"
-        ],
+        "tags": ["origin", "possession"],
         "difficulty": 1,
         "part_of_speech": "preposition",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "du",
-            "des"
-        ],
+        "synonyms": ["du", "des"],
         "antonyms": []
     },
     {
@@ -589,17 +397,12 @@
         "example": "Il aime le football et le basket-ball.",
         "example_en": "He likes football and basketball.",
         "emoji": "⚽🏀",
-        "tags": [
-            "conjunction",
-            "addition"
-        ],
+        "tags": ["conjunction", "addition"],
         "difficulty": 1,
         "part_of_speech": "conjunction",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "ainsi que"
-        ],
+        "synonyms": ["ainsi que"],
         "antonyms": []
     },
     {
@@ -608,20 +411,13 @@
         "example": "Je suis dans ma chambre.",
         "example_en": "I am in my room.",
         "emoji": "🏠",
-        "tags": [
-            "location",
-            "direction"
-        ],
+        "tags": ["location", "direction"],
         "difficulty": 1,
         "part_of_speech": "preposition",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "à l'intérieur de"
-        ],
-        "antonyms": [
-            "dehors"
-        ]
+        "synonyms": ["à l'intérieur de"],
+        "antonyms": ["dehors"]
     },
     {
         "word": "nous",
@@ -629,23 +425,13 @@
         "example": "Nous sommes étudiants.",
         "example_en": "We are students.",
         "emoji": "🧑🏽‍🎓",
-        "tags": [
-            "personal pronoun",
-            "1st person plural"
-        ],
+        "tags": ["personal pronoun", "1st person plural"],
         "difficulty": 1,
         "part_of_speech": "pronoun",
         "gender": null,
         "plural": "nous",
         "synonyms": [],
-        "antonyms": [
-            "je",
-            "tu",
-            "il",
-            "elle",
-            "elle-même",
-            "on"
-        ]
+        "antonyms": ["je", "tu", "il", "elle", "elle-même", "on"]
     },
     {
         "word": "boîte",
@@ -653,18 +439,12 @@
         "example": "Je mets les livres dans la boîte.",
         "example_en": "I am putting the books in the box.",
         "emoji": "📦",
-        "tags": [
-            "container",
-            "enclosure"
-        ],
+        "tags": ["container", "enclosure"],
         "difficulty": 1,
         "part_of_speech": "noun",
         "gender": "feminine",
         "plural": "boîtes",
-        "synonyms": [
-            "caisse",
-            "coffre"
-        ],
+        "synonyms": ["caisse", "coffre"],
         "antonyms": []
     },
     {
@@ -673,20 +453,13 @@
         "example": "Je suis dehors.",
         "example_en": "I am outside.",
         "emoji": "🌞",
-        "tags": [
-            "location",
-            "exterior"
-        ],
+        "tags": ["location", "exterior"],
         "difficulty": 1,
         "part_of_speech": "adverb",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "à l'extérieur"
-        ],
-        "antonyms": [
-            "dedans"
-        ]
+        "synonyms": ["à l'extérieur"],
+        "antonyms": ["dedans"]
     },
     {
         "word": "autre",
@@ -694,20 +467,13 @@
         "example": "J'ai une autre idée.",
         "example_en": "I have another idea.",
         "emoji": "💡",
-        "tags": [
-            "additional",
-            "different"
-        ],
+        "tags": ["additional", "different"],
         "difficulty": 1,
         "part_of_speech": "adjective",
         "gender": "masculine/feminine",
         "plural": "autres",
-        "synonyms": [
-            "un autre"
-        ],
-        "antonyms": [
-            "même"
-        ]
+        "synonyms": ["un autre"],
+        "antonyms": ["même"]
     },
     {
         "word": "étaient",
@@ -715,21 +481,13 @@
         "example": "Ils étaient très heureux hier soir.",
         "example_en": "They were very happy last night.",
         "emoji": "😊",
-        "tags": [
-            "past tense",
-            "auxiliary verb"
-        ],
+        "tags": ["past tense", "auxiliary verb"],
         "difficulty": 2,
         "part_of_speech": "verb",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "étaient en train d'être",
-            "étaient devenus"
-        ],
-        "antonyms": [
-            "sont"
-        ]
+        "synonyms": ["étaient en train d'être", "étaient devenus"],
+        "antonyms": ["sont"]
     },
     {
         "word": "qui",
@@ -737,17 +495,12 @@
         "example": "Qui est là?",
         "example_en": "Who is there?",
         "emoji": "👤",
-        "tags": [
-            "interrogative pronoun",
-            "relative pronoun"
-        ],
+        "tags": ["interrogative pronoun", "relative pronoun"],
         "difficulty": 1,
         "part_of_speech": "pronoun",
         "gender": "masculine/feminine/mixed",
         "plural": "qui",
-        "synonyms": [
-            "lequel"
-        ],
+        "synonyms": ["lequel"],
         "antonyms": []
     },
     {
@@ -756,18 +509,12 @@
         "example": "Je vais faire du shopping.",
         "example_en": "I am going to go shopping.",
         "emoji": "🛍",
-        "tags": [
-            "transitive verb",
-            "auxiliary verb"
-        ],
+        "tags": ["transitive verb", "auxiliary verb"],
         "difficulty": 1,
         "part_of_speech": "verb",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "effectuer",
-            "exécuter"
-        ],
+        "synonyms": ["effectuer", "exécuter"],
         "antonyms": []
     },
     {
@@ -776,22 +523,13 @@
         "example": "Leur maison est très belle.",
         "example_en": "Their house is very beautiful.",
         "emoji": "🏡",
-        "tags": [
-            "possession",
-            "3rd person plural"
-        ],
+        "tags": ["possession", "3rd person plural"],
         "difficulty": 2,
         "part_of_speech": "determiner",
         "gender": "masculine/feminine",
         "plural": "leurs",
-        "synonyms": [
-            "son",
-            "sa"
-        ],
-        "antonyms": [
-            "mon",
-            "ma"
-        ]
+        "synonyms": ["son", "sa"],
+        "antonyms": ["mon", "ma"]
     },
     {
         "word": "temps",
@@ -799,21 +537,13 @@
         "example": "Il fait beau temps aujourd'hui.",
         "example_en": "The weather is nice today.",
         "emoji": "☀️",
-        "tags": [
-            "weather",
-            "duration"
-        ],
+        "tags": ["weather", "duration"],
         "difficulty": 1,
         "part_of_speech": "noun",
         "gender": "masculine",
         "plural": "temps",
-        "synonyms": [
-            "durée",
-            "moment"
-        ],
-        "antonyms": [
-            "nuit"
-        ]
+        "synonyms": ["durée", "moment"],
+        "antonyms": ["nuit"]
     },
     {
         "word": "si",
@@ -821,17 +551,12 @@
         "example": "Je vais au cinéma si tu viens avec moi.",
         "example_en": "I will go to the cinema if you come with me.",
         "emoji": "🎬",
-        "tags": [
-            "conjunction",
-            "condition"
-        ],
+        "tags": ["conjunction", "condition"],
         "difficulty": 1,
         "part_of_speech": "conjunction",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "dans l'hypothèse où"
-        ],
+        "synonyms": ["dans l'hypothèse où"],
         "antonyms": []
     },
     {
@@ -840,21 +565,13 @@
         "example": "Il fera ce qu'il y a de mieux selon sa volonté.",
         "example_en": "He will do what is best according to his will.",
         "emoji": "🤝",
-        "tags": [
-            "determination",
-            "future tense"
-        ],
+        "tags": ["determination", "future tense"],
         "difficulty": 2,
         "part_of_speech": "noun",
         "gender": "feminine",
         "plural": "volontés",
-        "synonyms": [
-            "désir",
-            "résolution"
-        ],
-        "antonyms": [
-            "hésitation"
-        ]
+        "synonyms": ["désir", "résolution"],
+        "antonyms": ["hésitation"]
     },
     {
         "word": "comment",
@@ -862,18 +579,12 @@
         "example": "Comment vas-tu?",
         "example_en": "How are you?",
         "emoji": "😊",
-        "tags": [
-            "interrogative adverb",
-            "manner"
-        ],
+        "tags": ["interrogative adverb", "manner"],
         "difficulty": 1,
         "part_of_speech": "adverb",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "comment est-ce que",
-            "de quelle manière"
-        ],
+        "synonyms": ["comment est-ce que", "de quelle manière"],
         "antonyms": []
     },
     {
@@ -882,21 +593,13 @@
         "example": "Il a dit qu'il viendrait demain.",
         "example_en": "He said that he would come tomorrow.",
         "emoji": "🗣",
-        "tags": [
-            "past tense",
-            "auxiliary verb"
-        ],
+        "tags": ["past tense", "auxiliary verb"],
         "difficulty": 2,
         "part_of_speech": "verb",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "affirmé",
-            "proclamé"
-        ],
-        "antonyms": [
-            "dit que"
-        ]
+        "synonyms": ["affirmé", "proclamé"],
+        "antonyms": ["dit que"]
     },
     {
         "word": "chaque",
@@ -904,18 +607,12 @@
         "example": "Chaque jour, je vais à la gym.",
         "example_en": "Every day, I go to the gym.",
         "emoji": "🏋️‍♂️",
-        "tags": [
-            "indefinite adjective",
-            "quantifier"
-        ],
+        "tags": ["indefinite adjective", "quantifier"],
         "difficulty": 2,
         "part_of_speech": "adjective",
         "gender": "masculine/feminine",
         "plural": "chaque",
-        "synonyms": [
-            "tous",
-            "toutes"
-        ],
+        "synonyms": ["tous", "toutes"],
         "antonyms": []
     },
     {
@@ -924,18 +621,12 @@
         "example": "Je ne sais pas quoi dire.",
         "example_en": "I don't know what to say.",
         "emoji": "😕",
-        "tags": [
-            "transitive verb",
-            "auxiliary verb"
-        ],
+        "tags": ["transitive verb", "auxiliary verb"],
         "difficulty": 1,
         "part_of_speech": "verb",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "affirmer",
-            "exprimer"
-        ],
+        "synonyms": ["affirmer", "exprimer"],
         "antonyms": []
     },
     {
@@ -944,19 +635,516 @@
         "example": "Je ne parle pas français.",
         "example_en": "I don't speak French.",
         "emoji": "🇫🇷",
-        "tags": [
-            "negation",
-            "particle"
-        ],
+        "tags": ["negation", "particle"],
         "difficulty": 1,
         "part_of_speech": "particle",
         "gender": null,
         "plural": null,
-        "synonyms": [
-            "pas"
-        ],
-        "antonyms": [
-            ""
-        ]
+        "synonyms": ["pas"],
+        "antonyms": [""]
+    },
+    {
+        "word": "ensemble",
+        "translation": "together",
+        "example": "Nous sommes ensemble depuis cinq ans.",
+        "example_en": "We have been together for five years.",
+        "emoji": "💏",
+        "tags": ["adverb", "group"],
+        "difficulty": 2,
+        "part_of_speech": "adverb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["collectivement", "conjointement"],
+        "antonyms": ["séparément"]
+    },
+    {
+        "word": "trois",
+        "translation": "three",
+        "example": "J'ai trois frères.",
+        "example_en": "I have three brothers.",
+        "emoji": "3️⃣",
+        "tags": ["number"],
+        "difficulty": 1,
+        "part_of_speech": "number",
+        "gender": null,
+        "plural": "trois",
+        "synonyms": ["troisième"],
+        "antonyms": ["un", "deux"]
+    },
+    {
+        "word": "vouloir",
+        "translation": "to want",
+        "example": "Je veux un sandwich au jambon.",
+        "example_en": "I want a ham sandwich.",
+        "emoji": "🥪",
+        "tags": ["transitive verb", "auxiliary verb"],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["désirer", "souhaiter"],
+        "antonyms": ["ne pas vouloir"]
+    },
+    {
+        "word": "air",
+        "translation": "air",
+        "example": "Il fait un air frais ce matin.",
+        "example_en": "It is a cool air this morning.",
+        "emoji": "🌬",
+        "tags": ["atmosphere", "appearance"],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "airs",
+        "synonyms": ["apparence", "aspect"],
+        "antonyms": []
+    },
+    {
+        "word": "bien",
+        "translation": "well",
+        "example": "Je vais bien, merci.",
+        "example_en": "I am well, thank you.",
+        "emoji": "😊",
+        "tags": ["adverb", "health"],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["bon", "sain"],
+        "antonyms": ["mal"]
+    },
+    {
+        "word": "aussi",
+        "translation": "also, too",
+        "example": "Je veux aussi aller au cinéma.",
+        "example_en": "I want to go to the cinema too.",
+        "emoji": "🎬",
+        "tags": ["adverb", "addition"],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["de même", "également"],
+        "antonyms": ["seulement"]
+    },
+    {
+        "word": "jouer",
+        "translation": "to play",
+        "example": "Il aime jouer au football.",
+        "example_en": "He likes to play soccer.",
+        "emoji": "⚽",
+        "tags": ["intransitive verb", "auxiliary verb"],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["faire du sport", "s'amuser"],
+        "antonyms": []
+    },
+    {
+        "word": "petit",
+        "translation": "small, little",
+        "example": "J'ai un petit frère.",
+        "example_en": "I have a little brother.",
+        "emoji": "👶",
+        "tags": ["adjective", "size"],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine/feminine",
+        "plural": "petits",
+        "synonyms": ["petite", "minuscule"],
+        "antonyms": ["grand"]
+    },
+    {
+        "word": "fin",
+        "translation": "end, finish",
+        "example": "La fin du film est très émouvante.",
+        "example_en": "The end of the movie is very moving.",
+        "emoji": "🎥",
+        "tags": ["noun", "adjective"],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "fins",
+        "synonyms": ["conclusion", "terme"],
+        "antonyms": ["début"]
+    },
+    {
+        "word": "mettre",
+        "translation": "to put, to place",
+        "example": "Je vais mettre les livres sur l'étagère.",
+        "example_en": "I am going to put the books on the shelf.",
+        "emoji": "📚",
+        "tags": ["transitive verb", "auxiliary verb"],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["poser", "installer"],
+        "antonyms": []
+    },
+    {
+        "word": "maison",
+        "translation": "house",
+        "example": "J'ai acheté une nouvelle maison.",
+        "example_en": "I bought a new house.",
+        "emoji": "🏡",
+        "tags": ["home", "building", "dwelling"],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "maisons",
+        "synonyms": ["domicile", "demeure"],
+        "antonyms": ["appartement"]
+    },
+    {
+        "word": "lire",
+        "translation": "to read",
+        "example": "Je lis un livre intéressant.",
+        "example_en": "I am reading an interesting book.",
+        "emoji": "📖",
+        "tags": ["intransitive verb", "auxiliary verb"],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["étudier", "parcourir"],
+        "antonyms": []
+    },
+    {
+        "word": "main",
+        "translation": "hand",
+        "example": "J'ai mal à la main.",
+        "example_en": "I have a pain in my hand.",
+        "emoji": "🤚",
+        "tags": ["body part"],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "mains",
+        "synonyms": ["poignet", "paume"],
+        "antonyms": []
+    },
+    {
+        "word": "port",
+        "translation": "carry, wear",
+        "example": "Il porte un costume.",
+        "example_en": "He is wearing a suit.",
+        "emoji": "👔",
+        "tags": ["transitive verb", "auxiliary verb"],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["porter sur soi", "porter atour de soi"],
+        "antonyms": []
+    },
+    {
+        "word": "grand",
+        "translation": "big, tall",
+        "example": "Il a une grande famille.",
+        "example_en": "He has a large family.",
+        "emoji": "👪",
+        "tags": ["adjective", "size"],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine/feminine",
+        "plural": "grands",
+        "synonyms": ["gros", "imposant"],
+        "antonyms": ["petit"]
+    },
+    {
+        "word": "épeler",
+        "translation": "to spell",
+        "example": "Comment épelles-tu ton nom?",
+        "example_en": "How do you spell your name?",
+        "emoji": "📝",
+        "tags": ["transitive verb", "auxiliary verb"],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["orthographier", "écrire lettre par lettre"],
+        "antonyms": []
+    },
+    {
+        "word": "ajouter",
+        "translation": "to add",
+        "example": "Je vais ajouter du sucre dans mon café.",
+        "example_en": "I am going to add sugar to my coffee.",
+        "emoji": "☕",
+        "tags": ["transitive verb", "auxiliary verb"],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["adjonctionner", "incorporer"],
+        "antonyms": ["enlever"]
+    },
+    {
+        "word": "même",
+        "translation": "even, same",
+        "example": "Je veux manger la même chose que toi.",
+        "example_en": "I want to eat the same thing as you.",
+        "emoji": "🍴",
+        "tags": ["adverb", "identity"],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["pareillement", "toujours"],
+        "antonyms": ["différent"]
+    },
+    {
+        "word": "terre",
+        "translation": "earth, land",
+        "example": "La terre est notre maison.",
+        "example_en": "The earth is our home.",
+        "emoji": "🌍",
+        "tags": ["planet", "ground"],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "terres",
+        "synonyms": ["planète", "sol"],
+        "antonyms": []
+    },
+    {
+        "word": "ici",
+        "translation": "here",
+        "example": "Je suis ici depuis cinq ans.",
+        "example_en": "I have been here for five years.",
+        "emoji": "📍",
+        "tags": ["adverb", "location"],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["ici même", "en ce lieu"],
+        "antonyms": ["là"]
+    },
+    {
+        "word": "il faut",
+        "translation": "it is necessary",
+        "example": "Il faut que j'aille travailler.",
+        "example_en": "It is necessary that I go to work.",
+        "emoji": "💼",
+        "tags": ["auxiliary verb", "obligation"],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["il est nécessaire de", "il est indispensable de"],
+        "antonyms": ["il ne faut pas"]
+    },
+    {
+        "word": "haut",
+        "translation": "high, tall",
+        "example": "La tour Eiffel est très haute.",
+        "example_en": "The Eiffel Tower is very tall.",
+        "emoji": "🗼",
+        "tags": ["adjective", "size"],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine/feminine",
+        "plural": "hauts",
+        "synonyms": ["élevé", "grand"],
+        "antonyms": ["bas"]
+    },
+    {
+        "word": "tel",
+        "translation": "such, like",
+        "example": "Je n'ai jamais vu un tel film.",
+        "example_en": "I have never seen such a movie.",
+        "emoji": "🎥",
+        "tags": ["determiner", "adjective"],
+        "difficulty": 2,
+        "part_of_speech": "determiner",
+        "gender": "masculine/feminine",
+        "plural": "tels",
+        "synonyms": ["pareil", "semblable"],
+        "antonyms": ["différent"]
+    },
+    {
+        "word": "suivre",
+        "translation": "to follow",
+        "example": "Je vais suivre les instructions.",
+        "example_en": "I am going to follow the instructions.",
+        "emoji": "📜",
+        "tags": ["intransitive verb", "auxiliary verb"],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["adapter", "obéir"],
+        "antonyms": ["précéder"]
+    },
+    {
+        "word": "acte",
+        "translation": "act, deed",
+        "example": "C'est un acte de courage.",
+        "example_en": "It is an act of courage.",
+        "emoji": "💪",
+        "tags": ["noun", "courage"],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "actes",
+        "synonyms": ["geste", "démarche"],
+        "antonyms": []
+    },
+    {
+        "word": "pourquoi",
+        "translation": "why",
+        "example": "Pourquoi tu pleures?",
+        "example_en": "Why are you crying?",
+        "emoji": "😢",
+        "tags": ["interrogative pronoun"],
+        "difficulty": 1,
+        "part_of_speech": "interrogative pronoun",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["raison", "motif"],
+        "antonyms": []
+    },
+    {
+        "word": "interroger",
+        "translation": "to question",
+        "example": "Je vais interroger le professeur.",
+        "example_en": "I am going to question the professor.",
+        "emoji": "❓",
+        "tags": ["transitive verb", "auxiliary verb"],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["demander", "sonder"],
+        "antonyms": []
+    },
+    {
+        "word": "hommes",
+        "translation": "men",
+        "example": "Les hommes et les femmes sont égaux.",
+        "example_en": "Men and women are equal.",
+        "emoji": "👨‍👩‍👦",
+        "tags": ["plural noun", "gender"],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "hommes",
+        "synonyms": ["garçons", "mecs"],
+        "antonyms": ["femmes"]
+    },
+    {
+        "word": "changement",
+        "translation": "change, alteration",
+        "example": "Il y a eu un changement de plans.",
+        "example_en": "There has been a change of plans.",
+        "emoji": "🔄",
+        "tags": ["noun", "modification"],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "changements",
+        "synonyms": ["modification", "variation"],
+        "antonyms": ["constance"]
+    },
+    {
+        "word": "est allé",
+        "translation": "went",
+        "example": "Il est allé au magasin.",
+        "example_en": "He went to the store.",
+        "emoji": "🛒",
+        "tags": ["auxiliary verb", "past tense"],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["a été", "s'est rendu"],
+        "antonyms": ["viendra"]
+    },
+    {
+        "word": "lumière",
+        "translation": "light",
+        "example": "Allume la lumière s'il te plaît.",
+        "example_en": "Please turn on the light.",
+        "emoji": "💡",
+        "tags": ["noun", "electricity"],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "lumières",
+        "synonyms": ["clarté", "éclat"],
+        "antonyms": ["obscurité"]
+    },
+    {
+        "word": "genre",
+        "translation": "kind, type",
+        "example": "Qu'est-ce que tu fais comme genre de sport?",
+        "example_en": "What kind of sport do you do?",
+        "emoji": "🏋️‍♂️",
+        "tags": ["noun", "classification"],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "genres",
+        "synonyms": ["espèce", "catégorie"],
+        "antonyms": []
+    },
+    {
+        "word": "besoin",
+        "translation": "need",
+        "example": "J'ai besoin d'un stylo.",
+        "example_en": "I need a pen.",
+        "emoji": "🖋",
+        "tags": ["noun", "necessity"],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "besoins",
+        "synonyms": ["nécessité", "manque"],
+        "antonyms": []
+    },
+    {
+        "word": "image",
+        "translation": "image, picture",
+        "example": "Quelle est ton image préférée?",
+        "example_en": "What is your favorite image?",
+        "emoji": "🖼",
+        "tags": ["noun", "representation"],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "images",
+        "synonyms": ["représentation", "figure"],
+        "antonyms": []
+    },
+    {
+        "word": "essayer",
+        "translation": "to try",
+        "example": "Je vais essayer de nouvelles choses.",
+        "example_en": "I am going to try new things.",
+        "emoji": "🤞",
+        "tags": ["intransitive verb", "auxiliary verb"],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["tenter", "expérimenter"],
+        "antonyms": []
+    },
+    {
+        "word": "encore",
+        "translation": "again, more",
+        "example": "Veux-tu encore du gâteau?",
+        "example_en": "Do you want more cake?",
+        "emoji": "🎂",
+        "tags": ["adverb", "repetition"],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["encore une fois", "en plus"],
+        "antonyms": ["moins"]
     }
 ]

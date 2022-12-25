@@ -1,6 +1,6 @@
 <template>
     <div
-        class="h-96 bg-slate-200 rounded-[18px] grid grid-cols-4 grid-rows-2 m-4"
+        class="h-96 bg-slate-200 rounded-[18px] grid grid-cols-4 grid-rows-2 m-2"
     >
         <!-- Word -->
         <div
@@ -26,12 +26,32 @@
                 </div>
             </div>
         </div>
+
+        <!-- Tags, difficulty -->
+        <div class="flex flex-col p-4">
+            <div class="flex flex-row flex flex-row text-slate-500 text-l">
+                <div
+                    v-for="tag in word.tags"
+                    :key="tag"
+                    class="bg-slate-300 rounded-full m-2 px-2"
+                >
+                    {{ tag }}
+                </div>
+            </div>
+
+            <DifficultyRange :value="word.difficulty" />
+        </div>
     </div>
 </template>
 
 <script>
+import DifficultyRange from "@/components/DifficultyRange.vue";
+
 export default {
     name: "Card",
+    components: {
+        DifficultyRange,
+    },
     props: {
         word: {
             type: Object,

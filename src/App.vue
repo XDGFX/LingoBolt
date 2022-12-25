@@ -4,13 +4,20 @@
         class="flex flex-col items-center bg-white h-screen bg-slate-100 text-slate-900 px-4 py-8"
     >
         <!-- Heading -->
-        <h1 class="text-4xl pt-8 pb-12">
+        <h1 class="text-4xl pt-8 pb-4">
             <span class="text-slate-500">When learning a new language, </span>
             <span class="text-slate-900 underline decoration-pink-500"
                 >the first 1000</span
             >
             <span class="text-slate-500"> words are the most important.</span>
         </h1>
+
+        <!-- Subtitle -->
+        <h2 class="text-2xl pb-12">
+            <span class="text-slate-400">
+                Here you can learn your first 1000 words in French 🇫🇷.
+            </span>
+        </h2>
 
         <!-- Search box -->
         <div class="flex flex-row items-center justify-center">

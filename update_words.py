@@ -3,9 +3,10 @@
 import json
 import typing
 import time
+import os
 
 WORD_FILE = "french_words.json"
-OUTPUT_FILE = "french.json"
+OUTPUT_FILE = os.path.join("src", "french.json")
 BATCH = 3
 
 

@@ -2,6 +2,7 @@
 
 import json
 import typing
+import time
 
 WORD_FILE = "french_words.json"
 OUTPUT_FILE = "french.json"
@@ -72,6 +73,8 @@ def main():
     # We now iterate over every BATCH words and display them to the user.
     for i in range(0, len(words), BATCH):
 
+        start_time = time.time()
+
         # Get the next BATCH words
         next_words = words[i : i + BATCH]
 
@@ -94,6 +97,13 @@ def main():
                 f.write(json_string)
 
             print("\n\n")
+
+        end_time = time.time()
+        time_per_word = (end_time - start_time) / BATCH
+        print(f"Time taken per word: {time_per_word} seconds")
+        print(
+            f"Estimated time remaining: {((len(words) - i) * time_per_word) / 60} minutes"
+        )
 
 
 if __name__ == "__main__":

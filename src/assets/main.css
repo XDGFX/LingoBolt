@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Make html and body max height */
+html,
+body {
+    height: 100%;
+    font-family: "Sniglet", cursive;
+}

@@ -1,6 +1,6 @@
 <template>
     <div
-        class="m-4 h-full w-full overflow-auto rounded-[24px] bg-white border-2 border-slate-200"
+        class="m-4 h-full w-full lg:w-[990px] overflow-auto rounded-[24px] bg-white border-2 border-slate-200"
     >
         <TransitionGroup appear name="slide-fade">
             <card v-for="word in words" :key="word.word" :word="word"></card>

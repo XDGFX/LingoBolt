@@ -12,6 +12,7 @@
             <div class="text-4xl text-slate-400">
                 {{ word.translation }}
             </div>
+            <AudioPlayer :word="word.word"></AudioPlayer>
         </div>
 
         <!-- Example -->
@@ -21,6 +22,7 @@
                     {{ word.emoji }}
                 </div>
                 <div class="col-span-2 flex flex-col justify-center text-2xl">
+                    <AudioPlayer :word="word.example"></AudioPlayer>
                     <p class="pb-2">"{{ word.example }}"</p>
                     <p class="text-slate-500">"{{ word.example_en }}"</p>
                 </div>
@@ -79,11 +81,13 @@
 
 <script>
 import DifficultyRange from "@/components/DifficultyRange.vue";
+import AudioPlayer from "@/components/AudioPlayer.vue";
 
 export default {
     name: "Card",
     components: {
         DifficultyRange,
+        AudioPlayer,
     },
     props: {
         word: {

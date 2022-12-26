@@ -6,7 +6,7 @@
         >
             <div
                 ref="word"
-                class="flex text-slate-900 whitespace-nowrap -mb-4"
+                class="flex text-slate-900 whitespace-nowrap -mb-4 md:mb-0"
                 :style="wordSizeStyle"
             >
                 {{ word.word }}

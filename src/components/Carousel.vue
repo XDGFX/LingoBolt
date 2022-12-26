@@ -14,6 +14,7 @@
 
         <RecycleScroller
             v-else
+            ref="scroller"
             class="h-full w-full"
             :items="words"
             :item-size="384 + 8"
@@ -69,6 +70,12 @@ export default {
         })
             ? true
             : false;
+    },
+    watch: {
+        words() {
+            // If the words array changes, reset the scroll position
+            this.$refs.scroller.scrollToItem(0);
+        },
     },
 };
 </script>

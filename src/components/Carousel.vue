@@ -2,9 +2,6 @@
     <div
         class="m-4 h-full w-full lg:w-[990px] overflow-auto rounded-[24px] bg-white border-2 border-slate-200"
     >
-        <!-- <TransitionGroup appear name="slide-fade">
-            <card v-for="word in words" :key="word.word" :word="word"></card>
-        </TransitionGroup> -->
         <div
             v-if="words.length === 0"
             class="text-4xl p-4 h-full flex justify-center items-center"
@@ -13,7 +10,7 @@
         </div>
 
         <RecycleScroller
-            v-else
+            v-show="words.length > 0"
             ref="scroller"
             class="h-full w-full"
             :items="words"
@@ -80,15 +77,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.slide-fade-enter-active,
-.slide-fade-leave-active {
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-}
-
-.slide-fade-enter-from,
-.slide-fade-leave-to {
-    scale: 0.8;
-    opacity: 0;
-}
-</style>
+<style scoped></style>

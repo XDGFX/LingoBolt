@@ -2,7 +2,7 @@
     <div
         class="h-96 bg-slate-200 rounded-[18px] grid grid-cols-4 grid-rows-2 m-2"
     >
-        <!-- Word -->
+        <!-- word -->
         <div
             class="row-span-2 col-span-2 flex flex-col items-center justify-center bg-slate-100 rounded-[18px] m-2"
         >
@@ -12,7 +12,7 @@
             <div class="text-4xl text-slate-400">
                 {{ word.translation }}
             </div>
-            <AudioPlayer :word="word.word"></AudioPlayer>
+            <AudioPlayer v-if="showTTS" :word="word.word"></AudioPlayer>
         </div>
 
         <!-- Example -->
@@ -22,7 +22,10 @@
                     {{ word.emoji }}
                 </div>
                 <div class="col-span-2 flex flex-col justify-center text-2xl">
-                    <AudioPlayer :word="word.example"></AudioPlayer>
+                    <AudioPlayer
+                        v-if="showTTS"
+                        :word="word.example"
+                    ></AudioPlayer>
                     <p class="pb-2">"{{ word.example }}"</p>
                     <p class="text-slate-500">"{{ word.example_en }}"</p>
                 </div>
@@ -93,6 +96,10 @@ export default {
         word: {
             type: Object,
             required: true,
+        },
+        showTTS: {
+            type: Boolean,
+            default: false,
         },
     },
 };

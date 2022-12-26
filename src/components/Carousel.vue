@@ -35,6 +35,11 @@ import Card from "@/components/Card.vue";
 export default {
     name: "Carousel",
     components: { Card, RecycleScroller },
+    data() {
+        return {
+            showTTS: false,
+        };
+    },
     props: {
         words: {
             type: Array,
@@ -46,6 +51,24 @@ export default {
             // Return a random word from the words array
             return this.words[Math.floor(Math.random() * this.words.length)];
         },
+    },
+    async mounted() {
+        let voices = speechSynthesis.getVoices();
+
+        if (voices.length === 0) {
+            await new Promise((resolve) => {
+                speechSynthesis.onvoiceschanged = resolve;
+            });
+
+            voices = speechSynthesis.getVoices();
+        }
+
+        // Find a voice that speaks French (fr-FR or fr_FR)
+        this.showTTS = voices.find((voice) => {
+            return voice.lang === "fr-FR" || voice.lang === "fr_FR";
+        })
+            ? true
+            : false;
     },
 };
 </script>

@@ -1,12 +1,12 @@
 <template>
     <div
         id="app"
-        class="flex flex-col items-center bg-white h-screen bg-slate-100 text-slate-900 px-4 py-8"
+        class="flex flex-col items-center bg-white h-screen bg-slate-100 text-slate-900 px-4 py-8 selection:bg-rose-500 selection:text-white"
     >
         <!-- Heading -->
         <h1 class="text-4xl pt-8 pb-4">
             <span class="text-slate-500">When learning a new language, </span>
-            <span class="text-slate-900 underline decoration-pink-500"
+            <span class="text-slate-900 underline decoration-rose-500"
                 >the first 1000</span
             >
             <span class="text-slate-500"> words are the most important.</span>
@@ -23,7 +23,7 @@
         <div class="flex flex-row items-center justify-center">
             <input
                 v-model="search"
-                class="w-96 h-12 rounded-[24px] border-2 border-slate-200 p-4 text-2xl"
+                class="w-96 h-12 rounded-[24px] border-2 border-slate-200 p-4 text-2xl focus:border-rose-500 outline-none"
                 type="text"
                 placeholder="Search for a word"
             />

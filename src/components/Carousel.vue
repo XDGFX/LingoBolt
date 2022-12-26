@@ -18,7 +18,11 @@
             :key-field="'word'"
         >
             <template #default="{ item }">
-                <card :word="item" :showTTS="showTTS"></card>
+                <card
+                    :word="item"
+                    :showTTS="showTTS"
+                    :hideTranslations="hideTranslations"
+                ></card>
             </template>
         </RecycleScroller>
     </div>
@@ -42,6 +46,10 @@ export default {
         words: {
             type: Array,
             required: true,
+        },
+        hideTranslations: {
+            type: Boolean,
+            default: false,
         },
     },
     computed: {

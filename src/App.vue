@@ -34,15 +34,30 @@
             </h1>
         </div>
 
-        <!-- Search box -->
-        <input
-            v-model="search"
-            class="h-8 md:h-12 w-full md:w-96 rounded-full border-2 border-slate-200 p-4 text-xl md:text-2xl focus:border-rose-500 outline-none"
-            type="text"
-            placeholder="Search for a word"
-        />
+        <div class="flex">
+            <!-- Search box -->
+            <input
+                v-model="search"
+                class="h-8 md:h-12 w-full md:w-96 rounded-full border-2 border-slate-200 p-4 text-xl md:text-2xl focus:border-rose-500 outline-none"
+                type="text"
+                placeholder="Search for a word"
+            />
 
-        <carousel :words="words"></carousel>
+            <!-- Hide translations -->
+            <div class="flex items-center mx-4">
+                <input
+                    v-model="hideTranslations"
+                    class="h-6 w-6 mr-2 rounded-full"
+                    type="checkbox"
+                />
+                <span class="text-sm">Hide translations</span>
+            </div>
+        </div>
+
+        <carousel
+            :words="words"
+            :hide-translations="hideTranslations"
+        ></carousel>
     </div>
 </template>
 
@@ -60,6 +75,7 @@ export default {
     data() {
         return {
             search: "",
+            hideTranslations: false,
         };
     },
     computed: {

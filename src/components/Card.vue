@@ -11,7 +11,10 @@
             >
                 {{ word.word }}
             </div>
-            <div class="flex md:text-4xl text-slate-400 text-center px-4 py-2">
+            <div
+                class="flex md:text-4xl text-slate-400 text-center px-4 py-2"
+                v-show="!hideTranslations"
+            >
                 {{ word.translation }}
             </div>
             <AudioPlayer v-if="showTTS" :word="word.word"></AudioPlayer>
@@ -24,13 +27,15 @@
                     <div class="text-4xl pr-4">
                         {{ word.emoji }}
                     </div>
-                    <div class="flex flex-col justify-center">
+                    <div class="flex flex-col justify-center gap-2">
                         <AudioPlayer
                             v-if="showTTS"
                             :word="word.example"
                         ></AudioPlayer>
-                        <p class="pb-2">"{{ word.example }}"</p>
-                        <p class="text-slate-500">"{{ word.example_en }}"</p>
+                        <p>"{{ word.example }}"</p>
+                        <p class="text-slate-500" v-show="!hideTranslations">
+                            "{{ word.example_en }}"
+                        </p>
                     </div>
                 </div>
             </div>
@@ -50,15 +55,15 @@
                     </div>
                 </div>
 
-                <div class="pb-2 overflow-x-auto whitespace-nowrap">
+                <div class="pb-2">
                     <div class="grid grid-cols-2 px-2">
                         <div class="text-sm text-slate-900">Synonyms</div>
                         <div class="text-right text-sm text-slate-900">
                             Antonyms
                         </div>
                     </div>
-                    <div class="flex">
-                        <div class="flex flex-1 text-slate-900 text-l">
+                    <div class="flex overflow-x-auto whitespace-nowrap">
+                        <div class="flex flex-1 text-slate-900 text-l pr-4">
                             <div
                                 v-for="synonym in word.synonyms"
                                 :key="synonym"
@@ -104,6 +109,10 @@ export default {
             required: true,
         },
         showTTS: {
+            type: Boolean,
+            default: false,
+        },
+        hideTranslations: {
             type: Boolean,
             default: false,
         },

@@ -1,23 +1,8 @@
 <template>
-    <div>
-        <!-- <audio ref="audio" crossorigin="anonymous"></audio> -->
-        <button @click="playAudio">
-            <!-- <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-            >
-            </svg> -->
-            <!-- Speaker icon -->
-            <img
-                class="h-6 w-6 fill-slate-300"
-                src="../assets/speaker.svg"
-                alt="Speaker icon"
-            />
-        </button>
-    </div>
+    <!-- <audio ref="audio" crossorigin="anonymous"></audio> -->
+    <button @click="playAudio" ref="btn" class="disabled:opacity-50">
+        <img class="h-6 w-6" src="../assets/speaker.svg" alt="Speaker icon" />
+    </button>
 </template>
 
 <script>
@@ -43,6 +28,14 @@ export default {
             utterance.rate = 0.8;
 
             speechSynthesis.speak(utterance);
+
+            // Disable the button until the audio is done playing
+            this.$refs.btn.disabled = true;
+
+            // Re-enable the button after the audio is done playing
+            utterance.onend = () => {
+                this.$refs.btn.disabled = false;
+            };
         },
     },
 };

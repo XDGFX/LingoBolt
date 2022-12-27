@@ -16,8 +16,9 @@ Where <word> is the word in French
 
 The example sentence should be short, varied, and interesting in each case.
 
-For example, if the prompt  was "votre maison", the response could be:
-{"word":"votre","translation":"your (singular, formal)","example":"Votre chapeauest très élégant.","example_en":"Your hat is veryelegant.","emoji":"🎩","tags":["possession","formal"],"difficulty":1,"part_of_speech":"determiner","gender":"masculine/feminine","plural":"vos","synonyms":["ton","ta"],"antonyms":["mon", "ma"]},
-{"word":"maison","translation":"house","example":"J'ai acheté une nouvelle maison.","example_en":"I bought a new house.","emoji":"🏡","tags":["home","building","dwelling"],"difficulty":1,"part_of_speech":"noun","gender":"feminine","plural":"maisons","synonyms":["domicile", "demeure"],"antonyms":["appartement"]},
+For example, if the prompt  was "votre maison", the response could be exactly:
+{"word":"votre","translation":"your (singular, formal)","example":"Votre chapeauest très élégant.","example_en":"Your hat is veryelegant.","emoji":"🎩","tags":["possession","formal"],"difficulty":1,"part_of_speech":"determiner","gender":"masculine/feminine","plural":"vos","synonyms":["ton","ta"],"antonyms":["mon", "ma"]},{"word":"maison","translation":"house","example":"J'ai acheté une nouvelle maison.","example_en":"I bought a new house.","emoji":"🏡","tags":["home","building","dwelling"],"difficulty":1,"part_of_speech":"noun","gender":"feminine","plural":"maisons","synonyms":["domicile", "demeure"],"antonyms":["appartement"]},
+
+The response should contain only one-line of JSON, and nothing else
 
 Do you understand this?

@@ -49,6 +49,7 @@
             <button
                 class="h-8 md:h-12 w-8 md:w-12 flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
                 @click="quizMode = !quizMode"
+                title="Quiz"
             >
                 <span class="translate-y-px">🎓</span>
             </button>
@@ -58,6 +59,7 @@
                 v-if="!quizMode"
                 class="h-8 md:h-12 w-8 md:w-12 flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
                 @click="hideTranslations = !hideTranslations"
+                title="Hide translations"
             >
                 <span class="-translate-y-px">📖</span>
             </button>
@@ -77,6 +79,32 @@
                 :elo="elo"
                 @test-result="onTestResult"
             ></quiz>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex flex-col flex-1 items-center place-content-end mt-8">
+            <div class="text-sm text-slate-400">
+                <span class="text-slate-500">Made with ❤️ by </span>
+                <a
+                    class="text-slate-900 underline decoration-rose-500"
+                    href="https://github.com/xdgfx"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    xdgfx
+                </a>
+            </div>
+            <div class="text-sm text-slate-400">
+                <span class="text-slate-500">Notice a mistake? </span>
+                <a
+                    class="text-slate-900 underline decoration-rose-500"
+                    href="https://github.com/XDGFX/the-first-1000/issues/new"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Let me know!
+                </a>
+            </div>
         </div>
     </div>
 </template>

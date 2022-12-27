@@ -61,7 +61,7 @@
                         v-model="answer"
                         @keydown.enter="submitAnswer"
                         ref="answerInput"
-                        placeholder="Your answer"
+                        placeholder="What does this mean?"
                     />
 
                     <!-- Button to continue after result screen -->

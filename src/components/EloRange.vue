@@ -6,10 +6,14 @@
                     class="flex w-full rounded-md leading-5 text-slate-500 focus:outline-none focus:shadow-outline-blue-300 transition duration-150 ease-in-out"
                 >
                     <div
-                        class="h-4 bg-cyan-400 rounded-full motion-safe:transition-all"
+                        class="h-4 rounded-full motion-safe:transition-all"
+                        :class="{
+                            'bg-yellow-500': score == 20000,
+                            'bg-emerald-500': score < 20000,
+                        }"
                         :style="{
                             width: `${
-                                ((elo + 1 - minMax.min) /
+                                ((score + 0.5 - minMax.min) /
                                     (minMax.max - minMax.min)) *
                                 100
                             }%`,
@@ -37,7 +41,8 @@ export default {
     name: "DifficultyRange",
     data() {
         // Calculate the levels
-        const numLevels = 50;
+        const numLevels = 51;
+        const maxScore = 20000;
         let levels = [];
         let current = 0;
 
@@ -47,11 +52,17 @@ export default {
         }
 
         levels = levels.map((level) => {
-            return Math.round((level / levels[levels.length - 1]) * 2000);
+            return Math.round((level / levels[levels.length - 1]) * maxScore);
+        });
+
+        // Remove any duplicate level 0s
+        levels = levels.filter((level, index) => {
+            return level !== 0 || index === 0;
         });
 
         return {
             levels,
+            maxScore,
             confetti: new JSConfetti(),
         };
     },
@@ -60,17 +71,25 @@ export default {
             type: Number,
             required: true,
         },
+        score: {
+            type: Number,
+            required: true,
+        },
     },
     computed: {
         minMax() {
-            // Find the min and max elo for the current level
+            // Find the min and max score for the current level
             return {
                 min: this.levels[this.currentLevel - 1],
                 max: this.levels[this.currentLevel],
             };
         },
         currentLevel() {
-            return this.levels.findIndex((level) => level > this.elo);
+            if (this.score >= this.maxScore) {
+                return this.levels.length - 1;
+            }
+
+            return this.levels.findIndex((level) => level > this.score);
         },
     },
     watch: {

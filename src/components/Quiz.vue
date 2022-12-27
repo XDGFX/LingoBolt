@@ -1,6 +1,6 @@
 <template>
     <div class="mt-4">
-        <EloRange :elo="elo"></EloRange>
+        <EloRange :elo="elo" :score="score"></EloRange>
     </div>
 
     <div class="flex justify-center">
@@ -112,6 +112,10 @@ export default {
             required: true,
         },
         elo: {
+            type: Number,
+            required: true,
+        },
+        score: {
             type: Number,
             required: true,
         },

@@ -77,6 +77,7 @@
                 :words="wordsFiltered"
                 :wordScores="wordScores"
                 :elo="elo"
+                :score="score"
                 @test-result="onTestResult"
             ></quiz>
         </div>
@@ -130,6 +131,7 @@ export default {
 
             // Parameters for the quiz
             elo: JSON.parse(localStorage.getItem("elo")) || 500, // Init to 500 elo
+            score: JSON.parse(localStorage.getItem("score")) || 0, // Init to 0 score
             wordScores: JSON.parse(localStorage.getItem("wordScores")) || {}, // Words default to 0.5
         };
     },
@@ -202,6 +204,10 @@ export default {
                 Math.max(this.elo + (correct ? 2 : -2), 0),
                 2000
             );
+
+            // Update the score
+            this.score += correct ? 10 : 0;
+            this.score = Math.min(this.score, 20000);
         },
     },
 
@@ -225,6 +231,15 @@ export default {
                 );
             },
             deep: true,
+        },
+
+        // When the score changes, save it to localStorage
+        score() {
+            if (isNaN(this.score)) {
+                throw new Error("Score is not a number");
+            }
+
+            localStorage.setItem("score", JSON.stringify(this.score));
         },
     },
 };

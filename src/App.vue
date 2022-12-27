@@ -34,30 +34,50 @@
             </h1>
         </div>
 
-        <div class="flex">
+        <!-- Flash cards -->
+        <div class="flex gap-4">
             <!-- Search box -->
             <input
+                v-if="!quizMode"
                 v-model="search"
                 class="h-8 md:h-12 w-full md:w-96 rounded-full border-2 border-slate-200 p-4 text-xl md:text-2xl focus:border-rose-500 outline-none"
                 type="text"
                 placeholder="Search for a word"
             />
 
+            <!-- Quiz button -->
+            <button
+                class="h-8 md:h-12 w-8 md:w-12 flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
+                @click="quizMode = !quizMode"
+            >
+                <span class="translate-y-px">🎓</span>
+            </button>
+
             <!-- Hide translations -->
-            <div class="flex items-center mx-4">
-                <input
-                    v-model="hideTranslations"
-                    class="h-6 w-6 mr-2 rounded-full"
-                    type="checkbox"
-                />
-                <span class="text-sm">Hide translations</span>
-            </div>
+            <button
+                v-if="!quizMode"
+                class="h-8 md:h-12 w-8 md:w-12 flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
+                @click="hideTranslations = !hideTranslations"
+            >
+                <span class="-translate-y-px">📖</span>
+            </button>
         </div>
 
         <carousel
-            :words="words"
+            v-if="!quizMode"
+            :words="wordsFiltered"
             :hide-translations="hideTranslations"
         ></carousel>
+
+        <!-- Quiz -->
+        <div v-if="quizMode">
+            <quiz
+                :words="wordsFiltered"
+                :wordScores="wordScores"
+                :elo="elo"
+                @test-result="onTestResult"
+            ></quiz>
+        </div>
     </div>
 </template>
 
@@ -66,47 +86,120 @@ import Fuse from "fuse.js";
 
 import words from "@/french.json";
 import Carousel from "@/components/Carousel.vue";
+import Quiz from "@/components/Quiz.vue";
 
 export default {
     name: "App",
     components: {
         Carousel,
+        Quiz,
     },
     data() {
         return {
             search: "",
             hideTranslations: false,
+            quizMode: false,
+
+            // Parameters for the quiz
+            elo: JSON.parse(localStorage.getItem("elo")) || 500, // Init to 500 elo
+            wordScores: JSON.parse(localStorage.getItem("wordScores")) || {}, // Words default to 0.5
         };
     },
     computed: {
-        words() {
-            // If the search box is empty, return all words
-            if (this.search === "") {
-                return words;
-            }
+        wordsFiltered() {
+            // When not in quiz mode, words are filtered by the search box
+            if (!this.quizMode) {
+                // If the search box is empty, return all words
+                if (this.search === "") {
+                    return words;
+                }
 
-            // Otherwise, return the words that match the search query
-            const fuse = new Fuse(words, {
-                keys: [
-                    { name: "word", weight: 4 },
-                    { name: "translation", weight: 4 },
-                    "example",
-                    "example_en",
-                    { name: "tags", weight: 2 },
-                    { name: "synonyms", weight: 3 },
-                ],
-                shouldSort: true,
-            });
-            const results = fuse.search(
-                this.search.replace(/\s+/g, " ").toLowerCase()
+                // Otherwise, return the words that match the search query
+                const fuse = new Fuse(words, {
+                    keys: [
+                        { name: "word", weight: 4 },
+                        { name: "translation", weight: 4 },
+                        "example",
+                        "example_en",
+                        { name: "tags", weight: 2 },
+                        { name: "synonyms", weight: 3 },
+                    ],
+                    shouldSort: true,
+                });
+                const results = fuse.search(
+                    this.search.replace(/\s+/g, " ").toLowerCase()
+                );
+
+                return results.map((result) => result.item);
+            } else {
+                // When in quiz mode, words are filtered by your elo, and the
+                // difficulty of the word.
+                //
+                // Difficulty Level | Elo
+                // -------------------------
+                // 1                | 0 - 800
+                // 1, 2             | 800 - 1200
+                // 1, 2, 3          | 1200 - 1600
+                // all              | 1600 - 2000
+                return words.filter((word) => {
+                    if (this.elo < 800) {
+                        return word.difficulty === 1;
+                    } else if (this.elo < 1200) {
+                        return word.difficulty <= 2;
+                    } else if (this.elo < 1600) {
+                        return word.difficulty <= 3;
+                    } else {
+                        return true;
+                    }
+                });
+            }
+        },
+    },
+
+    methods: {
+        // When the quiz is finished, update the elo and wordScores
+        onTestResult(word, correct) {
+            // Update the wordScores
+            this.wordScores[word.word] = this.wordScores[word.word] || 0.5;
+
+            // Adjust the score based on whether the user got the answer right or wrong
+            const adjustment = correct ? 0.1 : -0.1;
+            this.wordScores[word.word] = Math.min(
+                Math.max(this.wordScores[word.word] + adjustment, 0),
+                1
             );
 
-            return results.map((result) => result.item);
+            // Update the elo
+            this.elo = Math.min(
+                Math.max(this.elo + (correct ? 2 : -2), 0),
+                2000
+            );
+        },
+    },
+
+    watch: {
+        // When the elo changes, save it to localStorage
+        elo() {
+            // If elo is not a number, raise an error
+            if (isNaN(this.elo)) {
+                throw new Error("Elo is not a number");
+            }
+
+            localStorage.setItem("elo", JSON.stringify(this.elo));
+        },
+
+        // When the wordScores change, save them to localStorage
+        wordScores: {
+            handler(newValue, oldValue) {
+                localStorage.setItem(
+                    "wordScores",
+                    JSON.stringify(this.wordScores)
+                );
+            },
+            deep: true,
         },
     },
 };
 </script>
 
-<style>
-/* Add your CSS here */
-</style>
+<style></style>

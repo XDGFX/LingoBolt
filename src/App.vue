@@ -4,7 +4,7 @@
         class="flex flex-col items-center bg-white h-screen bg-slate-100 text-slate-900 px-4 py-8 selection:bg-rose-500 selection:text-white"
     >
         <!-- Heading desktop -->
-        <div class="collapse md:visible text-center">
+        <div class="hidden md:block text-center">
             <h1 class="text-4xl pt-8 pb-4">
                 <span class="text-slate-500">
                     When learning a new language,
@@ -26,7 +26,7 @@
         </div>
 
         <!-- Heading mobile -->
-        <div class="visible md:collapse">
+        <div class="block md:hidden">
             <h1 class="text-4xl pb-4">
                 <span class="text-slate-900 underline decoration-rose-500">
                     the first 1000

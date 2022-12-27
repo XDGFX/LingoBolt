@@ -114,14 +114,18 @@ def main():
         # If the response is valid, we validate it
         for word in next_words:
             # Find the object for this word
-            word_obj = [x for x in input_obj if x["word"] == word][0]
+            word_obj = [x for x in input_obj if x["word"] == word]
+
+            # If the word is not in the input object, we skip it
+            if not word_obj:
+                continue
 
             # Validate the object
-            if not validate_word(word, word_obj):
+            if not validate_word(word, word_obj[0]):
                 continue
 
             # Add the word to the existing words
-            existing_words.append(word_obj)
+            existing_words.append(word_obj[0])
 
             # Update the output file
             with open(OUTPUT_FILE, "w") as f:

@@ -1,5 +1,7 @@
 <template>
-    {{ elo }}
+    <div class="mt-4">
+        <EloRange :elo="elo"></EloRange>
+    </div>
 
     <div class="flex justify-center">
         <div
@@ -80,9 +82,12 @@
 <script>
 import Fuse from "fuse.js";
 
+import EloRange from "@/components/EloRange.vue";
+
 export default {
     name: "QuizButton",
     emits: ["test-result"],
+    components: { EloRange },
     data() {
         return {
             // The word that is currently being displayed

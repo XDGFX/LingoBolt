@@ -181,7 +181,7 @@ export default {
             // Focus the continue button
             setTimeout(() => {
                 this.$refs.continueButton.focus();
-            }, 0);
+            }, 10);
         },
 
         nextWord() {
@@ -194,7 +194,7 @@ export default {
             // Focus the answer input
             setTimeout(() => {
                 this.$refs.answerInput.focus();
-            }, 0);
+            }, 10);
         },
     },
 

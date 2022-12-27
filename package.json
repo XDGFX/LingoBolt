@@ -1,7 +1,8 @@
 {
     "name": "the-first-1000",
-    "version": "0.0.0",
-    "private": true,
+    "version": "1.0.0",
+    "description": "An interactive way of learning the first 1000 words in a new language",
+    "license": "GPL-3.0-or-later",
     "scripts": {
         "dev": "vite",
         "build": "vite build",

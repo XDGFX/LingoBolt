@@ -9,9 +9,9 @@
                 <span class="text-slate-500">
                     When learning a new language,
                 </span>
-                <span class="text-slate-900 underline decoration-rose-500">
-                    the first 1000
-                </span>
+                <span class="text-slate-900 underline decoration-rose-500"
+                    >the first 1000</span
+                >
                 <span class="text-slate-500">
                     words are the most important.
                 </span>

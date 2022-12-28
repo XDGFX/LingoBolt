@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="bg-slate-200 rounded-full m-2 p-2">
+        <div class="bg-slate-200 rounded-full my-2 p-2">
             <div class="relative rounded-full">
                 <div
                     class="flex w-full rounded-md leading-5 text-slate-500 focus:outline-none focus:shadow-outline-blue-300 transition duration-150 ease-in-out"

@@ -1,104 +1,137 @@
 <template>
-    <div class="mt-4 mb-8">
-        <EloRange :elo="elo" :score="score"></EloRange>
-    </div>
+    <div class="flex flex-col items-center justify-center w-full lg:w-[990px]">
+        <div class="mt-4 mb-8 w-full">
+            <EloRange :elo="elo" :score="score"></EloRange>
+        </div>
 
-    <div class="flex justify-center">
+        <!-- Current Mode -->
         <div
-            class="min-h-[384px] bg-slate-200 rounded-[18px] flex flex-col items-center m-2 w-full lg:w-[990px]"
+            class="w-24 h-7 translate-y-1/2 text-xl text-center justify-self-center"
         >
-            <!-- Test page -->
-            <div
-                class="w-full h-full grid grid-rows-6 text-center justify-items-center"
-            >
-                <!-- Hint text -->
-                <div class="absolute w-24 h-7 -translate-y-1/2 text-xl">
-                    <Transition name="spin">
-                        <div
-                            v-if="mode === 'foreign'"
-                            class="bg-slate-300 rounded-full px-2 w-24 h-7 absolute"
-                        >
-                            🇬🇧 ➜ 🇫🇷
-                        </div>
-                        <div
-                            v-else
-                            class="bg-slate-300 rounded-full px-2 w-24 h-7 absolute"
-                        >
-                            🇫🇷 ➜ 🇬🇧
-                        </div>
-                    </Transition>
-                </div>
-
-                <!-- Word -->
-                <div
-                    ref="word"
-                    class="text-slate-900 my-auto whitespace-nowrap py-4 row-span-3"
-                    :style="wordSizeStyle"
-                    :class="{
-                        'text-emerald-500': lastTestResult === true,
-                        'text-rose-500': lastTestResult === false,
-                    }"
-                >
-                    {{
-                        lastTestResult !== null
-                            ? mode === "foreign"
-                                ? currentWord.word
-                                : currentWord.translation
-                            : mode === "native"
-                            ? currentWord.word
-                            : currentWord.translation
-                    }}
-                </div>
-
-                <!-- Example -->
-                <div>
-                    <div class="text-xl">
-                        {{
-                            mode === "foreign"
-                                ? currentWord.example_en
-                                : currentWord.example
-                        }}
+            <div v-if="page !== 'start'">
+                <Transition name="spin">
+                    <div
+                        v-if="mode === 'foreign'"
+                        class="bg-slate-100 border-2 border-slate-300 rounded-full px-2 w-24 h-8 absolute"
+                    >
+                        🇬🇧 ➜ 🇫🇷
                     </div>
                     <div
-                        v-if="lastTestResult !== null"
-                        class="text-xl"
+                        v-else
+                        class="bg-slate-100 border-2 border-slate-300 rounded-full px-2 w-24 h-8 absolute"
+                    >
+                        🇫🇷 ➜ 🇬🇧
+                    </div>
+                </Transition>
+            </div>
+        </div>
+
+        <div
+            class="min-h-[384px] bg-white border-2 border-slate-200 rounded-[18px] flex flex-col items-center justify-center w-full lg:w-[990px]"
+        >
+            <div
+                v-if="page === 'start'"
+                class="text-l md:text-xl my-8 text-center flex flex-col gap-2"
+            >
+                <div class="text-6xl">🎓</div>
+                <div class="mb-4 text-6xl">Practice</div>
+                <div>Translate each word accurately to level up.</div>
+                <div>
+                    Words you struggle with will be tested
+                    <span class="underline decoration-2 decoration-rose-500"
+                        >more often</span
+                    >, to help you remember!
+                </div>
+                <div>
+                    As you get
+                    <span class="underline decoration-2 decoration-rose-500"
+                        >better</span
+                    >, the words will get
+                    <span class="underline decoration-2 decoration-rose-500"
+                        >harder</span
+                    >, and you'll have to translate more words to level up.
+                </div>
+                <button
+                    class="flex self-center items-center justify-center h-8 md:h-12 w-48 rounded-full border-2 border-slate-300 p-4 m-8 text-xl md:text-2xl bg-white hover:bg-slate-200 outline-none"
+                    @click="nextWord()"
+                >
+                    Ready?
+                </button>
+            </div>
+
+            <div v-else>
+                <div class="w-full h-full grid grid-rows-6 text-center">
+                    <!-- Word -->
+                    <div
+                        ref="word"
+                        class="text-slate-900 my-auto whitespace-nowrap py-4 row-span-3"
+                        :style="wordSizeStyle"
                         :class="{
                             'text-emerald-500': lastTestResult === true,
                             'text-rose-500': lastTestResult === false,
                         }"
                     >
                         {{
-                            mode === "foreign"
-                                ? currentWord.example
-                                : currentWord.example_en
+                            lastTestResult !== null
+                                ? mode === "foreign"
+                                    ? currentWord.word
+                                    : currentWord.translation
+                                : mode === "native"
+                                ? currentWord.word
+                                : currentWord.translation
                         }}
                     </div>
-                </div>
 
-                <div class="row-span-2">
-                    <!-- Input for user to enter the answer -->
-                    <input
-                        v-show="lastTestResult === null"
-                        class="h-8 md:h-12 w-full md:w-96 rounded-full border-2 border-slate-200 p-4 m-8 text-xl md:text-2xl focus:border-rose-500 outline-none"
-                        v-model="answer"
-                        @keydown.enter="submitAnswer"
-                        ref="answerInput"
-                        :placeholder="
-                            mode === 'foreign'
-                                ? 'What is this in French?'
-                                : 'What does this mean?'
-                        "
-                    />
+                    <!-- Example -->
+                    <div>
+                        <div class="text-xl">
+                            {{
+                                mode === "foreign"
+                                    ? currentWord.example_en
+                                    : currentWord.example
+                            }}
+                        </div>
+                        <div
+                            v-if="lastTestResult !== null"
+                            class="text-xl"
+                            :class="{
+                                'text-emerald-500': lastTestResult === true,
+                                'text-rose-500': lastTestResult === false,
+                            }"
+                        >
+                            {{
+                                mode === "foreign"
+                                    ? currentWord.example
+                                    : currentWord.example_en
+                            }}
+                        </div>
+                    </div>
 
-                    <!-- Button to continue after result screen -->
-                    <button
-                        v-show="lastTestResult !== null"
-                        class="flex items-center justify-center h-8 md:h-12 w-full md:w-96 rounded-full border-2 border-slate-200 p-4 m-8 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
-                        @click="nextWord"
-                        ref="continueButton"
-                    >
-                        Continue
-                    </button>
+                    <div class="row-span-2">
+                        <!-- Input for user to enter the answer -->
+                        <input
+                            v-show="lastTestResult === null"
+                            class="h-8 md:h-12 w-full md:w-96 rounded-full border-2 border-slate-200 p-4 m-8 text-xl md:text-2xl bg-white hover:bg-slate-100 focus:border-rose-500 outline-none"
+                            v-model="answer"
+                            @keydown.enter="submitAnswer"
+                            ref="answerInput"
+                            :placeholder="
+                                mode === 'foreign'
+                                    ? 'What is this in French?'
+                                    : 'What does this mean?'
+                            "
+                        />
+
+                        <!-- Button to continue after result screen -->
+                        <button
+                            v-show="lastTestResult !== null"
+                            class="flex items-center justify-center h-8 md:h-12 w-full md:w-96 rounded-full border-2 border-slate-200 p-4 m-8 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
+                            @click="nextWord"
+                            ref="continueButton"
+                        >
+                            Continue
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,11 +153,14 @@ export default {
             // The word that is currently being displayed
             currentWord: null,
 
+            // The result of the last test
+            lastTestResult: null,
+
             // The answer that the user has entered
             answer: "",
 
-            // The result of the last test
-            lastTestResult: null,
+            // The current page from "start", "test", "result"
+            page: "start",
 
             // Random selection between foreign and native mode
             mode: Math.random() > 0.5 ? "foreign" : "native",
@@ -150,7 +186,7 @@ export default {
         },
     },
     methods: {
-        selectNextWord() {
+        getWord() {
             // Select a word at random from the list of words
             const word =
                 this.words[Math.floor(Math.random() * this.words.length)];
@@ -167,11 +203,13 @@ export default {
                 return word;
             } else {
                 // Otherwise, select the next word
-                return this.selectNextWord();
+                return this.getWord();
             }
         },
 
         submitAnswer() {
+            this.page = "result";
+
             // Get the user input, and split it into words
             const answerWords = this.answer.split(" ");
 
@@ -219,6 +257,8 @@ export default {
         },
 
         nextWord() {
+            this.page = "test";
+
             // Increment the mode test count
             this.modeTestCount++;
 
@@ -229,7 +269,7 @@ export default {
             }
 
             // Select the next word
-            this.currentWord = this.selectNextWord();
+            this.currentWord = this.getWord();
 
             // Clear the last test result
             this.lastTestResult = null;
@@ -241,10 +281,10 @@ export default {
         },
     },
 
-    beforeMount() {
-        // Select the first word
-        this.currentWord = this.selectNextWord();
-    },
+    // beforeMount() {
+    //     // Select the first word
+    //     this.currentWord = this.getWord();
+    // },
 
     computed: {
         wordSizeStyle() {

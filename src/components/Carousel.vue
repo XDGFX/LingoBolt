@@ -16,6 +16,7 @@
             :items="words"
             :item-size="384 + 8"
             :key-field="'word'"
+            :buffer="1000"
         >
             <template #default="{ item }">
                 <card

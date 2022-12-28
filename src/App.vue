@@ -42,11 +42,27 @@
                 <!-- Quiz button -->
                 <button
                     class="h-8 md:h-12 w-8 md:w-12 flex justify-center items-center rounded-full border-2 border-slate-200 text-slate-500 p-4 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
-                    @click="quizMode = !quizMode"
+                    @click="
+                        quizMode = !quizMode;
+                        firstLoad = false;
+                    "
                     title="Practice"
                 >
                     <span v-if="quizMode" class="-translate-y-px"> 📖 </span>
                     <span v-else class="translate-y-px"> 🎓 </span>
+
+                    <!-- Notification circle -->
+                    <div
+                        v-if="!quizMode && firstLoad"
+                        class="absolute h-4 w-4 translate-x-full -translate-y-full"
+                    >
+                        <div
+                            class="h-4 w-4 rounded-full bg-cyan-400 animate-ping"
+                        ></div>
+                        <div
+                            class="h-4 w-4 rounded-full bg-cyan-400 -translate-y-full"
+                        ></div>
+                    </div>
                 </button>
             </div>
         </div>
@@ -133,6 +149,8 @@ export default {
             search: "",
             hideTranslations: false,
             quizMode: false,
+
+            firstLoad: localStorage.getItem("elo") === null, // If this is the first time the user has loaded the page
 
             // Parameters for the quiz
             elo: JSON.parse(localStorage.getItem("elo")) || 500, // Init to 500 elo

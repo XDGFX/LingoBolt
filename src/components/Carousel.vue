@@ -20,6 +20,7 @@
             <template #default="{ item }">
                 <card
                     :word="item"
+                    :wordScore="wordScores[item.word]"
                     :showTTS="showTTS"
                     :hideTranslations="hideTranslations"
                 ></card>
@@ -45,6 +46,10 @@ export default {
     props: {
         words: {
             type: Array,
+            required: true,
+        },
+        wordScores: {
+            type: Object,
             required: true,
         },
         hideTranslations: {

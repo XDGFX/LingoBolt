@@ -68,6 +68,7 @@
         <carousel
             v-if="!quizMode"
             :words="wordsFiltered"
+            :wordScores="wordScores"
             :hide-translations="hideTranslations"
         ></carousel>
 
@@ -139,6 +140,13 @@ export default {
         wordsFiltered() {
             // When not in quiz mode, words are filtered by the search box
             if (!this.quizMode) {
+                // Sort the words based on their score in the wordScores object
+                words.sort((a, b) => {
+                    const aScore = this.wordScores[a.word] || 1;
+                    const bScore = this.wordScores[b.word] || 1;
+                    return aScore - bScore;
+                });
+
                 // If the search box is empty, return all words
                 if (this.search === "") {
                     return words;

@@ -6,6 +6,18 @@
         <div
             class="flex flex-col items-center justify-center bg-slate-100 rounded-[18px] m-2"
         >
+            <!-- Learning tag -->
+            <div
+                v-if="wordScore !== null && wordScore >= 0.7"
+                class="rounded-full m-2 px-2"
+                :class="{
+                    'bg-yellow-300': wordScore == 1,
+                    'bg-cyan-300': wordScore != 1,
+                }"
+            >
+                {{ wordScore == 1 ? "Mastered" : "Almost mastered" }}
+            </div>
+
             <div
                 ref="word"
                 class="flex text-slate-900 whitespace-nowrap -my-4 md:mb-0"
@@ -156,6 +168,10 @@ export default {
         word: {
             type: Object,
             required: true,
+        },
+        wordScore: {
+            type: Number,
+            default: null,
         },
         showTTS: {
             type: Boolean,

@@ -3528,7 +3528,7 @@
         "gender": "masculine/feminine",
         "plural": "ouverts",
         "synonyms": ["ouverture", "disponible"],
-        "antonyms": ["fermé", "fermé"]
+        "antonyms": ["fermé"]
     },
     {
         "word": "groupe",

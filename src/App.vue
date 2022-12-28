@@ -85,27 +85,42 @@
 
         <!-- Footer -->
         <div class="flex flex-col flex-1 items-center place-content-end mt-8">
-            <div class="text-sm text-slate-400">
-                <span class="text-slate-500">Made with ❤️ by </span>
-                <a
-                    class="text-slate-900 underline decoration-rose-500"
-                    href="https://github.com/xdgfx"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    xdgfx
-                </a>
-            </div>
-            <div class="text-sm text-slate-400">
-                <span class="text-slate-500">Notice a mistake? </span>
-                <a
-                    class="text-slate-900 underline decoration-rose-500"
-                    href="https://github.com/XDGFX/the-first-1000/issues/new"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Let me know!
-                </a>
+            <div class="text-sm text-slate-500 flex gap-2">
+                <div>
+                    Made with ❤️ by
+
+                    <a
+                        class="text-slate-900 underline decoration-rose-500"
+                        href="https://github.com/xdgfx"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        xdgfx</a
+                    >
+                </div>
+                ·
+                <div>
+                    <a
+                        class="text-slate-900"
+                        href="https://ko-fi.com/callumm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Buy me a coffee ☕</a
+                    >
+                </div>
+                ·
+                <div>
+                    Notice a mistake?
+                    <a
+                        class="text-slate-900 underline decoration-rose-500"
+                        href="https://github.com/XDGFX/the-first-1000/issues/new"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Let me know!</a
+                    >
+                </div>
             </div>
         </div>
     </div>

@@ -9,6 +9,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "diacritics": "^1.3.0",
         "fuse.js": "^6.6.2",
         "js-confetti": "^0.11.0",
         "vue": "^3.2.45",

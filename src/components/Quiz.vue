@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-4">
+    <div class="mt-4 mb-8">
         <EloRange :elo="elo" :score="score"></EloRange>
     </div>
 
@@ -11,6 +11,24 @@
             <div
                 class="w-full h-full grid grid-rows-6 text-center justify-items-center"
             >
+                <!-- Hint text -->
+                <div class="absolute w-24 h-7 -translate-y-1/2 text-xl">
+                    <Transition name="spin">
+                        <div
+                            v-if="mode === 'foreign'"
+                            class="bg-slate-300 rounded-full px-2 w-24 h-7 absolute"
+                        >
+                            🇬🇧 ➜ 🇫🇷
+                        </div>
+                        <div
+                            v-else
+                            class="bg-slate-300 rounded-full px-2 w-24 h-7 absolute"
+                        >
+                            🇫🇷 ➜ 🇬🇧
+                        </div>
+                    </Transition>
+                </div>
+
                 <!-- Word -->
                 <div
                     ref="word"
@@ -22,9 +40,13 @@
                     }"
                 >
                     {{
-                        mode === "foreign" || lastTestResult !== null
-                            ? currentWord.translation
-                            : currentWord.word
+                        lastTestResult !== null
+                            ? mode === "foreign"
+                                ? currentWord.word
+                                : currentWord.translation
+                            : mode === "native"
+                            ? currentWord.word
+                            : currentWord.translation
                     }}
                 </div>
 
@@ -61,7 +83,11 @@
                         v-model="answer"
                         @keydown.enter="submitAnswer"
                         ref="answerInput"
-                        placeholder="What does this mean?"
+                        :placeholder="
+                            mode === 'foreign'
+                                ? 'What is this in French?'
+                                : 'What does this mean?'
+                        "
                     />
 
                     <!-- Button to continue after result screen -->
@@ -81,6 +107,7 @@
 
 <script>
 import Fuse from "fuse.js";
+import diacritics from "diacritics";
 
 import EloRange from "@/components/EloRange.vue";
 
@@ -99,7 +126,9 @@ export default {
             // The result of the last test
             lastTestResult: null,
 
-            mode: "native", // foreign or native
+            // Random selection between foreign and native mode
+            mode: Math.random() > 0.5 ? "foreign" : "native",
+            modeTestCount: 0, // Number of tests performed in the current mode
         };
     },
     props: {
@@ -147,12 +176,17 @@ export default {
             const answerWords = this.answer.split(" ");
 
             // Get the correct answer, and split it into words
-            let correctAnswerWords;
+            let correctAnswerWord;
             if (this.mode === "foreign") {
-                correctAnswerWords = this.currentWord.word.split(" ");
+                correctAnswerWord = this.currentWord.word;
             } else {
-                correctAnswerWords = this.currentWord.translation.split(" ");
+                correctAnswerWord = this.currentWord.translation;
             }
+
+            // Remove diactrics and split the words
+            const correctAnswerWords = diacritics
+                .remove(correctAnswerWord)
+                .split(" ");
 
             // Check if the answer is correct by comparing the words. Only one
             // word must match for the answer to be correct. Use Fuse to allow
@@ -165,7 +199,7 @@ export default {
 
             // Check if any of the words in the answer match the correct answer
             const isCorrect = answerWords.some((word) => {
-                const results = fuse.search(word);
+                const results = fuse.search(diacritics.remove(word));
                 return results.length > 0 && results[0].score < 0.2;
             });
 
@@ -185,6 +219,15 @@ export default {
         },
 
         nextWord() {
+            // Increment the mode test count
+            this.modeTestCount++;
+
+            // If the mode test count is greater than 10, switch the mode
+            if (this.modeTestCount > 10) {
+                this.mode = this.mode === "foreign" ? "native" : "foreign";
+                this.modeTestCount = 0;
+            }
+
             // Select the next word
             this.currentWord = this.selectNextWord();
 
@@ -233,4 +276,19 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.spin-enter-active,
+.spin-leave-active {
+    transition: all 0.5s ease-in-out;
+}
+
+.spin-enter-from {
+    transform: rotate(-180deg);
+    opacity: 0;
+}
+
+.spin-leave-to {
+    transform: rotate(180deg);
+    opacity: 0;
+}
+</style>

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import json
-import sys
 import os
 
 WORD_LIST = os.path.join("..", "wordlists", "french.txt")
@@ -32,7 +31,7 @@ def main():
     # Sort the words alphabetically
     data = sorted(data, key=lambda k: k["word"])
 
-    # Write the new JSON file as minified JSON
+    # Write the new JSON file
     with open(OUTPUT_FILE, "w") as f:
         json.dump(data, f, ensure_ascii=False)
 

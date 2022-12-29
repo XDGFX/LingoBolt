@@ -1,12 +1,12 @@
-#!user/bin/env python3
+#!/usr/bin/env python3
 
 import json
 import typing
 import time
 import os
 
-WORD_FILE = "french_words.json"
-OUTPUT_FILE = os.path.join("src", "french.json")
+WORD_FILE = os.path.join("..", "wordlists", "french.txt")
+OUTPUT_FILE = os.path.join("..", "src", "french.json")
 BATCH = 3
 
 
@@ -80,7 +80,7 @@ def get_response(word: str) -> typing.Union[None, dict]:
 def main():
     # First we load all the words from WORD_FILE into a list
     with open(WORD_FILE, "r") as f:
-        words = json.load(f)
+        words = f.read().splitlines()
 
     # Then we open the output file, and check which words already exist
     with open(OUTPUT_FILE, "r") as f:

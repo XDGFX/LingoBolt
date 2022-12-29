@@ -192,10 +192,10 @@ export default {
                 this.words[Math.floor(Math.random() * this.words.length)];
 
             // Get the score of the word
-            const score = this.wordScores[word.word] || 0.5;
+            const score = this.wordScores[word.word] || 5;
 
             // Calculate the probability of selecting the word
-            const selectionProbability = Math.pow(Math.random(), 2);
+            const selectionProbability = Math.pow(Math.random(), 2) * 10;
 
             // If the selection probability is greater than the score, select
             // the word

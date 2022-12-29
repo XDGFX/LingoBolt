@@ -162,10 +162,16 @@ export default {
         wordsFiltered() {
             // When not in quiz mode, words are filtered by the search box
             if (!this.quizMode) {
-                // Sort the words based on their score in the wordScores object
                 words.sort((a, b) => {
-                    const aScore = this.wordScores[a.word] || 1;
-                    const bScore = this.wordScores[b.word] || 1;
+                    // Sort the words based on their score in the wordScores
+                    // object, and then based on difficulty (easy first)
+                    const aScore = this.wordScores[a.word] || 10;
+                    const bScore = this.wordScores[b.word] || 10;
+
+                    if (aScore === bScore) {
+                        return a.difficulty - b.difficulty;
+                    }
+
                     return aScore - bScore;
                 });
 
@@ -177,14 +183,15 @@ export default {
                 // Otherwise, return the words that match the search query
                 const fuse = new Fuse(words, {
                     keys: [
-                        { name: "word", weight: 4 },
-                        { name: "translation", weight: 4 },
+                        { name: "word", weight: 6 },
+                        { name: "translation", weight: 6 },
                         "example",
                         "example_en",
                         { name: "tags", weight: 2 },
                         { name: "synonyms", weight: 3 },
                     ],
                     shouldSort: true,
+                    ignoreLocation: true,
                 });
                 const results = fuse.search(
                     this.search.replace(/\s+/g, " ").toLowerCase()
@@ -220,13 +227,13 @@ export default {
         // When the quiz is finished, update the elo and wordScores
         onTestResult(word, correct) {
             // Update the wordScores
-            this.wordScores[word.word] = this.wordScores[word.word] || 0.5;
+            this.wordScores[word.word] = this.wordScores[word.word] || 5;
 
             // Adjust the score based on whether the user got the answer right or wrong
-            const adjustment = correct ? 0.1 : -0.1;
+            const adjustment = correct ? 1 : -1;
             this.wordScores[word.word] = Math.min(
                 Math.max(this.wordScores[word.word] + adjustment, 0),
-                1
+                10
             );
 
             // Update the elo

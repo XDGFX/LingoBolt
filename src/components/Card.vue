@@ -2,20 +2,19 @@
     <div
         class="min-h-[384px] bg-slate-200 rounded-[18px] grid md:grid-cols-2 m-2"
     >
-        <!-- word -->
         <div
             class="flex flex-col items-center justify-center bg-slate-100 rounded-[18px] m-2"
         >
             <!-- Learning tag -->
             <div
-                v-if="wordScore !== null && wordScore >= 0.7"
+                v-if="wordScore !== null && wordScore >= 7"
                 class="rounded-full m-2 px-2"
                 :class="{
-                    'bg-yellow-300': wordScore == 1,
-                    'bg-cyan-300': wordScore != 1,
+                    'bg-yellow-300': wordScore == 10,
+                    'bg-cyan-300': wordScore != 10,
                 }"
             >
-                {{ wordScore == 1 ? "Mastered" : "Almost mastered" }}
+                {{ wordScore == 10 ? "Mastered" : "Almost mastered" }}
             </div>
 
             <div

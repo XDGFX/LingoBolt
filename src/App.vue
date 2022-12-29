@@ -3,6 +3,8 @@
         id="app"
         class="flex flex-col items-center bg-white h-screen bg-slate-100 text-slate-900 px-4 py-8 selection:bg-rose-500 selection:text-white"
     >
+        <IntroPage v-if="firstLoad" />
+
         <!-- Menu -->
         <div class="w-full lg:w-[990px] flex flex-wrap items-center">
             <h1 class="text-2xl md:text-4xl flex-1">
@@ -135,12 +137,15 @@
 import Fuse from "fuse.js";
 
 import words from "@/french.json";
+
+import IntroPage from "@/components/IntroPage.vue";
 import Carousel from "@/components/Carousel.vue";
 import Quiz from "@/components/Quiz.vue";
 
 export default {
     name: "App",
     components: {
+        IntroPage,
         Carousel,
         Quiz,
     },

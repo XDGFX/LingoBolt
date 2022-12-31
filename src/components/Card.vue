@@ -35,6 +35,14 @@
                 v-if="showTTS"
                 :word="word.word"
             ></AudioPlayer>
+
+            <div v-if="debugMode">
+                <code>
+                    wordScore: {{ wordScore }} <br />
+                    wordSizeStyle: {{ wordSizeStyle }} <br />
+                    tags: {{ word.tags }} <br />
+                </code>
+            </div>
         </div>
 
         <div class="flex flex-col p-4">
@@ -163,6 +171,7 @@ export default {
         DifficultyRange,
         AudioPlayer,
     },
+    inject: ["debugMode"],
     props: {
         word: {
             type: Object,

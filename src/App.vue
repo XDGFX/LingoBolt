@@ -130,10 +130,45 @@
                 </div>
             </div>
         </div>
+
+        <!-- Debug mode window hover -->
+        <div
+            v-if="debugMode"
+            class="absolute top-0 left-0 max-h-screen overflow-y-scroll bg-white p-4 border-2 border-slate-200 w-96 opacity-20 hover:opacity-100 text-xs"
+        >
+            <code>
+                <b>Ctrl + Alt + D to toggle debug mode</b> <br />
+
+                <br />
+
+                Search: {{ search }} <br />
+                Hide translations: {{ hideTranslations }} <br />
+                Quiz mode: {{ quizMode }} <br />
+
+                <br />
+
+                ELO: {{ elo }} <br />
+                Score: {{ score }} <br />
+                wordScores:
+                <ul class="select-none">
+                    <li
+                        v-for="(score, word) in wordScores"
+                        :key="word"
+                        class="ml-2"
+                    >
+                        {{ word }}: {{ score }}
+                        <span @click="wordScores[word]++">+</span>
+                        <span @click="wordScores[word]--">-</span>
+                    </li>
+                </ul>
+            </code>
+        </div>
     </div>
 </template>
 
 <script>
+import { computed } from "vue";
+
 import Fuse from "fuse.js";
 
 import words from "@/french.json";
@@ -151,6 +186,8 @@ export default {
     },
     data() {
         return {
+            debugMode: false,
+
             search: "",
             hideTranslations: false,
             quizMode: false,
@@ -161,6 +198,11 @@ export default {
             elo: JSON.parse(localStorage.getItem("elo")) || 500, // Init to 500 elo
             score: JSON.parse(localStorage.getItem("score")) || 0, // Init to 0 score
             wordScores: JSON.parse(localStorage.getItem("wordScores")) || {}, // Words default to 0.5
+        };
+    },
+    provide() {
+        return {
+            debugMode: computed(() => this.debugMode),
         };
     },
     computed: {
@@ -283,6 +325,15 @@ export default {
 
             localStorage.setItem("score", JSON.stringify(this.score));
         },
+    },
+
+    mounted() {
+        // Add a listener to trigger debug mode with extra info
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "d" && event.ctrlKey && event.altKey) {
+                this.debugMode = !this.debugMode;
+            }
+        });
     },
 };
 </script>

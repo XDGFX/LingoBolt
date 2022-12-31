@@ -148,6 +148,7 @@ export default {
     name: "QuizButton",
     emits: ["test-result"],
     components: { EloRange },
+    inject: ["debugMode"],
     data() {
         return {
             // The word that is currently being displayed

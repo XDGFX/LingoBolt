@@ -1,5 +1,5 @@
-I am going to send you some of words in Spanish. I want you to respond exactly with the following message for each word:
-"{"word":"<word>","translation":"<translation>","example":"<example>","example_en":"<example_en>","emoji":"<emoji>","tags":[<tags>],"difficulty":<difficulty>,"part_of_speech":"<part_of_speech>","gender":<gender>,"plural":<plural>,"synonyms":[<synonyms>],"antonyms":[<antonyms>]},"
+I am going to send you some words in Spanish. I want you to respond exactly with the following message for each word:
+"{"word":"<word>","translation":"<translation>","example":"<example>","example_en":"<example_en>","emoji":"<emoji>","tags":[<tags>],"difficulty":<difficulty>,"part_of_speech":"<part_of_speech>","gender":"<gender>","plural":"<plural>","synonyms":[<synonyms>],"antonyms":[<antonyms>]},"
 
 Where <word> is the word in Spanish
 <translation> is the translation of the word in English

@@ -13,7 +13,7 @@ WORD_FILE = os.path.join(
     os.path.dirname(os.path.abspath(__file__)), "..", "wordlists", "spanish.txt"
 )
 OUTPUT_FILE = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)), "..", "src", "spanish.json"
+    os.path.dirname(os.path.abspath(__file__)), "..", "src", "languages", "es.json"
 )
 BATCH = 30
 

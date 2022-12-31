@@ -141,9 +141,9 @@
                 <span
                     @click="
                         answer =
-                            mode == native
-                                ? currentWord.word
-                                : currentWord.translation;
+                            mode === 'native'
+                                ? currentWord.translation
+                                : currentWord.word;
                         submitAnswer();
                     "
                 >

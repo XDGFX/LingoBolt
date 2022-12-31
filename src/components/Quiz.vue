@@ -1,26 +1,42 @@
 <template>
     <div class="flex flex-col items-center justify-center w-full lg:w-[990px]">
-        <div class="mt-4 mb-8 w-full">
-            <EloRange :elo="elo" :score="score"></EloRange>
+        <div class="mt-4 mb-4 w-full">
+            <EloRange :elo="stats.elo" :score="stats.score"></EloRange>
         </div>
 
         <!-- Current Mode -->
         <div
-            class="w-24 h-7 translate-y-1/2 text-xl text-center justify-self-center"
+            class="w-24 h-10 translate-y-1/2 text-xl text-center justify-self-center"
         >
             <div v-if="page !== 'start'">
                 <Transition name="spin">
                     <div
                         v-if="mode === 'foreign'"
-                        class="bg-slate-100 border-2 border-slate-300 rounded-full px-2 w-24 h-8 absolute"
+                        class="bg-slate-100 border-2 border-slate-300 rounded-full px-2 w-24 h-10 absolute flex justify-center items-center gap-1"
                     >
-                        🇬🇧 ➜ 🇫🇷
+                        <span
+                            class="w-6 h-6 fib fis inline-block rounded"
+                            :class="`fi-gb`"
+                        ></span>
+                        ➜
+                        <span
+                            class="w-6 h-6 fib fis inline-block rounded"
+                            :class="`fi-${language}`"
+                        ></span>
                     </div>
                     <div
                         v-else
-                        class="bg-slate-100 border-2 border-slate-300 rounded-full px-2 w-24 h-8 absolute"
+                        class="bg-slate-100 border-2 border-slate-300 rounded-full px-2 w-24 h-10 absolute flex justify-center items-center gap-1"
                     >
-                        🇫🇷 ➜ 🇬🇧
+                        <span
+                            class="w-6 h-6 fib fis inline-block rounded"
+                            :class="`fi-${language}`"
+                        ></span>
+                        ➜
+                        <span
+                            class="w-6 h-6 fib fis inline-block rounded"
+                            :class="`fi-gb`"
+                        ></span>
                     </div>
                 </Transition>
             </div>
@@ -132,7 +148,7 @@
                                 lowScoreMode
                                     ? hint
                                     : mode === 'foreign'
-                                    ? 'What is this in French?'
+                                    ? 'What does this translate to?'
                                     : 'What does this mean?'
                             "
                         />
@@ -179,9 +195,10 @@
 
                 <br />
 
-                wordScore: {{ wordScores[currentWord.word] }}
-                <span @click="wordScores[currentWord.word]++">+</span
-                ><span @click="wordScores[currentWord.word]--">-</span> <br />
+                wordScore: {{ stats.wordScores[currentWord.word] }}
+                <span @click="stats.wordScores[currentWord.word]++">+</span
+                ><span @click="stats.wordScores[currentWord.word]--">-</span>
+                <br />
                 lowScoreMode: {{ lowScoreMode }} <br />
                 wordsWithLowScore.length: {{ wordsWithLowScore.length }} <br />
                 mode:
@@ -198,6 +215,7 @@
 <script>
 import Fuse from "fuse.js";
 import diacritics from "diacritics";
+import "@/../node_modules/flag-icons/css/flag-icons.min.css";
 
 import EloRange from "@/components/EloRange.vue";
 
@@ -230,16 +248,12 @@ export default {
             type: Array,
             required: true,
         },
-        wordScores: {
+        stats: {
             type: Object,
             required: true,
         },
-        elo: {
-            type: Number,
-            required: true,
-        },
-        score: {
-            type: Number,
+        language: {
+            type: String,
             required: true,
         },
     },
@@ -258,7 +272,7 @@ export default {
                 this.words[Math.floor(Math.random() * this.words.length)];
 
             // Get the score of the word
-            const score = this.wordScores[word.word] || 5;
+            const score = this.stats.wordScores[word.word] || 5;
 
             // Calculate the probability of selecting the word
             const selectionProbability = Math.pow(Math.random(), 2) * 10;
@@ -347,10 +361,10 @@ export default {
         },
     },
 
-    // beforeMount() {
-    //     // Select the first word
-    //     this.currentWord = this.getWord();
-    // },
+    beforeMount() {
+        // Select the first word
+        this.currentWord = this.getWord();
+    },
 
     computed: {
         wordSizeStyle() {
@@ -383,7 +397,7 @@ export default {
         // only pick from those words
         wordsWithLowScore() {
             return this.words.filter(
-                (word) => (this.wordScores[word.word] ?? 5) < 5
+                (word) => (this.stats.wordScores[word.word] ?? 5) < 5
             );
         },
 
@@ -410,7 +424,7 @@ export default {
             // Longer words show more letters
             // A lower wordScore shows more letters
             // Up to 60% of the letters will be shown
-            const wordScore = this.wordScores[this.currentWord.word] || 5;
+            const wordScore = this.stats.wordScores[this.currentWord.word] || 5;
             let lettersToShow = Math.min(
                 Math.max(answerCleaned.length - 2 * wordScore, 0) + 1,
                 answerCleaned.length - 1

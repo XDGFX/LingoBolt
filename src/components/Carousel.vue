@@ -75,12 +75,14 @@ export default {
             voices = speechSynthesis.getVoices();
         }
 
-        // Find a voice that speaks French (fr-FR or fr_FR)
-        this.showTTS = voices.find((voice) => {
-            return voice.lang === "fr-FR" || voice.lang === "fr_FR";
-        })
-            ? true
-            : false;
+        // TODO: Update this to work for each language
+        // // Find a voice that speaks French (fr-FR or fr_FR)
+        // this.showTTS = voices.find((voice) => {
+        //     return voice.lang === "fr-FR" || voice.lang === "fr_FR";
+        // })
+        //     ? true
+        //     : false;
+        this.showTTS = false;
     },
     watch: {
         words() {

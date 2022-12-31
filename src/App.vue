@@ -1,7 +1,7 @@
 <template>
     <div
         id="app"
-        class="flex flex-col items-center bg-white h-screen bg-slate-100 text-slate-900 px-4 py-8 selection:bg-rose-500 selection:text-white"
+        class="flex flex-col items-center bg-white h-screen bg-slate-100 text-slate-900 px-4 py-8 selection:bg-cyan-500 selection:text-white"
     >
         <IntroPage v-if="firstLoad" />
 

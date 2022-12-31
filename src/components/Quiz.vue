@@ -135,6 +135,40 @@
                 </div>
             </div>
         </div>
+        <div v-if="debugMode" class="text-xs">
+            <code>
+                <br />
+                <span
+                    @click="
+                        answer =
+                            mode == native
+                                ? currentWord.word
+                                : currentWord.translation;
+                        submitAnswer();
+                    "
+                >
+                    CORRECT
+                </span>
+                <span
+                    @click="
+                        answer = '';
+                        submitAnswer();
+                    "
+                >
+                    INCORRECT
+                </span>
+                <br />
+                <br />
+
+                currentWord: {{ currentWord }} <br />
+
+                <br />
+
+                lowScoreMode: {{ lowScoreMode }} <br />
+                mode: {{ mode }} <br />
+                modeTestCount: {{ modeTestCount }} <br />
+            </code>
+        </div>
     </div>
 </template>
 
@@ -156,6 +190,9 @@ export default {
 
             // The result of the last test
             lastTestResult: null,
+
+            // Indicates more than 20 words with a score of less than 5
+            lowScoreMode: false,
 
             // The answer that the user has entered
             answer: "",
@@ -188,6 +225,22 @@ export default {
     },
     methods: {
         getWord() {
+            // If there's more than 20 words with a score of less than 5, then
+            // only pick from those words
+            const wordsWithLowScore = this.words.filter(
+                (word) => (this.wordScores[word.word] || 5) < 5
+            );
+
+            this.lowScoreMode = wordsWithLowScore.length > 20;
+
+            if (this.lowScoreMode) {
+                console.log("Picking from words with low score");
+                // Select a word at random from the list of words
+                return wordsWithLowScore[
+                    Math.floor(Math.random() * wordsWithLowScore.length)
+                ];
+            }
+
             // Select a word at random from the list of words
             const word =
                 this.words[Math.floor(Math.random() * this.words.length)];

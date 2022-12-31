@@ -2369,9 +2369,9 @@
         "antonyms": ["rien"]
     },
     {
-        "word": "ci",
+        "word": "ici",
         "translation": "here",
-        "example": "Je suis ci.",
+        "example": "Je suis ici.",
         "example_en": "I am here.",
         "emoji": "👋",
         "tags": ["here", "adverb"],
@@ -2379,7 +2379,7 @@
         "part_of_speech": "adverb",
         "gender": null,
         "plural": null,
-        "synonyms": ["ici"],
+        "synonyms": [],
         "antonyms": ["là"]
     },
     {

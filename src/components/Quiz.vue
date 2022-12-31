@@ -108,15 +108,30 @@
                     </div>
 
                     <div class="row-span-2">
+                        <!-- Hint bubble -->
+                        <div
+                            class="flex justify-center"
+                            v-show="lowScoreMode && page == 'test'"
+                        >
+                            <div
+                                class="absolute rounded-full bg-slate-200 text-sm w-fit px-2"
+                            >
+                                You've struggled with this one, so I've given
+                                you a hint!
+                            </div>
+                        </div>
+
                         <!-- Input for user to enter the answer -->
                         <input
                             v-show="lastTestResult === null"
-                            class="h-8 md:h-12 w-full md:w-96 rounded-full border-2 border-slate-200 p-4 m-8 text-xl md:text-2xl bg-white hover:bg-slate-100 focus:border-rose-500 outline-none"
+                            class="h-8 md:h-12 w-full md:w-96 rounded-full border-2 border-slate-200 p-4 m-8 text-xl md:text-2xl tracking-wide bg-white hover:bg-slate-100 focus:border-rose-500 outline-none"
                             v-model="answer"
                             @keydown.enter="submitAnswer"
                             ref="answerInput"
                             :placeholder="
-                                mode === 'foreign'
+                                lowScoreMode
+                                    ? hint
+                                    : mode === 'foreign'
                                     ? 'What is this in French?'
                                     : 'What does this mean?'
                             "
@@ -135,7 +150,7 @@
                 </div>
             </div>
         </div>
-        <div v-if="debugMode" class="text-xs">
+        <div v-if="debugMode" class="text-xs select-none">
             <code>
                 <br />
                 <span
@@ -164,8 +179,16 @@
 
                 <br />
 
+                wordScore: {{ wordScores[currentWord.word] }}
+                <span @click="wordScores[currentWord.word]++">+</span
+                ><span @click="wordScores[currentWord.word]--">-</span> <br />
                 lowScoreMode: {{ lowScoreMode }} <br />
-                mode: {{ mode }} <br />
+                wordsWithLowScore.length: {{ wordsWithLowScore.length }} <br />
+                mode:
+                <span @click="mode = mode === 'foreign' ? 'native' : 'foreign'">
+                    {{ mode }}
+                </span>
+                <br />
                 modeTestCount: {{ modeTestCount }} <br />
             </code>
         </div>
@@ -190,9 +213,6 @@ export default {
 
             // The result of the last test
             lastTestResult: null,
-
-            // Indicates more than 20 words with a score of less than 5
-            lowScoreMode: false,
 
             // The answer that the user has entered
             answer: "",
@@ -225,19 +245,11 @@ export default {
     },
     methods: {
         getWord() {
-            // If there's more than 20 words with a score of less than 5, then
-            // only pick from those words
-            const wordsWithLowScore = this.words.filter(
-                (word) => (this.wordScores[word.word] || 5) < 5
-            );
-
-            this.lowScoreMode = wordsWithLowScore.length > 20;
-
             if (this.lowScoreMode) {
                 console.log("Picking from words with low score");
                 // Select a word at random from the list of words
-                return wordsWithLowScore[
-                    Math.floor(Math.random() * wordsWithLowScore.length)
+                return this.wordsWithLowScore[
+                    Math.floor(Math.random() * this.wordsWithLowScore.length)
                 ];
             }
 
@@ -365,6 +377,78 @@ export default {
             return {
                 fontSize: `${fontSize}px`,
             };
+        },
+
+        // If there's more than 20 words with a score of less than 5, then
+        // only pick from those words
+        wordsWithLowScore() {
+            return this.words.filter(
+                (word) => (this.wordScores[word.word] ?? 5) < 5
+            );
+        },
+
+        lowScoreMode() {
+            return this.wordsWithLowScore.length > 20;
+        },
+
+        hint() {
+            const answer =
+                this.mode === "foreign"
+                    ? this.currentWord.word
+                    : this.currentWord.translation;
+
+            // Remove anything between brackets ()
+            let answerCleaned = answer.replace(/\(.*?\)/g, " ");
+
+            // Remove any duplicate spaces, or trailing spaces
+            answerCleaned = answerCleaned.replace(/\s+/g, " ").trim();
+
+            // Generate array of underscores
+            let hint = new Array(answerCleaned.length).fill("_");
+
+            // Calculate how many letters we will show
+            // Longer words show more letters
+            // A lower wordScore shows more letters
+            // Up to 60% of the letters will be shown
+            const wordScore = this.wordScores[this.currentWord.word] || 5;
+            let lettersToShow = Math.min(
+                Math.max(answerCleaned.length - 2 * wordScore, 0) + 1,
+                answerCleaned.length - 1
+            );
+
+            // Always show the first letter
+            hint[0] = answerCleaned[0];
+            lettersToShow--;
+
+            // Always show any commas, slashes, hyphens, and spaces
+            for (let i = 0; i < answerCleaned.length; i++) {
+                if (
+                    answerCleaned[i] === "," ||
+                    answerCleaned[i] === "/" ||
+                    answerCleaned[i] === "-" ||
+                    answerCleaned[i] === " "
+                ) {
+                    hint[i] = answerCleaned[i];
+                    lettersToShow--;
+                }
+            }
+
+            // Show the number of letters we calculated
+            for (let i = 0; i < lettersToShow; i++) {
+                // Select a random letter
+                const letterIndex = Math.floor(Math.random() * hint.length);
+
+                // If the letter is already shown, select another letter
+                if (hint[letterIndex] !== "_") {
+                    i--;
+                    continue;
+                }
+
+                // Show the letter
+                hint[letterIndex] = answerCleaned[letterIndex];
+            }
+
+            return hint.join("");
         },
     },
 };

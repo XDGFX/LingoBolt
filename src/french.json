@@ -122,7 +122,7 @@
         "part_of_speech": "verb",
         "gender": "masculine/feminine",
         "plural": null,
-        "synonyms": ["acheté", "acheté"],
+        "synonyms": ["acheté"],
         "antonyms": ["vendu"]
     },
     {
@@ -700,7 +700,7 @@
         "gender": "masculine",
         "plural": "atomes",
         "synonyms": ["particule", "molécule", "constituant"],
-        "antonyms": ["ensemble", "ensemble", "tout"]
+        "antonyms": ["ensemble", "tout"]
     },
     {
         "word": "atteindre",
@@ -2071,7 +2071,7 @@
         "part_of_speech": "noun",
         "gender": "feminine",
         "plural": "chances",
-        "synonyms": ["chance", "opportunité", "chance"],
+        "synonyms": ["chance", "opportunité"],
         "antonyms": []
     },
     {
@@ -3989,7 +3989,7 @@
         "part_of_speech": "adjective",
         "gender": "masculine/feminine",
         "plural": "doubles",
-        "synonyms": ["double", "deux fois", "double"],
+        "synonyms": ["double", "deux fois"],
         "antonyms": ["simple"]
     },
     {
@@ -4829,7 +4829,7 @@
         "part_of_speech": "adjective",
         "gender": "masculine/feminine",
         "plural": "exacts",
-        "synonyms": ["précis", "précis"],
+        "synonyms": ["précis"],
         "antonyms": ["approximatif"]
     },
     {
@@ -4885,7 +4885,7 @@
         "part_of_speech": "verb",
         "gender": "masculine/feminine",
         "plural": null,
-        "synonyms": ["exiger", "exiger", "insister"],
+        "synonyms": ["exiger", "insister"],
         "antonyms": []
     },
     {
@@ -5669,7 +5669,7 @@
         "part_of_speech": "noun",
         "gender": "masculine",
         "plural": "glissements",
-        "synonyms": ["glissement", "glissement"],
+        "synonyms": ["glissement"],
         "antonyms": []
     },
     {
@@ -6034,7 +6034,7 @@
         "gender": "masculine/feminine",
         "plural": "humains",
         "synonyms": ["humain", "personnel", "individuel"],
-        "antonyms": ["inhumain", "inhumain", "monstrueux"]
+        "antonyms": ["inhumain", "monstrueux"]
     },
     {
         "word": "ici",
@@ -7167,7 +7167,7 @@
         "part_of_speech": "adjective",
         "gender": "masculine/feminine",
         "plural": null,
-        "synonyms": ["mal", "mal", "malade"],
+        "synonyms": ["mal", "malade"],
         "antonyms": ["bien"]
     },
     {
@@ -7853,7 +7853,7 @@
         "part_of_speech": "noun",
         "gender": "masculine",
         "plural": "mouvements",
-        "synonyms": ["mouvement", "mouvement"],
+        "synonyms": ["mouvement"],
         "antonyms": ["immobilité"]
     },
     {
@@ -8091,7 +8091,7 @@
         "part_of_speech": "auxiliary verb",
         "gender": null,
         "plural": null,
-        "synonyms": ["ne sera pas", "ne sera pas"],
+        "synonyms": ["ne sera pas"],
         "antonyms": ["sera"]
     },
     {
@@ -8385,7 +8385,7 @@
         "part_of_speech": "adjective",
         "gender": "masculine/feminine",
         "plural": "nés",
-        "synonyms": ["né", "né", "né"],
+        "synonyms": ["né"],
         "antonyms": []
     },
     {
@@ -10415,7 +10415,7 @@
         "part_of_speech": "determiner",
         "gender": "feminine",
         "plural": "quelles",
-        "synonyms": ["quelles", "lesquelles", "lesquelles"],
+        "synonyms": ["quelles", "lesquelles"],
         "antonyms": ["aucunes"]
     },
     {
@@ -10429,7 +10429,7 @@
         "part_of_speech": "determiner",
         "gender": "masculine",
         "plural": "quels",
-        "synonyms": ["quels", "lesquels", "lesquels"],
+        "synonyms": ["quels", "lesquels"],
         "antonyms": ["aucuns"]
     },
     {
@@ -10737,7 +10737,7 @@
         "part_of_speech": "verb",
         "gender": null,
         "plural": null,
-        "synonyms": ["reconnaître", "reconnaître"],
+        "synonyms": ["reconnaître"],
         "antonyms": ["insulter"]
     },
     {
@@ -10765,7 +10765,7 @@
         "part_of_speech": "noun",
         "gender": "feminine",
         "plural": "rencontres",
-        "synonyms": ["rencontre", "rencontre"],
+        "synonyms": ["rencontre"],
         "antonyms": []
     },
     {
@@ -11776,7 +11776,7 @@
         "part_of_speech": "determiner",
         "gender": "masculine/feminine",
         "plural": "ses",
-        "synonyms": ["ses", "sa", "son", "sa"],
+        "synonyms": ["ses", "sa", "son"],
         "antonyms": ["ton", "votre", "leur"]
     },
     {
@@ -12504,7 +12504,7 @@
         "part_of_speech": "verb",
         "gender": "masculine/feminine",
         "plural": null,
-        "synonyms": ["sélectionner", "choisir", "choisir"],
+        "synonyms": ["sélectionner", "choisir"],
         "antonyms": []
     },
     {
@@ -14436,7 +14436,7 @@
         "part_of_speech": "noun",
         "gender": "masculine",
         "plural": "événements",
-        "synonyms": ["événement", "occurrence", "événement"],
+        "synonyms": ["événement", "occurrence"],
         "antonyms": []
     },
     {

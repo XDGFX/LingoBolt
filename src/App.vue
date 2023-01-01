@@ -28,11 +28,13 @@
 
         <section
             v-if="settings.language !== null"
-            class="flex flex-col items-center bg-white h-screen bg-slate-100 text-slate-900 px-4 py-8"
+            class="flex flex-col items-center bg-white h-screen bg-slate-100 text-slate-900 md:px-4 md:py-8"
         >
-            <!-- Menu -->
-            <div class="w-full lg:w-[990px] flex flex-wrap items-center">
-                <h1 class="text-2xl md:text-4xl flex-1">
+            <!-- Desktop menu -->
+            <div
+                class="w-full lg:w-[990px] hidden md:flex flex-wrap items-center"
+            >
+                <h1 class="text-4xl flex-1">
                     <span
                         class="text-slate-900 underline decoration-rose-500 whitespace-nowrap"
                     >
@@ -40,20 +42,18 @@
                     </span>
                 </h1>
 
-                <div class="flex flex-2 gap-4 items-center">
+                <div v-if="!quizMode" class="flex flex-2 gap-4 items-center">
                     <!-- Search box -->
                     <input
-                        v-if="!quizMode"
                         v-model="search"
-                        class="h-8 md:h-12 shrink rounded-full border-2 border-slate-200 p-4 text-xl md:text-2xl focus:border-rose-500 outline-none"
+                        class="h-12 shrink rounded-full border-2 border-slate-200 p-4 text-2xl focus:border-rose-500 outline-none"
                         type="text"
                         placeholder="Search"
                     />
 
                     <!-- Hide translations -->
                     <button
-                        v-if="!quizMode"
-                        class="h-8 md:h-12 w-8 md:w-12 flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
+                        class="h-12 w-12 flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white hover:bg-slate-100 outline-none"
                         @click="hideTranslations = !hideTranslations"
                         title="Hide translations"
                     >
@@ -61,15 +61,13 @@
                     </button>
 
                     <span
-                        v-if="!quizMode"
                         class="text-slate-300 text-4xl select-none -translate-y-1"
                         >·</span
                     >
 
                     <!-- Quiz button -->
                     <button
-                        v-if="!quizMode"
-                        class="h-8 md:h-12 w-8 md:w-12 flex justify-center items-center rounded-full border-2 border-slate-200 text-slate-500 p-4 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
+                        class="h-12 w-12 flex justify-center items-center rounded-full border-2 border-slate-200 text-slate-500 p-4 text-2xl bg-white hover:bg-slate-100 outline-none"
                         @click="quizMode = true"
                         title="Practice"
                     >
@@ -89,6 +87,93 @@
                         </div>
                     </button>
 
+                    <!-- Language select -->
+                    <button
+                        class="h-12 w-12 flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white hover:bg-slate-100 outline-none"
+                        @click="settings.language = null"
+                        title="Change language"
+                    >
+                        <span class="translate-y-px">🌐</span>
+                    </button>
+                </div>
+
+                <div v-if="quizMode" class="flex flex-2 gap-4 items-center">
+                    <!-- Home button -->
+                    <button
+                        v-if="quizMode"
+                        class="h-12 w-12 flex justify-center items-center rounded-full border-2 border-slate-200 text-slate-500 p-4 text-2xl bg-white hover:bg-slate-100 outline-none"
+                        @click="quizMode = false"
+                        title="Home"
+                    >
+                        <span class="translate-y-px"> 🏠 </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div
+                class="absolute bottom-0 w-full z-[999] md:hidden flex flex-wrap items-center bg-slate-200 p-2 border-t-2 rounded-t-[24px] border-slate-300"
+            >
+                <div
+                    v-if="!quizMode"
+                    class="flex gap-4 items-center justify-between w-full"
+                >
+                    <!-- Search box -->
+                    <input
+                        v-model="search"
+                        class="h-12 w-12 shrink focus:w-full peer transition-all flex justify-center items-center rounded-full border-2 border-slate-200 outline-none p-4 text-2xl bg-white"
+                        type="text"
+                    />
+
+                    <!-- Div which overlays the previous input -->
+                    <div
+                        class="h-12 w-12 peer-focus:hidden pointer-events-none absolute flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white"
+                    >
+                        <span>🔎</span>
+                    </div>
+
+                    <!-- Hide translations -->
+                    <button
+                        class="h-12 w-12 peer-focus:hidden flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white"
+                        @click="hideTranslations = !hideTranslations"
+                        title="Hide translations"
+                    >
+                        🔖
+                    </button>
+
+                    <!-- Quiz button -->
+                    <button
+                        class="h-12 w-12 peer-focus:hidden flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white"
+                        @click="quizMode = true"
+                        title="Practice"
+                    >
+                        <span class="translate-y-px"> 🎓 </span>
+
+                        <!-- Notification circle -->
+                        <div
+                            v-if="settings.firstLoad"
+                            class="absolute h-4 w-4 translate-x-full -translate-y-full"
+                        >
+                            <div
+                                class="h-4 w-4 rounded-full bg-cyan-400 animate-ping"
+                            ></div>
+                            <div
+                                class="h-4 w-4 rounded-full bg-cyan-400 -translate-y-full"
+                            ></div>
+                        </div>
+                    </button>
+
+                    <!-- Language select -->
+                    <button
+                        class="h-12 w-12 peer-focus:hidden flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white"
+                        @click="settings.language = null"
+                        title="Change language"
+                    >
+                        <span class="translate-y-px">🌐</span>
+                    </button>
+                </div>
+
+                <div v-if="quizMode" class="flex flex-2 gap-4 items-center">
                     <!-- Home button -->
                     <button
                         v-if="quizMode"
@@ -96,17 +181,7 @@
                         @click="quizMode = false"
                         title="Home"
                     >
-                        <span class="translate-y-px"> 🏠 </span>
-                    </button>
-
-                    <!-- Language select -->
-                    <button
-                        v-if="!quizMode"
-                        class="h-8 md:h-12 w-8 md:w-12 flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
-                        @click="settings.language = null"
-                        title="Change language"
-                    >
-                        <span class="translate-y-px">🌐</span>
+                        <span class="translate-y-px">🏠</span>
                     </button>
                 </div>
             </div>
@@ -129,7 +204,7 @@
 
             <!-- Footer -->
             <div
-                class="flex flex-col flex-1 items-center place-content-end mt-2 md:mt-8"
+                class="hidden md:flex flex-col flex-1 items-center place-content-end mt-2 md:mt-8"
             >
                 <div
                     class="text-xs md:text-sm text-slate-500 flex gap-2 text-center items-center"

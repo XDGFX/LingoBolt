@@ -186,13 +186,6 @@ import Quiz from "@/components/Quiz.vue";
 const defaultSettings = {
     firstLoad: true, // If this is the first time the user has loaded the page
     language: null, // The language the user is learning
-    languageReadable: function () {
-        return {
-            fr: "French",
-            es: "Spanish",
-            de: "German",
-        }[this.language];
-    },
     stats: {}, // The user's stats for each language
     hideTranslations: false,
 };

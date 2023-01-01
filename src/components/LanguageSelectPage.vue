@@ -11,17 +11,42 @@
                 </h1>
             </div>
 
-            <div class="mx-4 md:mx-32 flex gap-4 justify-center">
+            <!-- Desktop list of languages, click to select -->
+            <div class="mx-4 md:mx-32 gap-8 justify-center hidden md:flex">
                 <button
                     v-for="language in languages"
                     :key="language"
-                    class="w-24 h-24 fib fis rounded-[18px] border-2 border-slate-300 transition hover:scale-110"
+                    class="w-24 h-24 fib fis rounded-[18px] transition hover:scale-110"
                     :class="`fi-${language}`"
                     @click="$emit('set-language', language)"
                 ></button>
             </div>
 
-            <div class="m-2 md:m-8">
+            <!-- Mobile side scrolling list of languages, snap to each to select
+            -->
+            <div
+                ref="languageSelectIcons"
+                class="md:hidden w-full flex overflow-x-auto snap-x snap-mandatory my-4"
+                @scroll="checkSelectedLanguage"
+            >
+                <div
+                    v-for="language in languages"
+                    :language="language"
+                    :key="language"
+                    class="language-select-icon w-24 h-24 mx-8 first:ml-[50vw] last:mr-[50vw] shrink-0 snap-center snap-always fib fis rounded-[18px]"
+                    :class="`fi-${language}`"
+                ></div>
+            </div>
+
+            <button
+                :disabled="selectedLanguage == null"
+                class="md:hidden flex items-center justify-center h-12 w-48 rounded-full border-2 border-slate-300 p-4 m-8 text-xl bg-white outline-none"
+                @click="$emit('set-language', selectedLanguage)"
+            >
+                {{ selectedLanguageText }}
+            </button>
+
+            <div class="hidden md:inline m-2 md:m-8">
                 <h2 class="pb-12 text-slate-500">
                     Language not listed?
                     <a
@@ -46,7 +71,41 @@ export default {
     data() {
         return {
             languages: ["fr", "es", "de"],
+
+            // Only used on mobile
+            selectedLanguage: null,
         };
+    },
+    methods: {
+        // Only used on mobile
+        checkSelectedLanguage() {
+            const div = this.$refs.languageSelectIcons;
+            const icons = div.querySelectorAll(".language-select-icon");
+
+            // Check which icon the scroll snap is currently on
+            for (let i = 0; i < icons.length; i++) {
+                const icon = icons[i];
+                const rect = icon.getBoundingClientRect();
+                if (rect.x > 0 && rect.x < window.innerWidth) {
+                    this.selectedLanguage = icon.getAttribute("language");
+                    break;
+                }
+            }
+        },
+    },
+    computed: {
+        // Only used on mobile
+        selectedLanguageText() {
+            if (!this.selectedLanguage) {
+                return "Select a language";
+            }
+
+            return {
+                fr: "C'est parti!",
+                es: "¡Vamos!",
+                de: "Los geht's!",
+            }[this.selectedLanguage];
+        },
     },
 };
 </script>

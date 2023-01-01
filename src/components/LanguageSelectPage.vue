@@ -45,7 +45,7 @@ export default {
     emits: ["set-language"],
     data() {
         return {
-            languages: ["fr", "es"],
+            languages: ["fr", "es", "de"],
         };
     },
 };

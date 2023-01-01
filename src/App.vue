@@ -182,6 +182,7 @@ const defaultSettings = {
         return {
             fr: "French",
             es: "Spanish",
+            de: "German",
         }[this.language];
     },
     stats: {}, // The user's stats for each language

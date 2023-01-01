@@ -1,20 +1,54 @@
 <template>
     <div class="w-48 h-48 md:w-64 md:h-64 pointer-events-none select-none">
+        {{ baseUrl }}
         <img
-            class="absolute w-48 h-48 md:w-64 md:h-64 floating delayed"
+            class="absolute w-48 h-48 md:w-64 md:h-64 floating delayed z-10"
             src="@/assets/pluie/bobble.svg"
         />
-        <img
-            class="absolute w-48 h-48 md:w-64 md:h-64 floating"
-            src="@/assets/pluie/default.svg"
-            alt="Pluie mascot"
-        />
+        <div class="absolute w-48 h-48 md:w-64 md:h-64 floating">
+            <img
+                ref="base"
+                class="absolute z-10"
+                src="@/assets/pluie/base.svg"
+                alt="Pluie mascot"
+            />
+            <img class="absolute z-30" :src="`${baseUrl}face_${mood}.svg`" />
+            <img
+                v-show="accessory !== ''"
+                class="absolute z-40"
+                src_root="@/assets/pluie/accessory_"
+                :src="`${baseUrl}accessory_${accessory}.svg`"
+            />
+        </div>
     </div>
 </template>
 
 <script>
 export default {
     name: "PluieMascot",
+    props: {
+        mood: {
+            type: String,
+            default: "smile",
+            validator: (value) =>
+                ["smile", "grin", "interest", "content"].includes(value),
+        },
+        accessory: {
+            type: String,
+            default: "",
+            validator: (value) => ["", "hat", "glasses"].includes(value),
+        },
+    },
+    data() {
+        return {
+            baseUrl: "",
+        };
+    },
+    mounted() {
+        this.baseUrl = this.$refs.base
+            .getAttribute("src")
+            .replace("base.svg", "");
+    },
 };
 </script>
 

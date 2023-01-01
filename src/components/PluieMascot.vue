@@ -15,8 +15,12 @@
             <img
                 v-show="accessory !== ''"
                 class="absolute z-40"
-                src_root="@/assets/pluie/accessory_"
                 :src="`${baseUrl}accessory_${accessory}.svg`"
+            />
+            <img
+                v-show="speaking"
+                class="absolute z-10"
+                src="@/assets/pluie/speech.svg"
             />
         </div>
     </div>
@@ -36,6 +40,10 @@ export default {
             type: String,
             default: "",
             validator: (value) => ["", "hat", "glasses"].includes(value),
+        },
+        speaking: {
+            type: Boolean,
+            default: false,
         },
     },
     data() {

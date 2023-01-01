@@ -1,12 +1,13 @@
+import argparse
 import json
 import os
 import time
 from string import Template
-from tqdm import tqdm
 
 import inquirer
 import openai
 from dotenv import load_dotenv
+from tqdm import tqdm
 
 load_dotenv()
 
@@ -121,6 +122,42 @@ def get_response(prompt: str) -> str:
 
 
 def setup():
+    # For each option, we check if the value has been provided as a command line
+    # argument. If not, we ask the user for the value.
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-l",
+        "--language",
+        type=str,
+        help="The ISO 639-1 code for the language to update",
+    )
+    parser.add_argument(
+        "-b",
+        "--batch-size",
+        type=int,
+        help="The number of words to ask for in each batch",
+    )
+    parser.add_argument(
+        "-e",
+        "--language_english",
+        type=str,
+        help="The English name of the language",
+    )
+    parser.add_argument(
+        "-i",
+        "--example_input",
+        type=str,
+        help="The example input for the prompt",
+    )
+    parser.add_argument(
+        "-o",
+        "--example_output",
+        type=str,
+        help="The example output for the prompt",
+    )
+
+    args = parser.parse_args()
+
     # The inquirer prompt makes sure that the user does not send the wrong
     # requests to the API, potentially costing money unnecessarily.
 
@@ -133,15 +170,20 @@ def setup():
         for filename in os.listdir(os.path.join(SCRIPT_DIR, "..", "src", "languages"))
     ]
 
-    language = inquirer.prompt(
-        [
-            inquirer.List(
-                "language",
-                message="Which language do you want to work on?",
-                choices=languages,
-            )
-        ]
-    )["language"]
+    # Check if the language has been provided as a command line argument
+
+    language = (
+        args.language
+        or inquirer.prompt(
+            [
+                inquirer.List(
+                    "language",
+                    message="Which language do you want to work on?",
+                    choices=languages,
+                )
+            ]
+        )["language"]
+    )
 
     # We can then load the language object to update
     language_object_dir = os.path.join(
@@ -181,49 +223,61 @@ def setup():
 
     # We can then ask the user how many words they want to generate at a time
     # (default 25)
-    batch_size = inquirer.prompt(
-        [
-            inquirer.Text(
-                "batch_size",
-                message="How many words do you want to generate at a time?",
-                default="25",
-            )
-        ]
-    )["batch_size"]
+    batch_size = (
+        args.batch_size
+        or inquirer.prompt(
+            [
+                inquirer.Text(
+                    "batch_size",
+                    message="How many words do you want to generate at a time?",
+                    default="25",
+                )
+            ]
+        )["batch_size"]
+    )
 
     # To generate the prompt, we ask what the language is called in English
-    language_english = inquirer.prompt(
-        [
-            inquirer.Text(
-                "language_english",
-                message="What is the language in English?",
-            )
-        ]
-    )["language_english"]
+    language_english = (
+        args.language_english
+        or inquirer.prompt(
+            [
+                inquirer.Text(
+                    "language_english",
+                    message="What is the language in English?",
+                )
+            ]
+        )["language_english"]
+    )
 
     # Then we ask for an example input (comma separated list of 2-3 words in the
     # language)
-    example_input = inquirer.prompt(
-        [
-            inquirer.Text(
-                "example_input",
-                message="What is an example input? (comma separated list of 2-3 words in the language)",
-                default="algunos,abajo",
-            )
-        ]
-    )["example_input"]
+    example_input = (
+        args.example_input
+        or inquirer.prompt(
+            [
+                inquirer.Text(
+                    "example_input",
+                    message="What is an example input? (comma separated list of 2-3 words in the language)",
+                    default="algunos,abajo",
+                )
+            ]
+        )["example_input"]
+    )
 
     # Then we ask for an example output (the JSON response for the example
     # input)
-    example_output = inquirer.prompt(
-        [
-            inquirer.Editor(
-                "example_output",
-                message="What is an example output? (the JSON response for the example input)",
-                default='{{"word":"alguno","translation":"some","example":"Algunos de ellos llegaron tarde","example_en":"Some of them arrived late","emoji":"🕰️","tags":["quantifier"],"difficulty":1,"part_of_speech":"determiner","gender":"male","plural":"algunos","synonyms":["ciertos","unos cuantos"],"antonyms":[]}},{{"word":"abajo","translation":"down","example":"Corre abajo para llegar a tiempo","example_en":"Run down to get there on time","emoji":"🏃‍♀️","tags":["direction", "movement"],"difficulty":1,"part_of_speech":"adverb","gender":null,"plural":null,"synonyms":["bajo","debajo"],"antonyms":["arriba"]}},',
-            )
-        ]
-    )["example_output"]
+    example_output = (
+        args.example_output
+        or inquirer.prompt(
+            [
+                inquirer.Editor(
+                    "example_output",
+                    message="What is an example output? (the JSON response for the example input)",
+                    default='{{"word":"alguno","translation":"some","example":"Algunos de ellos llegaron tarde","example_en":"Some of them arrived late","emoji":"🕰️","tags":["quantifier"],"difficulty":1,"part_of_speech":"determiner","gender":"male","plural":"algunos","synonyms":["ciertos","unos cuantos"],"antonyms":[]}},{{"word":"abajo","translation":"down","example":"Corre abajo para llegar a tiempo","example_en":"Run down to get there on time","emoji":"🏃‍♀️","tags":["direction", "movement"],"difficulty":1,"part_of_speech":"adverb","gender":null,"plural":null,"synonyms":["bajo","debajo"],"antonyms":["arriba"]}},',
+                )
+            ]
+        )["example_output"]
+    )
 
     # We can now format the prompt
     template = Template(PROMPT_TEMPLATE)

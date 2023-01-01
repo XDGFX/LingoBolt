@@ -1,6 +1,6 @@
 <template>
     <div
-        class="my-4 h-full w-full lg:w-[990px] overflow-auto rounded-[24px] bg-white border-2 border-slate-200"
+        class="md:my-4 h-full w-full lg:w-[990px] overflow-auto md:rounded-[24px] bg-white md:border-2 border-slate-200"
     >
         <div
             v-if="words.length === 0"

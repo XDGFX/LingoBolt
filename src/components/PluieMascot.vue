@@ -52,9 +52,13 @@ export default {
         };
     },
     mounted() {
-        this.baseUrl = this.$refs.base
-            .getAttribute("src")
-            .replace("base.svg", "");
+        // Split by "/" and remove last element ("base.svg") to get base URL
+        this.baseUrl =
+            this.$refs.base
+                .getAttribute("src")
+                .split("/")
+                .slice(0, -1)
+                .join("/") + "/";
     },
 };
 </script>

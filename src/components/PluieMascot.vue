@@ -11,14 +11,43 @@
                 src="@/assets/pluie/base.svg"
                 alt="Pluie mascot"
             />
-            <img class="absolute z-30" :src="`${baseUrl}face_${mood}.svg`" />
+
+            <!-- Face -->
             <img
-                v-show="accessory !== ''"
-                class="absolute z-40"
-                :src="`${baseUrl}accessory_${accessory}.svg`"
+                v-if="mood === 'smile'"
+                class="absolute z-30"
+                src="@/assets/pluie/face_smile.svg"
             />
             <img
-                v-show="speaking"
+                v-else-if="mood === 'grin'"
+                class="absolute z-30"
+                src="@/assets/pluie/face_grin.svg"
+            />
+            <img
+                v-else-if="mood === 'interest'"
+                class="absolute z-30"
+                src="@/assets/pluie/face_interest.svg"
+            />
+            <img
+                v-else-if="mood === 'content'"
+                class="absolute z-30"
+                src="@/assets/pluie/face_content.svg"
+            />
+
+            <!-- Accessories -->
+            <img
+                v-if="accessory === 'hat'"
+                class="absolute z-40"
+                src="@/assets/pluie/accessory_hat.svg"
+            />
+            <img
+                v-else-if="accessory === 'glasses'"
+                class="absolute z-40"
+                src="@/assets/pluie/accessory_glasses.svg"
+            />
+
+            <img
+                v-if="speaking"
                 class="absolute z-10"
                 src="@/assets/pluie/speech.svg"
             />
@@ -45,20 +74,6 @@ export default {
             type: Boolean,
             default: false,
         },
-    },
-    data() {
-        return {
-            baseUrl: "",
-        };
-    },
-    mounted() {
-        // Split by "/" and remove last element ("base.svg") to get base URL
-        this.baseUrl =
-            this.$refs.base
-                .getAttribute("src")
-                .split("/")
-                .slice(0, -1)
-                .join("/") + "/";
     },
 };
 </script>

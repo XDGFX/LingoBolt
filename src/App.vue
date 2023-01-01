@@ -68,18 +68,16 @@
 
                     <!-- Quiz button -->
                     <button
+                        v-if="!quizMode"
                         class="h-8 md:h-12 w-8 md:w-12 flex justify-center items-center rounded-full border-2 border-slate-200 text-slate-500 p-4 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
-                        @click="quizMode = !quizMode"
+                        @click="quizMode = true"
                         title="Practice"
                     >
-                        <span v-if="quizMode" class="-translate-y-px">
-                            📖
-                        </span>
-                        <span v-else class="translate-y-px"> 🎓 </span>
+                        <span class="translate-y-px"> 🎓 </span>
 
                         <!-- Notification circle -->
                         <div
-                            v-if="!quizMode && settings.firstLoad"
+                            v-if="settings.firstLoad"
                             class="absolute h-4 w-4 translate-x-full -translate-y-full"
                         >
                             <div
@@ -89,6 +87,16 @@
                                 class="h-4 w-4 rounded-full bg-cyan-400 -translate-y-full"
                             ></div>
                         </div>
+                    </button>
+
+                    <!-- Home button -->
+                    <button
+                        v-if="quizMode"
+                        class="h-8 md:h-12 w-8 md:w-12 flex justify-center items-center rounded-full border-2 border-slate-200 text-slate-500 p-4 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
+                        @click="quizMode = false"
+                        title="Home"
+                    >
+                        <span class="translate-y-px"> 🏠 </span>
                     </button>
 
                     <!-- Language select -->

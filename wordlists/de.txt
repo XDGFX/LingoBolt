@@ -196,7 +196,7 @@ Knochen
 Koch
 Kolonie
 Konsonant
-KontinentKontinent
+Kontinent
 Kontrolle
 Kopf
 Kopie

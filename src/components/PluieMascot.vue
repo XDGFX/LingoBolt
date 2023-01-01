@@ -1,6 +1,5 @@
 <template>
     <div class="w-48 h-48 md:w-64 md:h-64 pointer-events-none select-none">
-        {{ baseUrl }}
         <img
             class="absolute w-48 h-48 md:w-64 md:h-64 floating delayed z-10"
             src="@/assets/pluie/bobble.svg"

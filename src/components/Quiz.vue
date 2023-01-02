@@ -1,10 +1,12 @@
 <template>
-    <div class="flex flex-col items-center justify-center w-full lg:w-[990px]">
-        <div class="mt-4 mb-4 w-full">
+    <div
+        class="flex flex-col items-center p-4 h-full md:-0 w-full lg:w-[990px]"
+    >
+        <div class="md:my-4 w-full">
             <EloRange :elo="stats.elo" :score="stats.score"></EloRange>
         </div>
 
-        <!-- Current Mode -->
+        <!-- Current Mode Overlay -->
         <div
             class="w-24 h-10 translate-y-1/2 text-xl text-center justify-self-center"
         >
@@ -42,12 +44,13 @@
             </div>
         </div>
 
-        <div
-            class="min-h-[384px] bg-white border-2 border-slate-200 rounded-[18px] flex flex-col items-center justify-center w-full lg:w-[990px]"
+        <!-- Main content -->
+        <section
+            class="min-h-[384px] h-full md:h-auto bg-white border-2 border-slate-200 rounded-[18px] flex flex-col items-center justify-center w-full lg:w-[990px]"
         >
             <div
                 v-if="page === 'start'"
-                class="text-l md:text-xl my-8 text-center flex flex-col gap-2"
+                class="text-l md:text-xl my-8 mx-2 text-center flex flex-col gap-2"
             >
                 <div class="text-6xl">🎓</div>
                 <div class="mb-4 text-6xl">Practice</div>
@@ -75,13 +78,23 @@
                 </button>
             </div>
 
-            <div v-else>
-                <div class="w-full h-full grid grid-rows-6 text-center">
-                    <!-- Word -->
+            <div
+                v-else
+                class="flex flex-col items-center text-center w-full p-4"
+            >
+                <PluieMascot
+                    v-show="lowScoreMode && page == 'test'"
+                    speechPosition="right"
+                    speech="You've struggled with this one, so I've given you a
+                            hint!"
+                    size="sm"
+                ></PluieMascot>
+
+                <!-- Word -->
+                <ReactiveText :state="currentWord.word + lastTestResult">
                     <div
                         ref="word"
-                        class="text-slate-900 my-auto whitespace-nowrap py-4 row-span-3"
-                        :style="wordSizeStyle"
+                        class="text-slate-900 text-center whitespace-nowrap"
                         :class="{
                             'text-emerald-500': lastTestResult === true,
                             'text-rose-500': lastTestResult === false,
@@ -97,75 +110,74 @@
                                 : currentWord.translation
                         }}
                     </div>
+                </ReactiveText>
 
-                    <!-- Example -->
-                    <div>
-                        <div class="text-xl">
-                            {{
-                                mode === "foreign"
-                                    ? currentWord.example_en
-                                    : currentWord.example
-                            }}
-                        </div>
-                        <div
-                            v-if="lastTestResult !== null"
-                            class="text-xl"
-                            :class="{
-                                'text-emerald-500': lastTestResult === true,
-                                'text-rose-500': lastTestResult === false,
-                            }"
-                        >
-                            {{
-                                mode === "foreign"
-                                    ? currentWord.example
-                                    : currentWord.example_en
-                            }}
-                        </div>
+                <!-- Example -->
+                <div class="flex flex-col flex-1">
+                    <div class="text-xl">
+                        {{
+                            mode === "foreign"
+                                ? currentWord.example_en
+                                : currentWord.example
+                        }}
                     </div>
-
-                    <div class="row-span-2">
-                        <!-- Hint bubble -->
-                        <div
-                            class="flex justify-center"
-                            v-show="lowScoreMode && page == 'test'"
-                        >
-                            <div
-                                class="absolute rounded-full bg-slate-200 text-sm w-fit px-2"
-                            >
-                                You've struggled with this one, so I've given
-                                you a hint!
-                            </div>
-                        </div>
-
-                        <!-- Input for user to enter the answer -->
-                        <input
-                            v-show="lastTestResult === null"
-                            class="h-8 md:h-12 w-full md:w-96 rounded-full border-2 border-slate-200 p-4 m-8 text-xl md:text-2xl tracking-wide bg-white hover:bg-slate-100 focus:border-rose-500 outline-none"
-                            v-model="answer"
-                            @keydown.enter="submitAnswer"
-                            ref="answerInput"
-                            :placeholder="
-                                lowScoreMode
-                                    ? hint
-                                    : mode === 'foreign'
-                                    ? 'What does this translate to?'
-                                    : 'What does this mean?'
-                            "
-                        />
-
-                        <!-- Button to continue after result screen -->
-                        <button
-                            v-show="lastTestResult !== null"
-                            class="flex items-center justify-center h-8 md:h-12 w-full md:w-96 rounded-full border-2 border-slate-200 p-4 m-8 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
-                            @click="nextWord"
-                            ref="continueButton"
-                        >
-                            Continue
-                        </button>
+                    <div
+                        v-if="lastTestResult !== null"
+                        class="text-xl"
+                        :class="{
+                            'text-emerald-500': lastTestResult === true,
+                            'text-rose-500': lastTestResult === false,
+                        }"
+                    >
+                        {{
+                            mode === "foreign"
+                                ? currentWord.example
+                                : currentWord.example_en
+                        }}
                     </div>
                 </div>
+
+                <!-- Hint bubble -->
+                <!-- <div
+                        class="flex justify-center mt-8"
+                        v-show="lowScoreMode && page == 'test'"
+                    >
+                        <div
+                            class="rounded-full bg-slate-200 text-sm w-fit px-2"
+                        >
+                            You've struggled with this one, so I've given you a
+                            hint!
+                        </div>
+                    </div> -->
+
+                <!-- Input for user to enter the answer -->
+                <input
+                    v-show="lastTestResult === null"
+                    class="h-8 md:h-12 w-64 md:w-96 rounded-full border-2 border-slate-200 p-4 my-8 text-xl md:text-2xl tracking-wide bg-white hover:bg-slate-100 focus:border-rose-500 outline-none"
+                    v-model="answer"
+                    @keydown.enter="submitAnswer"
+                    ref="answerInput"
+                    :placeholder="
+                        lowScoreMode
+                            ? hint
+                            : mode === 'foreign'
+                            ? 'Write in English'
+                            : 'Write in ' + languageReadable
+                    "
+                />
+
+                <!-- Button to continue after result screen -->
+                <button
+                    v-show="lastTestResult !== null"
+                    class="flex items-center justify-center h-8 md:h-12 w-full md:w-96 rounded-full border-2 border-slate-200 p-4 m-8 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
+                    @click="nextWord"
+                    ref="continueButton"
+                >
+                    Continue
+                </button>
             </div>
-        </div>
+        </section>
+
         <div v-if="debugMode" class="text-xs select-none">
             <code>
                 <br />
@@ -218,11 +230,17 @@ import diacritics from "diacritics";
 import "@/../node_modules/flag-icons/css/flag-icons.min.css";
 
 import EloRange from "@/components/EloRange.vue";
+import ReactiveText from "@/components/ReactiveText.vue";
+import PluieMascot from "@/components/PluieMascot.vue";
 
 export default {
     name: "QuizButton",
     emits: ["test-result"],
-    components: { EloRange },
+    components: {
+        EloRange,
+        ReactiveText,
+        PluieMascot,
+    },
     inject: ["debugMode"],
     data() {
         return {
@@ -463,6 +481,14 @@ export default {
             }
 
             return hint.join("");
+        },
+
+        languageReadable() {
+            // Using the Intl API convert the ISO 639-1 language code to the
+            // English language name
+            return new Intl.DisplayNames(["en"], {
+                type: "language",
+            }).of(this.language);
         },
     },
 };

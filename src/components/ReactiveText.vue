@@ -52,7 +52,7 @@ export default {
         this.updateReactiveText();
     },
 
-    unmounted() {
+    beforeUnmount() {
         // Remove resize listener
         window.removeEventListener("resize", this.updateReactiveText);
 

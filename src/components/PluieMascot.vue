@@ -52,12 +52,6 @@
                     class="absolute z-40"
                     src="@/assets/pluie/accessory_glasses.svg"
                 />
-
-                <img
-                    v-if="speaking"
-                    class="absolute z-10"
-                    src="@/assets/pluie/speech.svg"
-                />
             </div>
         </div>
         <div

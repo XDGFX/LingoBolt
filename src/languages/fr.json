@@ -2369,20 +2369,6 @@
         "antonyms": ["rien"]
     },
     {
-        "word": "ici",
-        "translation": "here",
-        "example": "Je suis ici.",
-        "example_en": "I am here.",
-        "emoji": "👋",
-        "tags": ["here", "adverb"],
-        "difficulty": 1,
-        "part_of_speech": "adverb",
-        "gender": null,
-        "plural": null,
-        "synonyms": [],
-        "antonyms": ["là"]
-    },
-    {
         "word": "ciel",
         "translation": "sky",
         "example": "Le ciel est bleu aujourd'hui.",
@@ -6039,15 +6025,15 @@
     {
         "word": "ici",
         "translation": "here",
-        "example": "Je suis ici depuis cinq ans.",
-        "example_en": "I have been here for five years.",
-        "emoji": "📍",
-        "tags": ["adverb", "location"],
+        "example": "Je suis ici.",
+        "example_en": "I am here.",
+        "emoji": "👋",
+        "tags": ["here", "adverb"],
         "difficulty": 1,
         "part_of_speech": "adverb",
         "gender": null,
         "plural": null,
-        "synonyms": ["ici même", "en ce lieu"],
+        "synonyms": [],
         "antonyms": ["là"]
     },
     {
@@ -6496,34 +6482,6 @@
         "gender": null,
         "plural": null,
         "synonyms": ["jusque", "en attendant que"],
-        "antonyms": ["depuis"]
-    },
-    {
-        "word": "jusqu'à",
-        "translation": "up to",
-        "example": "J'ai besoin de 20 euros jusqu'à demain.",
-        "example_en": "I need 20 euros up to tomorrow.",
-        "emoji": "💰",
-        "tags": ["preposition", "time", "quantity"],
-        "difficulty": 1,
-        "part_of_speech": "preposition",
-        "gender": null,
-        "plural": null,
-        "synonyms": ["jusque", "jusqu'à ce que"],
-        "antonyms": ["après"]
-    },
-    {
-        "word": "jusqu'à ce que",
-        "translation": "until",
-        "example": "Je vais attendre jusqu'à ce qu'il arrive.",
-        "example_en": "I will wait until he arrives.",
-        "emoji": "⏳",
-        "tags": ["conjunction", "time"],
-        "difficulty": 1,
-        "part_of_speech": "conjunction",
-        "gender": null,
-        "plural": null,
-        "synonyms": ["tant que", "jusque-là"],
         "antonyms": ["depuis"]
     },
     {
@@ -14452,20 +14410,6 @@
         "plural": "êtes",
         "synonyms": ["êtes", "êtes en train d'être"],
         "antonyms": ["n'êtes pas"]
-    },
-    {
-        "word": "êtes",
-        "translation": "are (second person singular, formal)",
-        "example": "Vous êtes très gentil.",
-        "example_en": "You are very kind.",
-        "emoji": "😊",
-        "tags": ["are", "formal", "auxiliary verb"],
-        "difficulty": 1,
-        "part_of_speech": "auxiliary verb",
-        "gender": null,
-        "plural": null,
-        "synonyms": ["es", "es-tu"],
-        "antonyms": ["suis"]
     },
     {
         "word": "être",

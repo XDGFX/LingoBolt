@@ -21,6 +21,17 @@
 
                 <br />
 
+                Search results:
+                <pre v-if="search !== ''">{{
+                    JSON.stringify(
+                        wordsFiltered.map((word) => word.word),
+                        null,
+                        4
+                    )
+                }}</pre>
+
+                <br />
+
                 Settings: <br />
                 <pre>{{ JSON.stringify(settings, null, 4) }}</pre>
             </code>
@@ -112,7 +123,7 @@
 
             <!-- Mobile menu -->
             <div
-                class="absolute bottom-0 w-full z-[999] md:hidden flex flex-wrap items-center bg-slate-200 p-2 border-t-2 rounded-t-[24px] border-slate-300"
+                class="fixed bottom-0 w-full z-[999] md:hidden flex flex-wrap items-center bg-slate-200 p-2 border-t-2 rounded-t-[24px] border-slate-300"
             >
                 <div
                     v-if="!quizMode"
@@ -127,10 +138,20 @@
 
                     <!-- Div which overlays the previous input -->
                     <div
+                        v-if="search === ''"
                         class="h-12 w-12 peer-focus:hidden pointer-events-none absolute flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white"
                     >
                         <span>🔎</span>
                     </div>
+
+                    <!-- Clear search button -->
+                    <button
+                        v-else
+                        class="h-12 w-12 peer-focus:hidden absolute flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white"
+                        @click="search = ''"
+                    >
+                        <span>❌</span>
+                    </button>
 
                     <!-- Hide translations -->
                     <button
@@ -461,36 +482,6 @@ export default {
             },
             deep: true,
         },
-
-        // // When the elo changes, save it to localStorage
-        // elo() {
-        //     // If elo is not a number, raise an error
-        //     if (isNaN(this.settings.stats[this.settings.language].elo)) {
-        //         throw new Error("Elo is not a number");
-        //     }
-
-        //     localStorage.setItem("elo", JSON.stringify(this.settings.stats[this.settings.language].elo));
-        // },
-
-        // // When the wordScores change, save them to localStorage
-        // wordScores: {
-        //     handler(newValue, oldValue) {
-        //         localStorage.setItem(
-        //             "wordScores",
-        //             JSON.stringify(this.wordScores)
-        //         );
-        //     },
-        //     deep: true,
-        // },
-
-        // // When the score changes, save it to localStorage
-        // score() {
-        //     if (isNaN(this.score)) {
-        //         throw new Error("Score is not a number");
-        //     }
-
-        //     localStorage.setItem("score", JSON.stringify(this.score));
-        // },
     },
 
     mounted() {

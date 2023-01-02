@@ -104,19 +104,19 @@ export default {
             const div = this.$refs.languageSelectIcons;
             const icons = div.querySelectorAll(".language-select-icon");
 
-            // Check which icon the scroll snap is currently on
+            // Check which icon the scroll snap is currently on (which one has
+            // the midle of the screen closest to it)
             for (let i = 0; i < icons.length; i++) {
                 const icon = icons[i];
                 const rect = icon.getBoundingClientRect();
-                if (rect.x > 0 && rect.x < window.innerWidth) {
+
+                if (rect.left < window.innerWidth / 2) {
                     this.selectedLanguage = icon.getAttribute("language");
-                    break;
                 }
             }
         },
     },
     computed: {
-        // Only used on mobile
         selectedLanguageText() {
             if (!this.selectedLanguage) {
                 return "...";

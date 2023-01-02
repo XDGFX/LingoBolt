@@ -80,7 +80,7 @@
 
             <!-- Second page on mobile -->
             <div
-                class="flex basis-full snap-center md:basis-auto shrink-0 grow-0 flex-col justify-around"
+                class="flex basis-full w-full snap-center md:basis-auto shrink-0 grow-0 flex-col justify-around"
             >
                 <div
                     class="flex justify-between overflow-x-auto whitespace-nowrap"

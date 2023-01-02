@@ -121,9 +121,25 @@
                 </div>
             </div>
 
+            <carousel
+                v-if="!quizMode"
+                :words="wordsFiltered"
+                :wordScores="settings.stats[settings.language].wordScores"
+                :hide-translations="hideTranslations"
+            ></carousel>
+
+            <!-- Quiz -->
+            <quiz
+                v-if="quizMode"
+                :words="wordsFiltered"
+                :stats="settings.stats[settings.language]"
+                :language="settings.language"
+                @test-result="onTestResult"
+            ></quiz>
+
             <!-- Mobile menu -->
             <div
-                class="fixed bottom-0 w-full z-[999] md:hidden flex flex-wrap items-center bg-slate-200 p-2 border-t-2 rounded-t-[24px] border-slate-300"
+                class="fixed bottom-0 w-full z-[999] md:hidden flex justify-around bg-slate-200 p-2 border-t-2 rounded-t-[24px] border-slate-300"
             >
                 <div
                     v-if="!quizMode"
@@ -132,14 +148,14 @@
                     <!-- Search box -->
                     <input
                         v-model="search"
-                        class="h-12 w-12 shrink focus:w-full peer transition-all flex justify-center items-center rounded-full border-2 border-slate-200 outline-none p-4 text-2xl bg-white"
+                        class="h-12 w-12 shrink focus:w-full peer transition-all flex justify-center p-4 rounded-full border-2 border-slate-200 outline-none text-2xl bg-white"
                         type="text"
                     />
 
                     <!-- Div which overlays the previous input -->
                     <div
                         v-if="search === ''"
-                        class="h-12 w-12 peer-focus:hidden pointer-events-none absolute flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white"
+                        class="h-12 w-12 peer-focus:hidden pointer-events-none absolute flex justify-center items-center rounded-full border-2 border-slate-200 text-2xl bg-white"
                     >
                         <span>🔎</span>
                     </div>
@@ -147,7 +163,7 @@
                     <!-- Clear search button -->
                     <button
                         v-else
-                        class="h-12 w-12 peer-focus:hidden absolute flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white"
+                        class="h-12 w-12 peer-focus:hidden absolute flex justify-center items-center rounded-full border-2 border-slate-200 text-2xl bg-white"
                         @click="search = ''"
                     >
                         <span>❌</span>
@@ -155,7 +171,7 @@
 
                     <!-- Hide translations -->
                     <button
-                        class="h-12 w-12 peer-focus:hidden flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white"
+                        class="h-12 w-12 peer-focus:hidden flex justify-center items-center rounded-full border-2 border-slate-200 text-2xl bg-white"
                         @click="hideTranslations = !hideTranslations"
                         title="Hide translations"
                     >
@@ -164,7 +180,7 @@
 
                     <!-- Quiz button -->
                     <button
-                        class="h-12 w-12 peer-focus:hidden flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white"
+                        class="h-12 w-12 peer-focus:hidden flex justify-center items-center rounded-full border-2 border-slate-200 text-2xl bg-white"
                         @click="quizMode = true"
                         title="Practice"
                     >
@@ -186,7 +202,7 @@
 
                     <!-- Language select -->
                     <button
-                        class="h-12 w-12 peer-focus:hidden flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white"
+                        class="h-12 w-12 peer-focus:hidden flex justify-center items-center rounded-full border-2 border-slate-200 text-2xl bg-white"
                         @click="settings.language = null"
                         title="Change language"
                     >
@@ -198,7 +214,7 @@
                     <!-- Home button -->
                     <button
                         v-if="quizMode"
-                        class="h-8 md:h-12 w-8 md:w-12 flex justify-center items-center rounded-full border-2 border-slate-200 text-slate-500 p-4 text-xl md:text-2xl bg-white hover:bg-slate-100 outline-none"
+                        class="h-12 w-12 flex justify-center items-center rounded-full border-2 border-slate-200 text-2xl bg-white"
                         @click="quizMode = false"
                         title="Home"
                     >
@@ -207,21 +223,10 @@
                 </div>
             </div>
 
-            <carousel
-                v-if="!quizMode"
-                :words="wordsFiltered"
-                :wordScores="settings.stats[settings.language].wordScores"
-                :hide-translations="hideTranslations"
-            ></carousel>
-
-            <!-- Quiz -->
-            <quiz
-                v-if="quizMode"
-                :words="wordsFiltered"
-                :stats="settings.stats[settings.language]"
-                :language="settings.language"
-                @test-result="onTestResult"
-            ></quiz>
+            <!-- Spacer for mobile menu -->
+            <div
+                class="bottom-0 w-full pointer-events-none md:hidden m-2 h-12"
+            ></div>
 
             <!-- Footer -->
             <div

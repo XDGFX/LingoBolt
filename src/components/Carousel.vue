@@ -9,6 +9,7 @@
             <p class="pb-4">No results found :(</p>
         </div>
 
+        <!-- Consider adding `scrollbar-hide` class -->
         <RecycleScroller
             v-show="words.length > 0"
             ref="scroller"
@@ -93,4 +94,15 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+</style>

@@ -51,8 +51,10 @@
                 class="flex flex-1 basis-full snap-center md:basis-auto shrink-0 grow-0 md:grow flex-col md:justify-start md:text-xl lg:text-2xl"
             >
                 <div class="flex flex-1 justify-left items-center md:h-auto">
-                    <div class="text-4xl pr-4">
+                    <div class="w-min text-4xl pr-4">
+                        <!-- <Twemoji> -->
                         {{ word.emoji }}
+                        <!-- </Twemoji> -->
                     </div>
                     <div class="flex flex-col justify-center gap-2">
                         <div class="overflow-auto">
@@ -162,12 +164,14 @@
 <script>
 import DifficultyRange from "@/components/DifficultyRange.vue";
 import ReactiveText from "@/components/ReactiveText.vue";
+import Twemoji from "@/components/Twemoji.vue";
 
 export default {
     name: "Card",
     components: {
         DifficultyRange,
         ReactiveText,
+        Twemoji,
     },
     inject: ["debugMode"],
     props: {

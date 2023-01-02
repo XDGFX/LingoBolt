@@ -6,12 +6,16 @@
             'flex-nowrap': speechPosition === 'right',
         }"
     >
-        <div class="w-48 h-48 md:w-64 md:h-64 pointer-events-none select-none">
+        <div
+            class="shrink-0 pointer-events-none select-none"
+            :class="sizeClass"
+        >
             <img
-                class="absolute w-48 h-48 md:w-64 md:h-64 floating delayed z-10"
+                class="absolute floating delayed z-10"
+                :class="sizeClass"
                 src="@/assets/pluie/bobble.svg"
             />
-            <div class="absolute w-48 h-48 md:w-64 md:h-64 floating">
+            <div class="absolute floating" :class="sizeClass">
                 <img
                     ref="base"
                     class="absolute z-10"
@@ -95,6 +99,25 @@ export default {
             default: "right",
             validator: (value) => ["right", "top"].includes(value),
         },
+        size: {
+            type: String,
+            default: "lg",
+            validator: (value) => ["sm", "md", "lg"].includes(value),
+        },
+    },
+    computed: {
+        sizeClass() {
+            // If size is lg, return "w-48 h-48 md:w-64 md:h-64"
+            // If size is md, return "w-32 h-32 md:w-48 md:h-48"
+            // If size is sm, return "w-24 h-24 md:w-32 md:h-32"
+            return `w-${
+                this.size === "lg" ? 48 : this.size === "md" ? 32 : 24
+            } h-${
+                this.size === "lg" ? 48 : this.size === "md" ? 32 : 24
+            } md:w-${
+                this.size === "lg" ? 64 : this.size === "md" ? 48 : 32
+            } md:h-${this.size === "lg" ? 64 : this.size === "md" ? 48 : 32}`;
+        },
     },
 };
 </script>
@@ -103,13 +126,13 @@ export default {
 /* Animation slow float up and down on loop */
 @keyframes float {
     0% {
-        transform: translateY(0);
+        transform: translateY(5px);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
     100% {
-        transform: translateY(0);
+        transform: translateY(5px);
     }
 }
 

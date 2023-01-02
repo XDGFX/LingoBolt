@@ -1,9 +1,8 @@
 <template>
-    <div
-        class="min-h-[384px] bg-slate-200 rounded-[18px] grid md:grid-cols-2 m-2"
-    >
+    <div class="h-[384px] bg-slate-200 rounded-[18px] grid md:grid-cols-2 m-2">
+        <!-- Word -->
         <div
-            class="flex flex-col items-center justify-center bg-slate-100 rounded-[18px] m-2"
+            class="flex flex-col items-center justify-center bg-slate-100 rounded-[18px] m-2 p-12"
         >
             <!-- Learning tag -->
             <div
@@ -17,29 +16,24 @@
                 {{ wordScore == 10 ? "Mastered" : "Almost mastered" }}
             </div>
 
-            <div
-                ref="word"
-                class="flex text-slate-900 whitespace-nowrap -my-4 md:mb-0"
-                :style="wordSizeStyle"
-            >
-                {{ word.word }}
-            </div>
+            <ReactiveText>
+                <div
+                    ref="word"
+                    class="text-slate-900 text-center whitespace-nowrap"
+                >
+                    {{ word.word }}
+                </div>
+            </ReactiveText>
             <div
                 class="flex md:text-4xl text-slate-400 text-center px-4 py-2"
                 v-show="!hideTranslations"
             >
                 {{ word.translation }}
             </div>
-            <AudioPlayer
-                class="pb-2"
-                v-if="showTTS"
-                :word="word.word"
-            ></AudioPlayer>
 
             <div v-if="debugMode">
                 <code>
                     wordScore: {{ wordScore }} <br />
-                    wordSizeStyle: {{ wordSizeStyle }} <br />
                     tags: {{ word.tags }} <br />
                 </code>
             </div>
@@ -54,10 +48,6 @@
                     </div>
                     <div class="flex flex-col justify-center gap-2">
                         <div class="flex gap-2 align-middle">
-                            <AudioPlayer
-                                v-if="showTTS"
-                                :word="word.example"
-                            ></AudioPlayer>
                             <p>"{{ word.example }}"</p>
                         </div>
                         <p class="text-slate-500" v-show="!hideTranslations">
@@ -163,13 +153,13 @@
 
 <script>
 import DifficultyRange from "@/components/DifficultyRange.vue";
-import AudioPlayer from "@/components/AudioPlayer.vue";
+import ReactiveText from "@/components/ReactiveText.vue";
 
 export default {
     name: "Card",
     components: {
         DifficultyRange,
-        AudioPlayer,
+        ReactiveText,
     },
     inject: ["debugMode"],
     props: {
@@ -181,40 +171,9 @@ export default {
             type: Number,
             default: null,
         },
-        showTTS: {
-            type: Boolean,
-            default: false,
-        },
         hideTranslations: {
             type: Boolean,
             default: false,
-        },
-    },
-    computed: {
-        wordSizeStyle() {
-            // Based on the number of characters in the word, we can estimate the font size
-            // <8 characters: 96px
-            // 8-12 characters: 72px
-            // 12-16 characters: 48px
-            // 16-20 characters: 36px
-            // 20+ characters: 24px
-
-            const wordLength = this.word.word.length;
-            let fontSize = 96;
-
-            if (wordLength >= 8 && wordLength < 12) {
-                fontSize = 72;
-            } else if (wordLength >= 12 && wordLength < 16) {
-                fontSize = 48;
-            } else if (wordLength >= 16 && wordLength < 20) {
-                fontSize = 36;
-            } else if (wordLength >= 20) {
-                fontSize = 24;
-            }
-
-            return {
-                fontSize: `${fontSize}px`,
-            };
         },
     },
 };

@@ -3,9 +3,9 @@
 import json
 import os
 
-WORD_LIST = os.path.join("..", "wordlists", "french.txt")
-JSON_FILE = os.path.join("..", "src", "french.json")
-OUTPUT_FILE = os.path.join("..", "src", "french_new.json")
+WORD_LIST = os.path.join("..", "wordlists", "fr.txt")
+JSON_FILE = os.path.join("..", "src", "languages", "fr.json")
+OUTPUT_FILE = os.path.join("..", "src", "languages", "french_new.json")
 
 
 def main():
@@ -26,10 +26,17 @@ def main():
     # Remove all the words that are not in the wordlist
     data = [w for w in data if w["word"] in words]
 
-    print(f"New word count: {len(data)}")
-
     # Sort the words alphabetically
     data = sorted(data, key=lambda k: k["word"])
+
+    # Remove duplicate occurances of duplicate words
+    data = [
+        data[i]
+        for i in range(len(data))
+        if i == 0 or data[i]["word"] != data[i - 1]["word"]
+    ]
+
+    print(f"New word count: {len(data)}")
 
     # Write the new JSON file
     with open(OUTPUT_FILE, "w") as f:

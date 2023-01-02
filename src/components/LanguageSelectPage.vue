@@ -3,6 +3,20 @@
         <div
             class="flex flex-col items-center text-center justify-center text-slate-800 h-full"
         >
+            <div v-if="debugMode" class="text-left">
+                <code>
+                    selectedLanguage: {{ selectedLanguage }} <br />
+                    selectedLanguageText:{{ selectedLanguageText }} <br />
+                    languages: {{ languages }} <br />
+                </code>
+            </div>
+
+            <PluieMascot
+                mood="grin"
+                :speech="selectedLanguageText"
+                speechPosition="top"
+            ></PluieMascot>
+
             <div class="m-2 md:m-8">
                 <h1 class="text-4xl pb-4">
                     <span class="text-slate-500"
@@ -19,6 +33,8 @@
                     class="w-24 h-24 fib fis rounded-[18px] transition hover:scale-110"
                     :class="`fi-${language}`"
                     @click="$emit('set-language', language)"
+                    @mouseover="selectedLanguage = language"
+                    @mouseleave="selectedLanguage = null"
                 ></button>
             </div>
 
@@ -26,14 +42,14 @@
             -->
             <div
                 ref="languageSelectIcons"
-                class="md:hidden w-full flex overflow-x-auto snap-x snap-mandatory my-4"
-                @scroll="checkSelectedLanguage"
+                class="md:hidden w-full flex overflow-x-auto snap-x snap-mandatory my-4 scrollbar-hide"
+                @scroll="checkSelectedLanguage()"
             >
                 <div
                     v-for="language in languages"
                     :language="language"
                     :key="language"
-                    class="language-select-icon w-24 h-24 mx-8 first:ml-[50vw] last:mr-[50vw] shrink-0 snap-center snap-always fib fis rounded-[18px]"
+                    class="language-select-icon w-24 h-24 mx-8 first:ml-[100vw] last:mr-[100vw] shrink-0 snap-center snap-always fib fis rounded-[18px]"
                     :class="`fi-${language}`"
                 ></div>
             </div>
@@ -43,7 +59,7 @@
                 class="md:hidden flex items-center justify-center h-12 w-48 rounded-full border-2 border-slate-300 p-4 m-8 text-xl bg-white outline-none"
                 @click="$emit('set-language', selectedLanguage)"
             >
-                {{ selectedLanguageText }}
+                Select
             </button>
 
             <div class="hidden md:inline m-2 md:m-8">
@@ -65,9 +81,15 @@
 <script>
 import "@/../node_modules/flag-icons/css/flag-icons.min.css";
 
+import PluieMascot from "@/components/PluieMascot.vue";
+
 export default {
     name: "LanguageSelectPage",
+    inject: ["debugMode"],
     emits: ["set-language"],
+    components: {
+        PluieMascot,
+    },
     data() {
         return {
             languages: ["fr", "es", "de"],
@@ -97,7 +119,7 @@ export default {
         // Only used on mobile
         selectedLanguageText() {
             if (!this.selectedLanguage) {
-                return "Select a language";
+                return "...";
             }
 
             return {
@@ -110,4 +132,15 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+</style>

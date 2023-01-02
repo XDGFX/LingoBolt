@@ -62,17 +62,19 @@ export default {
     methods: {
         updateReactiveText() {
             // Add callback to wait for the element to be rendered
-            // Get the width of the parent element
-            const cardWidth = this.$refs.parent.offsetWidth;
+            this.$nextTick(() => {
+                // Get the width of the parent element
+                const cardWidth = this.$refs.parent.offsetWidth;
 
-            // Get the width of the text element
-            const textWidth = this.$refs.text.offsetWidth;
+                // Get the width of the text element
+                const textWidth = this.$refs.text.offsetWidth;
 
-            // Scale down the text so it's the same width as the parent element
-            this.scale = Math.max(
-                this.minScale,
-                Math.min(this.maxScale, cardWidth / textWidth)
-            );
+                // Scale down the text so it's the same width as the parent element
+                this.scale = Math.max(
+                    this.minScale,
+                    Math.min(this.maxScale, cardWidth / textWidth)
+                );
+            });
         },
     },
 };

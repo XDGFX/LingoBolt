@@ -25,6 +25,12 @@ export default {
             type: Number,
             default: 0,
         },
+
+        // Used to force an update
+        state: {
+            type: String,
+            default: "",
+        },
     },
     data() {
         return {
@@ -51,13 +57,19 @@ export default {
         // Initial resize
         this.updateReactiveText();
     },
-
     beforeUnmount() {
         // Remove resize listener
         window.removeEventListener("resize", this.updateReactiveText);
 
         // Remove window observer
         this.observer.unobserve(this.$refs.text);
+    },
+    watch: {
+        state() {
+            console.log("state changed");
+
+            this.updateReactiveText();
+        },
     },
     methods: {
         updateReactiveText() {

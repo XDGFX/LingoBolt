@@ -80,7 +80,7 @@
 
             <div
                 v-else
-                class="flex flex-col items-center text-center w-full p-4 min-h-[512px]"
+                class="flex flex-col items-center text-center w-full p-4 justify-start md:justify-center"
             >
                 <!-- Word -->
                 <ReactiveText :state="currentWord.word + lastTestResult">
@@ -152,8 +152,8 @@
                         lowScoreMode
                             ? hint
                             : mode === 'foreign'
-                            ? 'Write in English'
-                            : 'Write in ' + languageReadable
+                            ? 'Write in ' + languageReadable
+                            : 'Write in English'
                     "
                 />
 

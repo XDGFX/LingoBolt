@@ -139,7 +139,7 @@
 
             <!-- Mobile menu -->
             <div
-                class="absolute bottom-0 w-full z-[999] md:hidden flex justify-around bg-slate-200 p-2 border-t-2 rounded-t-[24px] border-slate-300"
+                class="fixed bottom-0 w-full z-[999] md:hidden flex justify-around bg-slate-200 p-2 border-t-2 rounded-t-[24px] border-slate-300"
             >
                 <div
                     v-if="!quizMode"

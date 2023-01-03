@@ -82,14 +82,6 @@
                 v-else
                 class="flex flex-col items-center text-center w-full p-4 min-h-[512px]"
             >
-                <PluieMascot
-                    v-show="lowScoreMode && page == 'test'"
-                    speechPosition="right"
-                    speech="You've struggled with this one, so I've given you a
-                            hint!"
-                    size="sm"
-                ></PluieMascot>
-
                 <!-- Word -->
                 <ReactiveText :state="currentWord.word + lastTestResult">
                     <div
@@ -164,6 +156,14 @@
                             : 'Write in ' + languageReadable
                     "
                 />
+
+                <PluieMascot
+                    v-show="lowScoreMode && page == 'test'"
+                    speechPosition="right"
+                    speech="You've struggled with this one, so I've given you a
+                            hint!"
+                    size="sm"
+                ></PluieMascot>
 
                 <!-- Button to continue after result screen -->
                 <button

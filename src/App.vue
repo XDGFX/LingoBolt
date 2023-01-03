@@ -39,7 +39,7 @@
 
         <section
             v-if="settings.language !== null"
-            class="flex flex-col items-center bg-white h-screen bg-slate-100 text-slate-900 md:px-4 md:py-8"
+            class="flex flex-col items-center bg-white h-screen bg-slate-100 text-slate-900 md:px-4 md:py-8 pb-16"
         >
             <!-- Desktop menu -->
             <div
@@ -139,7 +139,7 @@
 
             <!-- Mobile menu -->
             <div
-                class="fixed bottom-0 w-full z-[999] md:hidden flex justify-around bg-slate-200 p-2 border-t-2 rounded-t-[24px] border-slate-300"
+                class="absolute bottom-0 w-full z-[999] md:hidden flex justify-around bg-slate-200 p-2 border-t-2 rounded-t-[24px] border-slate-300"
             >
                 <div
                     v-if="!quizMode"
@@ -223,11 +223,6 @@
                 </div>
             </div>
 
-            <!-- Spacer for mobile menu -->
-            <div
-                class="bottom-0 w-full pointer-events-none md:hidden m-2 h-12"
-            ></div>
-
             <!-- Footer -->
             <div
                 class="hidden md:flex flex-col flex-1 items-center place-content-end mt-2 md:mt-8"
@@ -270,6 +265,11 @@
                 </div>
             </div>
         </section>
+
+        <!-- Spacer for mobile menu -->
+        <!-- <div
+            class="bottom-0 shrink-0 w-full pointer-events-none md:hidden m-2 h-12"
+        ></div> -->
     </div>
 </template>
 

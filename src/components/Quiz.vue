@@ -8,7 +8,7 @@
 
         <!-- Current Mode Overlay -->
         <div
-            class="w-24 h-10 translate-y-1/2 text-xl text-center justify-self-center"
+            class="w-24 h-10 translate-y-1/2 text-xl text-center justify-self-center z-50"
         >
             <div v-if="page !== 'start'">
                 <Transition name="spin">
@@ -46,7 +46,7 @@
 
         <!-- Main content -->
         <section
-            class="min-h-[384px] h-full md:h-auto bg-white border-2 border-slate-200 rounded-[18px] flex flex-col items-center justify-center w-full lg:w-[990px]"
+            class="md:min-h-[384px] overflow-y-scroll h-full md:h-auto bg-white border-2 border-slate-200 rounded-[18px] flex flex-col items-center w-full lg:w-[990px]"
         >
             <div
                 v-if="page === 'start'"
@@ -80,7 +80,7 @@
 
             <div
                 v-else
-                class="flex flex-col items-center text-center w-full p-4"
+                class="flex flex-col items-center text-center w-full p-4 min-h-[512px]"
             >
                 <PluieMascot
                     v-show="lowScoreMode && page == 'test'"
@@ -113,7 +113,7 @@
                 </ReactiveText>
 
                 <!-- Example -->
-                <div class="flex flex-col flex-1">
+                <div class="flex flex-col basis-4">
                     <div class="text-xl">
                         {{
                             mode === "foreign"
@@ -349,6 +349,7 @@ export default {
             this.answer = "";
 
             // Focus the continue button
+            // TODO Change this to enter key watcher
             setTimeout(() => {
                 this.$refs.continueButton.focus();
             }, 10);
@@ -373,6 +374,7 @@ export default {
             this.lastTestResult = null;
 
             // Focus the answer input
+            // TODO Change this to enter key watcher
             setTimeout(() => {
                 this.$refs.answerInput.focus();
             }, 10);

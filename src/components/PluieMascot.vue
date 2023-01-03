@@ -7,7 +7,7 @@
         }"
     >
         <div
-            class="shrink-0 pointer-events-none select-none"
+            class="relative shrink-0 pointer-events-none select-none"
             :class="sizeClass"
         >
             <img

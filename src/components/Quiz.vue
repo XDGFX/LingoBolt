@@ -155,7 +155,6 @@
                     v-show="lastTestResult === null"
                     class="h-8 md:h-12 w-64 md:w-96 rounded-full border-2 border-slate-200 p-4 my-8 text-xl md:text-2xl tracking-wide bg-white hover:bg-slate-100 focus:border-rose-500 outline-none"
                     v-model="answer"
-                    @keydown.enter="submitAnswer"
                     ref="answerInput"
                     :placeholder="
                         lowScoreMode
@@ -350,9 +349,9 @@ export default {
 
             // Focus the continue button
             // TODO Change this to enter key watcher
-            setTimeout(() => {
-                this.$refs.continueButton.focus();
-            }, 10);
+            // setTimeout(() => {
+            //     this.$refs.continueButton.focus();
+            // }, 10);
         },
 
         nextWord() {
@@ -375,15 +374,29 @@ export default {
 
             // Focus the answer input
             // TODO Change this to enter key watcher
-            setTimeout(() => {
-                this.$refs.answerInput.focus();
-            }, 10);
+            // setTimeout(() => {
+            //     this.$refs.answerInput.focus();
+            // }, 10);
         },
     },
 
     beforeMount() {
         // Select the first word
         this.currentWord = this.getWord();
+    },
+
+    mounted() {
+        // Add enter key watcher to the page, and call submitAnswer or nextWord
+        // depending on the page
+        document.addEventListener("keyup", (event) => {
+            if (event.key === "Enter") {
+                if (this.page === "test") {
+                    this.submitAnswer();
+                } else if (this.page === "result") {
+                    this.nextWord();
+                }
+            }
+        });
     },
 
     computed: {

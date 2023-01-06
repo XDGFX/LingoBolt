@@ -32,7 +32,7 @@ Where <word> is the word in ${language_english}
 
 The example sentence should be short, varied, and interesting in each case.
 
-For example, if the prompt  was "${example_input}", the response could be exactly:
+For example, if the prompt was "${example_input}", the response could be exactly:
 ${example_output}
 The response should contain only one-line of JSON, and nothing else
 
@@ -95,28 +95,40 @@ def validate_word(word: str, input_obj: dict) -> bool:
 
 def get_response(prompt: str) -> str:
     # Get a response from the API
-    response = openai.Completion.create(
-        model="text-davinci-003",
-        prompt=prompt,
-        temperature=0.7,
-        max_tokens=3297,
-        top_p=1,
-        frequency_penalty=0,
-        presence_penalty=0,
-    )
+    try:
+        response = openai.Completion.create(
+            model="text-davinci-003",
+            prompt=prompt,
+            temperature=0.7,
+            max_tokens=3297,
+            top_p=1,
+            frequency_penalty=0,
+            presence_penalty=0,
+        )
+    except Exception as e:
+        print("Error getting response from OpenAI API")
+        print(e)
+        return None
 
     response_text = response["choices"][0]["text"]
 
     response = response_text.strip().strip(",").strip()
 
+    # Add square brackets if needed
+    if not response.startswith("["):
+        response = "[" + response
+
+    if not response.endswith("]"):
+        response = response + "]"
+
     try:
-        input_obj = json.loads("[" + response + "]")
+        input_obj = json.loads(response)
 
     except json.JSONDecodeError as e:
         print("Invalid JSON string")
-        print()
+        print(e)
         print(response)
-        raise e
+        return None
 
     return input_obj
 
@@ -337,12 +349,26 @@ def main():
         ]
         next_words_string = ",".join(next_words)
 
-        # Get the response from the API
-        input_obj = get_response(setup_results["prompt"] + next_words_string + "\n")
+        # Attempt to get the response from the API up to 3 times
+        for attempt in range(3):
+            try:
+                input_obj = get_response(
+                    setup_results["prompt"] + next_words_string + "\n"
+                )
 
-        # If the response is invalid, we raise an error
-        if not input_obj:
-            raise Exception("Invalid response")
+                # If the response is None, we raise an error
+                if not input_obj:
+                    raise Exception("Invalid response")
+
+                break
+            except Exception as e:
+                print(f"Attempt {attempt + 1} failed, retrying...")
+                continue
+
+        # If we failed 3 times, we skip this batch
+        if attempt == 2:
+            print("Failed 3 times, skipping batch")
+            continue
 
         # If the response is valid, we validate it
         for word in next_words:

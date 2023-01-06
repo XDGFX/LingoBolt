@@ -1,0 +1,5410 @@
+[
+    {
+        "word": "a",
+        "translation": "to",
+        "example": "Parlo a te.",
+        "example_en": "I am talking to you.",
+        "emoji": "🗣",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "preposition",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "per",
+            "da"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "abbastanza",
+        "translation": "enough",
+        "example": "Ho abbastanza soldi per comprare.",
+        "example_en": "I have enough money to buy.",
+        "emoji": "💰",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "adverb",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "sufficiente",
+            "sufficientemente"
+        ],
+        "antonyms": [
+            "insufficiente"
+        ]
+    },
+    {
+        "word": "abilità",
+        "translation": "abilities",
+        "example": "Ho grandi abilità di scrittura.",
+        "example_en": "I have great writing abilities.",
+        "emoji": "✍️",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "abilità",
+        "synonyms": [
+            "capacità",
+            "competenze"
+        ],
+        "antonyms": [
+            "inabilità"
+        ]
+    },
+    {
+        "word": "accadere",
+        "translation": "to happen",
+        "example": "Tutto può accadere.",
+        "example_en": "Anything can happen.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "neuter",
+        "plural": "accadere",
+        "synonyms": [
+            "succedere",
+            "verificarsi"
+        ],
+        "antonyms": [
+            "non succedere"
+        ]
+    },
+    {
+        "word": "acciaio",
+        "translation": "steel",
+        "example": "La statua è fatta di acciaio.",
+        "example_en": "The statue is made of steel.",
+        "emoji": "🔩",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "acciai",
+        "synonyms": [
+            "ferro",
+            "metallo"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "accordo",
+        "translation": "agreement",
+        "example": "Firmiamo l'accordo.",
+        "example_en": "Let's sign the agreement.",
+        "emoji": "✍️",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "accordi",
+        "synonyms": [
+            "contratto",
+            "intesa"
+        ],
+        "antonyms": [
+            "disaccordo"
+        ]
+    },
+    {
+        "word": "acqua",
+        "translation": "water",
+        "example": "Bevo un bicchiere d'acqua.",
+        "example_en": "I am drinking a glass of water.",
+        "emoji": "💧",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "acque",
+        "synonyms": [
+            "liquido"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "acquistare",
+        "translation": "to buy",
+        "example": "Devo acquistare un nuovo computer.",
+        "example_en": "I need to buy a new computer.",
+        "emoji": "💰",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "acquistare",
+        "synonyms": [
+            "comprare"
+        ],
+        "antonyms": [
+            "vendere"
+        ]
+    },
+    {
+        "word": "adattarsi",
+        "translation": "to adapt",
+        "example": "Devi adattarti ai cambiamenti.",
+        "example_en": "You need to adapt to the changes.",
+        "emoji": "🤝",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "adattarsi",
+        "synonyms": [
+            "adattare",
+            "aggiustare",
+            "adeguarsi"
+        ],
+        "antonyms": [
+            "rimanere"
+        ]
+    },
+    {
+        "word": "aderire",
+        "translation": "to adhere",
+        "example": "Devo aderire alle regole.",
+        "example_en": "I have to adhere to the rules.",
+        "emoji": "📜",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "aderire",
+        "synonyms": [
+            "adottare",
+            "conformarsi"
+        ],
+        "antonyms": [
+            "disubbidire"
+        ]
+    },
+    {
+        "word": "affare",
+        "translation": "deal",
+        "example": "Ho trovato un buon affare.",
+        "example_en": "I found a good deal.",
+        "emoji": "🤑",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "affari",
+        "synonyms": [
+            "trattativa",
+            "accordo"
+        ],
+        "antonyms": [
+            "fallimento"
+        ]
+    },
+    {
+        "word": "aggiungere",
+        "translation": "to add",
+        "example": "Ho aggiunto una nota.",
+        "example_en": "I added a note.",
+        "emoji": "📝",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "aggiungere",
+        "synonyms": [
+            "includere",
+            "inserire"
+        ],
+        "antonyms": [
+            "togliere"
+        ]
+    },
+    {
+        "word": "aiutare",
+        "translation": "to help",
+        "example": "Posso aiutare con i compiti.",
+        "example_en": "I can help with the homework.",
+        "emoji": "🙏",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "aiutare",
+        "synonyms": [
+            "assistere",
+            "soccorrere",
+            "servire"
+        ],
+        "antonyms": [
+            "ostacolare",
+            "impedire",
+            "rallentare"
+        ]
+    },
+    {
+        "word": "ala",
+        "translation": "wing",
+        "example": "L'uccello vola con le ali.",
+        "example_en": "The bird is flying with its wings.",
+        "emoji": "🦅",
+        "tags": [
+            "body part"
+        ],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "ali",
+        "synonyms": [
+            "pennino"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "albero",
+        "translation": "tree",
+        "example": "C'è un grande albero nel parco.",
+        "example_en": "There is a big tree in the park.",
+        "emoji": "🌳",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "alberi",
+        "synonyms": [
+            "pianta"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "alcune",
+        "translation": "some",
+        "example": "Ho alcune scarpe nuove.",
+        "example_en": "I have some new shoes.",
+        "emoji": "👟",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "pronoun",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "qualche"
+        ],
+        "antonyms": [
+            "nessuna"
+        ]
+    },
+    {
+        "word": "alcuni",
+        "translation": "some",
+        "example": "Ci sono alcuni libri sul tavolo.",
+        "example_en": "There are some books on the table.",
+        "emoji": "📚",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "pronoun",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "qualche"
+        ],
+        "antonyms": [
+            "nessuno"
+        ]
+    },
+    {
+        "word": "alimentazione",
+        "translation": "nutrition",
+        "example": "Devi prestare attenzione alla tua alimentazione.",
+        "example_en": "You need to pay attention to your nutrition.",
+        "emoji": "🥗",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "alimentazioni",
+        "synonyms": [
+            "nutrizione"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "alleviare",
+        "translation": "to relieve",
+        "example": "Devo alleviare il dolore.",
+        "example_en": "I have to relieve the pain.",
+        "emoji": "🤕",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "alleviare",
+        "synonyms": [
+            "calmare",
+            "lenire"
+        ],
+        "antonyms": [
+            "aggravare"
+        ]
+    },
+    {
+        "word": "allora",
+        "translation": "then",
+        "example": "Sei pronto? Allora andiamo.",
+        "example_en": "Are you ready? Then let's go.",
+        "emoji": "👍",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "successivamente"
+        ],
+        "antonyms": [
+            "prima"
+        ]
+    },
+    {
+        "word": "alto",
+        "translation": "high",
+        "example": "L'albero è alto.",
+        "example_en": "The tree is high.",
+        "emoji": "🌳",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "alti",
+        "synonyms": [
+            "grande"
+        ],
+        "antonyms": [
+            "basso"
+        ]
+    },
+    {
+        "word": "altro",
+        "translation": "other",
+        "example": "C'è un altro modo.",
+        "example_en": "There is another way.",
+        "emoji": "🔀",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "altri",
+        "synonyms": [
+            "diverso",
+            "ulteriore"
+        ],
+        "antonyms": [
+            "uguale"
+        ]
+    },
+    {
+        "word": "altrove",
+        "translation": "elsewhere",
+        "example": "Cerco un libro altrove.",
+        "example_en": "I am looking for a book elsewhere.",
+        "emoji": "🔎",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "adverb",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "altro posto"
+        ],
+        "antonyms": [
+            "qui"
+        ]
+    },
+    {
+        "word": "am",
+        "translation": "love",
+        "example": "Ti amo.",
+        "example_en": "I love you.",
+        "emoji": "❤️",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "ami",
+        "synonyms": [
+            "adorare"
+        ],
+        "antonyms": [
+            "odio"
+        ]
+    },
+    {
+        "word": "amare",
+        "translation": "to love",
+        "example": "Amo la mia famiglia.",
+        "example_en": "I love my family.",
+        "emoji": "💕",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "amare",
+        "synonyms": [
+            "adorare",
+            "apprezzare"
+        ],
+        "antonyms": [
+            "odiare"
+        ]
+    },
+    {
+        "word": "atomo",
+        "translation": "atom",
+        "example": "L'atomo è la più piccola particella di un elemento chimico.",
+        "example_en": "The atom is the smallest particle of a chemical element.",
+        "emoji": "⚛️",
+        "tags": [
+            "science"
+        ],
+        "difficulty": 3,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "atomi",
+        "synonyms": [
+            "particella"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "atto",
+        "translation": "act",
+        "example": "L'atto di coraggio di sua madre l'ha ispirato.",
+        "example_en": "His mother's act of courage inspired him.",
+        "emoji": "🤝",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "atti",
+        "synonyms": [
+            "azione"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "attraversare",
+        "translation": "to cross",
+        "example": "Attraversiamo la strada per andare al parco.",
+        "example_en": "Let's cross the street to go to the park.",
+        "emoji": "🚶‍♂️",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "attraversare",
+        "synonyms": [
+            "passare",
+            "oltrepassare"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "attraverso",
+        "translation": "through",
+        "example": "L'autobus passerà attraverso il centro della città.",
+        "example_en": "The bus will go through the center of the city.",
+        "emoji": "🚌",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "preposition",
+        "gender": "masculine",
+        "plural": "attraverso",
+        "synonyms": [
+            "per",
+            "su"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "aumentare",
+        "translation": "to increase",
+        "example": "La temperatura sta aumentando del giorno in giorno.",
+        "example_en": "The temperature is increasing day by day.",
+        "emoji": "⬆️",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "aumentare",
+        "synonyms": [
+            "crescere",
+            "aumento"
+        ],
+        "antonyms": [
+            "diminuire",
+            "abbassare"
+        ]
+    },
+    {
+        "word": "auto",
+        "translation": "car",
+        "example": "Ho un'auto rossa.",
+        "example_en": "I have a red car.",
+        "emoji": "🚗",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "auto",
+        "synonyms": [
+            "macchina"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "avanti",
+        "translation": "ahead",
+        "example": "Andiamo avanti con il lavoro.",
+        "example_en": "Let's move ahead with the work.",
+        "emoji": "🏃‍♂️",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "adverb",
+        "gender": "masculine",
+        "plural": "avanti",
+        "synonyms": [
+            "davanti",
+            "successivo"
+        ],
+        "antonyms": [
+            "indietro",
+            "precedente"
+        ]
+    },
+    {
+        "word": "avere",
+        "translation": "to have",
+        "example": "Ho un gatto grigio.",
+        "example_en": "I have a grey cat.",
+        "emoji": "🐱",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "avere",
+        "synonyms": [
+            "possedere"
+        ],
+        "antonyms": [
+            "non avere"
+        ]
+    },
+    {
+        "word": "aveva",
+        "translation": "had",
+        "example": "Aveva un gatto grigio.",
+        "example_en": "She had a grey cat.",
+        "emoji": "🐱",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "aveva",
+        "synonyms": [
+            "possedeva"
+        ],
+        "antonyms": [
+            "non avere"
+        ]
+    },
+    {
+        "word": "avviso",
+        "translation": "notice",
+        "example": "L'avviso è stato pubblicato sul giornale.",
+        "example_en": "The notice was published in the newspaper.",
+        "emoji": "📰",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "avvisi",
+        "synonyms": [
+            "annuncio"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "azienda",
+        "translation": "business",
+        "example": "Ha un'azienda di produzione di giocattoli.",
+        "example_en": "He has a toy manufacturing business.",
+        "emoji": "🤝",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "aziende",
+        "synonyms": [
+            "impresa"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "bambini",
+        "translation": "children",
+        "example": "I bambini giocano nella piazza.",
+        "example_en": "The children are playing in the square.",
+        "emoji": "👧👦",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "bambini",
+        "synonyms": [
+            "ragazzi"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "banca",
+        "translation": "bank",
+        "example": "Ho un conto bancario.",
+        "example_en": "I have a bank account.",
+        "emoji": "🏦",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "banche",
+        "synonyms": [
+            "istituto di credito"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "banda",
+        "translation": "band",
+        "example": "Ascoltiamo la banda suonare.",
+        "example_en": "Let's listen to the band playing.",
+        "emoji": "🎺",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "bande",
+        "synonyms": [
+            "gruppo musicale"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "bar",
+        "translation": "bar",
+        "example": "Andiamo al bar a prendere un drink.",
+        "example_en": "Let's go to the bar to get a drink.",
+        "emoji": "🍻",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "bar",
+        "synonyms": [
+            "pub"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "barca",
+        "translation": "boat",
+        "example": "Gli ospiti sono arrivati in barca.",
+        "example_en": "The guests arrived by boat.",
+        "emoji": "⛵️",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "barche",
+        "synonyms": [
+            "imbarcazione"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "base",
+        "translation": "base",
+        "example": "C'è una base militare nelle vicinanze.",
+        "example_en": "There is a military base nearby.",
+        "emoji": "🛡",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "basi",
+        "synonyms": [
+            "fondazione"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "basso",
+        "translation": "low",
+        "example": "Il livello del lago è basso.",
+        "example_en": "The lake level is low.",
+        "emoji": "🌊",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "bassi",
+        "synonyms": [
+            "ridotto"
+        ],
+        "antonyms": [
+            "alto"
+        ]
+    },
+    {
+        "word": "bastone",
+        "translation": "stick",
+        "example": "Ha un bastone da passeggio.",
+        "example_en": "He has a walking stick.",
+        "emoji": "🪓",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "bastoni",
+        "synonyms": [
+            "bacchetta"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "battere",
+        "translation": "to beat",
+        "example": "Il cuore batte velocemente.",
+        "example_en": "The heart is beating fast.",
+        "emoji": "💓",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "battere",
+        "synonyms": [
+            "percuotere"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "bellezza",
+        "translation": "beauty",
+        "example": "La bellezza della natura è stupefacente.",
+        "example_en": "The beauty of nature is astounding.",
+        "emoji": "🌿",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "bellezze",
+        "synonyms": [
+            "splendore"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "bene",
+        "translation": "well",
+        "example": "Mi sento bene oggi.",
+        "example_en": "I feel well today.",
+        "emoji": "🤗",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": "masculine",
+        "plural": "bene",
+        "synonyms": [
+            "bene",
+            "ottimamente"
+        ],
+        "antonyms": [
+            "male"
+        ]
+    },
+    {
+        "word": "bevanda",
+        "translation": "drink",
+        "example": "Prendo una bevanda fredda.",
+        "example_en": "I'm having a cold drink.",
+        "emoji": "🥤",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "bevande",
+        "synonyms": [
+            "bibita"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "bianco",
+        "translation": "white",
+        "example": "La casa è dipinta di bianco.",
+        "example_en": "The house is painted white.",
+        "emoji": "⚪️",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "bianchi",
+        "synonyms": [
+            "candido"
+        ],
+        "antonyms": [
+            "nero"
+        ]
+    },
+    {
+        "word": "cantiere",
+        "translation": "construction site",
+        "example": "C'è un cantiere di costruzione in quella strada.",
+        "example_en": "There is a construction site on that street.",
+        "emoji": "🚧",
+        "tags": [
+            "building"
+        ],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "cantieri",
+        "synonyms": [
+            "impresa edile",
+            "costruzione",
+            "stabilimento"
+        ],
+        "antonyms": [
+            "distruzione"
+        ]
+    },
+    {
+        "word": "canzone",
+        "translation": "song",
+        "example": "Adoro cantare canzoni in spagnolo.",
+        "example_en": "I love singing songs in Spanish.",
+        "emoji": "🎤",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "canzoni",
+        "synonyms": [
+            "melodia",
+            "aria",
+            "composizione"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "capelli",
+        "translation": "hair",
+        "example": "Ho i capelli lunghi.",
+        "example_en": "I have long hair.",
+        "emoji": "💇",
+        "tags": [
+            "body part"
+        ],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "capelli",
+        "synonyms": [
+            "ricciolo",
+            "ciocca",
+            "tricheco"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "capitale",
+        "translation": "capital",
+        "example": "Roma è la capitale d'Italia.",
+        "example_en": "Rome is the capital of Italy.",
+        "emoji": "🇮🇹",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "capitali",
+        "synonyms": [
+            "principale",
+            "centrale",
+            "importante"
+        ],
+        "antonyms": [
+            "periferico"
+        ]
+    },
+    {
+        "word": "capitano",
+        "translation": "captain",
+        "example": "Il capitano del nostro team è bravo.",
+        "example_en": "Our team's captain is good.",
+        "emoji": "⚓",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "capitani",
+        "synonyms": [
+            "comandante",
+            "guida",
+            "capo"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "capo",
+        "translation": "head",
+        "example": "Una volta, il capo della famiglia era il più importante.",
+        "example_en": "Once, the head of the family was the most important.",
+        "emoji": "🙇",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "capi",
+        "synonyms": [
+            "testa",
+            "patriarca",
+            "patrono"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "cappello",
+        "translation": "hat",
+        "example": "Ho comprato un nuovo cappello da cowboy.",
+        "example_en": "I bought a new cowboy hat.",
+        "emoji": "🤠",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "cappelli",
+        "synonyms": [
+            "berretto",
+            "copricapo",
+            "cuffia"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "cappotto",
+        "translation": "coat",
+        "example": "Ho un cappotto marrone con cappuccio.",
+        "example_en": "I have a brown coat with a hood.",
+        "emoji": "🧥",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "cappotti",
+        "synonyms": [
+            "giacca",
+            "giubbotto",
+            "montgomery"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "carattere",
+        "translation": "character",
+        "example": "Ho un carattere forte e deciso.",
+        "example_en": "I have a strong and decisive character.",
+        "emoji": "💪",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "caratteri",
+        "synonyms": [
+            "personaggio",
+            "personalità",
+            "temperamento"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "carica",
+        "translation": "charge",
+        "example": "La carica elettrica è importante per le batterie.",
+        "example_en": "Electric charge is important for batteries.",
+        "emoji": "⚡",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "cariche",
+        "synonyms": [
+            "corrente",
+            "energia",
+            "impulso"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "carne",
+        "translation": "meat",
+        "example": "Ho comprato una fetta di carne.",
+        "example_en": "I bought a piece of meat.",
+        "emoji": "🍖",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "carne",
+        "synonyms": [
+            "proteine",
+            "bistecca",
+            "manzo"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "caro",
+        "translation": "dear",
+        "example": "Cara amica, come stai?",
+        "example_en": "Dear friend, how are you?",
+        "emoji": "❤️",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "cari",
+        "synonyms": [
+            "amata",
+            "amorevole",
+            "cara"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "carta",
+        "translation": "paper",
+        "example": "Ho bisogno di un foglio di carta.",
+        "example_en": "I need a sheet of paper.",
+        "emoji": "📝",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "carte",
+        "synonyms": [
+            "foglio",
+            "documento",
+            "appunto"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "casa",
+        "translation": "house",
+        "example": "La mia casa è grande.",
+        "example_en": "My house is big.",
+        "emoji": "🏠",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "case",
+        "synonyms": [
+            "abitazione",
+            "residenza",
+            "abitare"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "caso",
+        "translation": "case",
+        "example": "Il caso è molto complicato.",
+        "example_en": "The case is very complicated.",
+        "emoji": "🔍",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "casi",
+        "synonyms": [
+            "incidente",
+            "causa",
+            "situazione"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "cattivo",
+        "translation": "bad",
+        "example": "Ho fatto una cattiva scelta.",
+        "example_en": "I made a bad choice.",
+        "emoji": "☹️",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "cattivi",
+        "synonyms": [
+            "spiacevole",
+            "negativo",
+            "sbagliato"
+        ],
+        "antonyms": [
+            "bene"
+        ]
+    },
+    {
+        "word": "catturato",
+        "translation": "captured",
+        "example": "Hanno catturato l'uomo.",
+        "example_en": "They captured the man.",
+        "emoji": "👮",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "catturati",
+        "synonyms": [
+            "arrestato",
+            "imprigionato",
+            "incarcerato"
+        ],
+        "antonyms": [
+            "liberato"
+        ]
+    },
+    {
+        "word": "causa",
+        "translation": "cause",
+        "example": "Qual è la causa del problema?",
+        "example_en": "What is the cause of the problem?",
+        "emoji": "❓",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "cause",
+        "synonyms": [
+            "ragione",
+            "motivo",
+            "origine"
+        ],
+        "antonyms": [
+            "effetto"
+        ]
+    },
+    {
+        "word": "cavallo",
+        "translation": "horse",
+        "example": "Ho un cavallo bianco.",
+        "example_en": "I have a white horse.",
+        "emoji": "🐴",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "cavalli",
+        "synonyms": [
+            "equino",
+            "puledro",
+            "mangiatoia"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "cella",
+        "translation": "cell",
+        "example": "La cella del carcere è piccola.",
+        "example_en": "The prison cell is small.",
+        "emoji": "🚔",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "celle",
+        "synonyms": [
+            "stanza",
+            "locale",
+            "prigione"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "cent",
+        "translation": "hundred",
+        "example": "Ho trovato cent euro in strada.",
+        "example_en": "I found a hundred euros on the street.",
+        "emoji": "💵",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "cent",
+        "synonyms": [
+            "cien",
+            "mille",
+            "migliaio"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "cento",
+        "translation": "hundred",
+        "example": "Ho cento amici su Facebook.",
+        "example_en": "I have a hundred friends on Facebook.",
+        "emoji": "👥",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "cento",
+        "synonyms": [
+            "unsecolo",
+            "migliaio",
+            "mille"
+        ],
+        "antonyms": [
+            "zero"
+        ]
+    },
+    {
+        "word": "centro",
+        "translation": "center",
+        "example": "Il centro della città è molto affollato.",
+        "example_en": "The center of the city is very crowded.",
+        "emoji": "🏙",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "centri",
+        "synonyms": [
+            "centrale",
+            "durante",
+            "interno"
+        ],
+        "antonyms": [
+            "periferia"
+        ]
+    },
+    {
+        "word": "cerchio",
+        "translation": "circle",
+        "example": "Ho disegnato un cerchio sulla lavagna.",
+        "example_en": "I drew a circle on the blackboard.",
+        "emoji": "⭕",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "cerchi",
+        "synonyms": [
+            "dischetto",
+            "rotonda",
+            "sfera"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "certo",
+        "translation": "certain",
+        "example": "Non sono sicuro, ma è certo una buona idea.",
+        "example_en": "I'm not sure, but it's certainly a good idea.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "certi",
+        "synonyms": [
+            "determinato",
+            "preciso",
+            "sicuro"
+        ],
+        "antonyms": [
+            "incerto"
+        ]
+    },
+    {
+        "word": "che",
+        "translation": "that,which",
+        "example": "Non so che cosa fare.",
+        "example_en": "I don't know what to do.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "pronoun",
+        "gender": "neuter",
+        "plural": "",
+        "synonyms": [
+            "cosa",
+            "quale",
+            "quanto"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "chi",
+        "translation": "who",
+        "example": "Chi è al telefono?.",
+        "example_en": "Who is on the phone?.",
+        "emoji": "🤷",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "pronoun",
+        "gender": "masculine",
+        "plural": "chi",
+        "synonyms": [
+            "qualcuno"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "chiamata",
+        "translation": "call",
+        "example": "Ho ricevuto una chiamata stamattina.",
+        "example_en": "I received a call this morning.",
+        "emoji": "📞",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "chiamate",
+        "synonyms": [
+            "telefonata",
+            "conversazione"
+        ],
+        "antonyms": [
+            "silenzio"
+        ]
+    },
+    {
+        "word": "chiaro",
+        "translation": "clear",
+        "example": "Tutto è diventato chiaro.",
+        "example_en": "Everything has become clear.",
+        "emoji": "✨",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "chiari",
+        "synonyms": [
+            "evidente",
+            "illuminato"
+        ],
+        "antonyms": [
+            "oscuro"
+        ]
+    },
+    {
+        "word": "chiave",
+        "translation": "key",
+        "example": "Hai la chiave della porta?.",
+        "example_en": "Do you have the key to the door?.",
+        "emoji": "🔑",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "chiavi",
+        "synonyms": [
+            "serratura",
+            "apertura"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "chiedere",
+        "translation": "to ask",
+        "example": "Ho chiesto aiuto.",
+        "example_en": "I asked for help.",
+        "emoji": "❓",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "chiedere",
+        "synonyms": [
+            "domandare",
+            "richiedere"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "chiunque",
+        "translation": "anyone",
+        "example": "Chiunque può partecipare.",
+        "example_en": "Anyone can participate.",
+        "emoji": "👥",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "pronoun",
+        "gender": "masculine",
+        "plural": "",
+        "synonyms": [
+            "qualunque",
+            "ognuno"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "ci",
+        "translation": "us,there",
+        "example": "Ci vediamo alla stazione.",
+        "example_en": "Let's meet at the station.",
+        "emoji": "👋",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "pronoun",
+        "gender": "masculine",
+        "plural": "",
+        "synonyms": [
+            "noi",
+            "qui"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "ciao",
+        "translation": "hello,bye",
+        "example": "Ciao, come stai?.",
+        "example_en": "Hi, how are you?.",
+        "emoji": "🖐",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "interjection",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "salve",
+            "arrivederci"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "cibo",
+        "translation": "food",
+        "example": "Il cibo è delizioso.",
+        "example_en": "The food is delicious.",
+        "emoji": "🍴",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "cibi",
+        "synonyms": [
+            "alimento",
+            "nutrizione"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "cielo",
+        "translation": "sky,heaven",
+        "example": "Il cielo è azzurro.",
+        "example_en": "The sky is blue.",
+        "emoji": "🌤",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "cieli",
+        "synonyms": [
+            "atmosfera",
+            "paradiso"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "cinque",
+        "translation": "five",
+        "example": "Ho cinque fratelli.",
+        "example_en": "I have five brothers.",
+        "emoji": "🤝",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "number",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "quinta",
+            "quinto"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "circa",
+        "translation": "about",
+        "example": "Ho circa cinque minuti.",
+        "example_en": "I have about five minutes.",
+        "emoji": "🕰",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "circa",
+            "approssimativamente"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "città",
+        "translation": "city",
+        "example": "Parigi è una bella città.",
+        "example_en": "Paris is a beautiful city.",
+        "emoji": "🗼",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "città",
+        "synonyms": [
+            "capitale",
+            "metropoli"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "classe",
+        "translation": "class",
+        "example": "Tutti i bambini sono nella classe.",
+        "example_en": "All the children are in the class.",
+        "emoji": "📚",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "classi",
+        "synonyms": [
+            "categoria",
+            "divisione"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "close",
+        "translation": "close",
+        "example": "La porta è chiusa.",
+        "example_en": "The door is closed.",
+        "emoji": "🔐",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "closi",
+        "synonyms": [
+            "vicino",
+            "prossimo"
+        ],
+        "antonyms": [
+            "aperto"
+        ]
+    },
+    {
+        "word": "coda",
+        "translation": "tail",
+        "example": "Il gatto ha una lunga coda arricciata.",
+        "example_en": "The cat has a long, curly tail.",
+        "emoji": "🐱",
+        "tags": [
+            "body part"
+        ],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "code",
+        "synonyms": [
+            "cauda",
+            "coda di cavallo",
+            "coda di topo"
+        ],
+        "antonyms": [
+            "testa"
+        ]
+    },
+    {
+        "word": "collegare",
+        "translation": "to connect",
+        "example": "È possibile collegare il computer al router.",
+        "example_en": "It is possible to connect the computer to the router.",
+        "emoji": "🔗",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "collegare",
+        "synonyms": [
+            "unire",
+            "connettersi"
+        ],
+        "antonyms": [
+            "disconnettersi"
+        ]
+    },
+    {
+        "word": "collina",
+        "translation": "hill",
+        "example": "Viviamo su una collina.",
+        "example_en": "We live on a hill.",
+        "emoji": "⛰️",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "colline",
+        "synonyms": [
+            "altura",
+            "montagna"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "collo",
+        "translation": "neck",
+        "example": "Il rondone ha un collo lungo.",
+        "example_en": "The stork has a long neck.",
+        "emoji": "🦢",
+        "tags": [
+            "body part"
+        ],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "collo",
+        "synonyms": [
+            "gomito",
+            "scapola"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "colonia",
+        "translation": "colony",
+        "example": "La colonia di api è grande.",
+        "example_en": "The bee colony is big.",
+        "emoji": "🐝",
+        "tags": [
+            "group"
+        ],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "colonie",
+        "synonyms": [
+            "accampamento",
+            "città"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "colonna",
+        "translation": "column",
+        "example": "C'è una colonna di pietra nella piazza.",
+        "example_en": "There is a stone column in the square.",
+        "emoji": "🗿",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "colonne",
+        "synonyms": [
+            "sostegno",
+            "pilastro"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "colore",
+        "translation": "color",
+        "example": "Ho dipinto il muro di un colore rosso.",
+        "example_en": "I painted the wall a red color.",
+        "emoji": "🎨",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "colori",
+        "synonyms": [
+            "tonalità",
+            "shade"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "colpire",
+        "translation": "to hit",
+        "example": "Ho colpito la palla con la racchetta.",
+        "example_en": "I hit the ball with the racket.",
+        "emoji": "🏓",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "colpire",
+        "synonyms": [
+            "battere",
+            "percuotere"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "colpo",
+        "translation": "shot,blow",
+        "example": "Ho sentito un colpo forte.",
+        "example_en": "I heard a loud shot.",
+        "emoji": "🔫",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "colpi",
+        "synonyms": [
+            "sparo",
+            "botto"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "come",
+        "translation": "as",
+        "example": "Come ti senti oggi?",
+        "example_en": "How are you feeling today?",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "quale",
+            "quasi",
+            "simile"
+        ],
+        "antonyms": [
+            "diversamente"
+        ]
+    },
+    {
+        "word": "commercio",
+        "translation": "commerce",
+        "example": "Il commercio online sta diventando sempre più importante.",
+        "example_en": "Online commerce is becoming increasingly important.",
+        "emoji": "🛒",
+        "tags": [
+            "business"
+        ],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "commerci",
+        "synonyms": [
+            "trading",
+            "mercato",
+            "negozio"
+        ],
+        "antonyms": [
+            "isolamento"
+        ]
+    },
+    {
+        "word": "compitare",
+        "translation": "to compete",
+        "example": "I giocatori competeranno per vincere il gioco.",
+        "example_en": "The players will compete to win the game.",
+        "emoji": "🤼‍♀️",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "concorrere",
+            "lottare",
+            "combattere"
+        ],
+        "antonyms": [
+            "collaborare"
+        ]
+    },
+    {
+        "word": "completo",
+        "translation": "complete",
+        "example": "Ho completato tutti i compiti.",
+        "example_en": "I have completed all the tasks.",
+        "emoji": "✅",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "completi",
+        "synonyms": [
+            "pieno",
+            "intero",
+            "finito"
+        ],
+        "antonyms": [
+            "incompleto"
+        ]
+    },
+    {
+        "word": "comprato",
+        "translation": "bought",
+        "example": "Ho comprato un libro interessante.",
+        "example_en": "I bought an interesting book.",
+        "emoji": "📚",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "acquistato",
+            "ottenuto",
+            "preso"
+        ],
+        "antonyms": [
+            "venduto"
+        ]
+    },
+    {
+        "word": "comune",
+        "translation": "common",
+        "example": "Le persone hanno molti interessi comuni.",
+        "example_en": "People have many common interests.",
+        "emoji": "👥",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "comuni",
+        "synonyms": [
+            "ordinario",
+            "generale",
+            "normale"
+        ],
+        "antonyms": [
+            "insolito"
+        ]
+    },
+    {
+        "word": "con",
+        "translation": "with",
+        "example": "Vado al cinema con i miei amici.",
+        "example_en": "I'm going to the movies with my friends.",
+        "emoji": "🎬",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "preposition",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "insieme",
+            "uso",
+            "accanto"
+        ],
+        "antonyms": [
+            "senza"
+        ]
+    },
+    {
+        "word": "concordare",
+        "translation": "to agree",
+        "example": "Dobbiamo concordare sul prezzo.",
+        "example_en": "We must agree on the price.",
+        "emoji": "🤝",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "accettare",
+            "convenire",
+            "accordare"
+        ],
+        "antonyms": [
+            "disaccordare"
+        ]
+    },
+    {
+        "word": "condizione",
+        "translation": "condition",
+        "example": "Le condizioni del tempo sono cattive.",
+        "example_en": "The weather conditions are bad.",
+        "emoji": "☔️",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "condizioni",
+        "synonyms": [
+            "stato",
+            "circostanza",
+            "atmosfera"
+        ],
+        "antonyms": [
+            "favore"
+        ]
+    },
+    {
+        "word": "confrontare",
+        "translation": "to compare",
+        "example": "Confrontiamo le offerte.",
+        "example_en": "Let's compare the offers.",
+        "emoji": "🔍",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "analizzare",
+            "esaminare",
+            "contrastare"
+        ],
+        "antonyms": [
+            "accettare"
+        ]
+    },
+    {
+        "word": "consentire",
+        "translation": "to allow",
+        "example": "Non è consentito fumare qui.",
+        "example_en": "Smoking is not allowed here.",
+        "emoji": "🚭",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "ammettere",
+            "concedere",
+            "accettare"
+        ],
+        "antonyms": [
+            "vietare"
+        ]
+    },
+    {
+        "word": "considerare",
+        "translation": "to consider",
+        "example": "Devi considerare tutte le opzioni.",
+        "example_en": "You should consider all the options.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "pensare",
+            "valutare",
+            "esaminare"
+        ],
+        "antonyms": [
+            "ignorare"
+        ]
+    },
+    {
+        "word": "consonante",
+        "translation": "consonant",
+        "example": "Le consonanti si trovano all'interno delle parole.",
+        "example_en": "Consonants are found inside words.",
+        "emoji": "🔤",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "noun",
+        "gender": "femminile",
+        "plural": "consonanti",
+        "synonyms": [
+            "suono",
+            "lettera",
+            "articolazione"
+        ],
+        "antonyms": [
+            "vocale"
+        ]
+    },
+    {
+        "word": "contare",
+        "translation": "to count",
+        "example": "Devi contare fino a cinque.",
+        "example_en": "You need to count to five.",
+        "emoji": "🧮",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "calcolare",
+            "numerare",
+            "quantificare"
+        ],
+        "antonyms": [
+            "sottrarre"
+        ]
+    },
+    {
+        "word": "contenere",
+        "translation": "to contain",
+        "example": "Questa scatola contiene dolci.",
+        "example_en": "This box contains candy.",
+        "emoji": "🍬",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "avere",
+            "comprendere",
+            "includere"
+        ],
+        "antonyms": [
+            "escludere"
+        ]
+    },
+    {
+        "word": "continente",
+        "translation": "continent",
+        "example": "Il continente asiatico è molto grande.",
+        "example_en": "The Asian continent is very large.",
+        "emoji": "🌍",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "continenti",
+        "synonyms": [
+            "superficie terrestre",
+            "terra",
+            "paese"
+        ],
+        "antonyms": [
+            "isola"
+        ]
+    },
+    {
+        "word": "continuare",
+        "translation": "to continue",
+        "example": "Continuiamo il nostro lavoro.",
+        "example_en": "Let's continue our work.",
+        "emoji": "💪",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "proseguire",
+            "procedere",
+            "andare avanti"
+        ],
+        "antonyms": [
+            "interrompere"
+        ]
+    },
+    {
+        "word": "contro",
+        "translation": "against",
+        "example": "Giocheremo una partita di calcio contro la nostra squadra rivale.",
+        "example_en": "We will play a soccer game against our rival team.",
+        "emoji": "⚽",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "preposition",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "rispetto a",
+            "in opposizione a",
+            "in contrasto con"
+        ],
+        "antonyms": [
+            "per"
+        ]
+    },
+    {
+        "word": "controllare",
+        "translation": "to control",
+        "example": "Il computer controlla tutte le operazioni.",
+        "example_en": "The computer controls all the operations.",
+        "emoji": "🖥️",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "gestire",
+            "regolare",
+            "dirigere"
+        ],
+        "antonyms": [
+            "abbandonare"
+        ]
+    },
+    {
+        "word": "controllo",
+        "translation": "control",
+        "example": "Ha perso il controllo della situazione.",
+        "example_en": "He lost control of the situation.",
+        "emoji": "🤚",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "controlli",
+        "synonyms": [
+            "potere",
+            "dominio",
+            "sovranità"
+        ],
+        "antonyms": [
+            "disordine"
+        ]
+    },
+    {
+        "word": "copertura",
+        "translation": "coverage",
+        "example": "La copertura assicurativa è importante.",
+        "example_en": "Insurance coverage is important.",
+        "emoji": "🛡️",
+        "tags": [
+            "business"
+        ],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "femminile",
+        "plural": "coperture",
+        "synonyms": [
+            "garanzia",
+            "assicurazione",
+            "tutela"
+        ],
+        "antonyms": [
+            "rischio"
+        ]
+    },
+    {
+        "word": "copia",
+        "translation": "copy",
+        "example": "Voglio una copia di quel libro.",
+        "example_en": "I want a copy of that book.",
+        "emoji": "📗",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "femminile",
+        "plural": "copie",
+        "synonyms": [
+            "duplicato",
+            "replica",
+            "ricopia"
+        ],
+        "antonyms": [
+            "originale"
+        ]
+    },
+    {
+        "word": "coppia",
+        "translation": "pair",
+        "example": "Ho comperato una coppia di scarpe.",
+        "example_en": "I bought a pair of shoes.",
+        "emoji": "👞",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "femminile",
+        "plural": "coppie",
+        "synonyms": [
+            "binomio",
+            "duo",
+            "accoppiata"
+        ],
+        "antonyms": [
+            "singolo"
+        ]
+    },
+    {
+        "word": "corda",
+        "translation": "rope",
+        "example": "Tirano la corda con forza.",
+        "example_en": "They pull the rope with force.",
+        "emoji": "🪢",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "femminile",
+        "plural": "corde",
+        "synonyms": [
+            "laccio",
+            "cima",
+            "cavo"
+        ],
+        "antonyms": [
+            "spago"
+        ]
+    },
+    {
+        "word": "corpo",
+        "translation": "body",
+        "example": "Il suo corpo è in forma.",
+        "example_en": "His body is in shape.",
+        "emoji": "💪",
+        "tags": [
+            "body part"
+        ],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "corpi",
+        "synonyms": [
+            "figura",
+            "forma",
+            "struttura"
+        ],
+        "antonyms": [
+            "mente"
+        ]
+    },
+    {
+        "word": "corrente",
+        "translation": "current",
+        "example": "C'è una corrente forte nel fiume.",
+        "example_en": "There is a strong current in the river.",
+        "emoji": "🌊",
+        "tags": [
+            "nature"
+        ],
+        "difficulty": 2,
+        "part_of_speech": "adjective",
+        "gender": "feminine",
+        "plural": "correnti",
+        "synonyms": [
+            "attuale",
+            "presente",
+            "normale"
+        ],
+        "antonyms": [
+            "vecchio",
+            "passato",
+            "inattivo"
+        ]
+    },
+    {
+        "word": "corretto",
+        "translation": "correct",
+        "example": "Le risposte corrette sono state contrassegnate.",
+        "example_en": "The correct answers were marked.",
+        "emoji": "✅",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "corretti",
+        "synonyms": [
+            "esatto",
+            "giusto",
+            "appropriato"
+        ],
+        "antonyms": [
+            "sbagliato",
+            "errato",
+            "falso"
+        ]
+    },
+    {
+        "word": "corse",
+        "translation": "ran",
+        "example": "Ho corso fino a casa.",
+        "example_en": "I ran home.",
+        "emoji": "🏃",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": "feminine",
+        "plural": "corse",
+        "synonyms": [
+            "correre",
+            "scappare",
+            "fuggire"
+        ],
+        "antonyms": [
+            "camminare",
+            "passeggiare",
+            "stare"
+        ]
+    },
+    {
+        "word": "corso",
+        "translation": "course",
+        "example": "Ho frequentato un corso di scrittura.",
+        "example_en": "I took a writing course.",
+        "emoji": "📚",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "corsi",
+        "synonyms": [
+            "lezione",
+            "lezioni",
+            "studio"
+        ],
+        "antonyms": [
+            "ignoranza",
+            "disconoscimento",
+            "rinuncia"
+        ]
+    },
+    {
+        "word": "cosa",
+        "translation": "thing",
+        "example": "Vedo una cosa strana.",
+        "example_en": "I see a strange thing.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "cose",
+        "synonyms": [
+            "oggetto",
+            "coso",
+            "articolo"
+        ],
+        "antonyms": [
+            "nulla",
+            "nessuna",
+            "persona"
+        ]
+    },
+    {
+        "word": "costa",
+        "translation": "coast",
+        "example": "Vado in vacanza sulla costa.",
+        "example_en": "I'm going on vacation on the coast.",
+        "emoji": "🌊",
+        "tags": [
+            "nature"
+        ],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "coste",
+        "synonyms": [
+            "riviera",
+            "spiaggia",
+            "litorale"
+        ],
+        "antonyms": [
+            "interno",
+            "centro",
+            "interno"
+        ]
+    },
+    {
+        "word": "costo",
+        "translation": "cost",
+        "example": "Quanto costa questo?.",
+        "example_en": "How much does this cost?.",
+        "emoji": "💰",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "costi",
+        "synonyms": [
+            "prezzo",
+            "spesa",
+            "tariffa"
+        ],
+        "antonyms": [
+            "guadagno",
+            "ricompensa",
+            "vantaggio"
+        ]
+    },
+    {
+        "word": "costruire",
+        "translation": "build",
+        "example": "Stanno costruendo una nuova strada.",
+        "example_en": "They are building a new road.",
+        "emoji": "🚧",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "costruire",
+        "synonyms": [
+            "edificare",
+            "fabbricare",
+            "realizzare"
+        ],
+        "antonyms": [
+            "distruggere",
+            "smontare",
+            "rovinare"
+        ]
+    },
+    {
+        "word": "così",
+        "translation": "so",
+        "example": "Ho fatto così e ha funzionato.",
+        "example_en": "I did it that way and it worked.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": "masculine",
+        "plural": "così",
+        "synonyms": [
+            "quindi",
+            "allora",
+            "dunque"
+        ],
+        "antonyms": [
+            "opposto",
+            "contrario",
+            "diverso"
+        ]
+    },
+    {
+        "word": "cotone",
+        "translation": "cotton",
+        "example": "Questa maglietta è fatta di cotone.",
+        "example_en": "This shirt is made of cotton.",
+        "emoji": "🧶",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "cotoni",
+        "synonyms": [
+            "lana",
+            "lino",
+            "seta"
+        ],
+        "antonyms": [
+            "poliestere",
+            "nylon",
+            "acrilico"
+        ]
+    },
+    {
+        "word": "cravatta",
+        "translation": "tie",
+        "example": "Porto una cravatta rossa.",
+        "example_en": "I'm wearing a red tie.",
+        "emoji": "👔",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "cravatte",
+        "synonyms": [
+            "laccio",
+            "fascia",
+            "nodo"
+        ],
+        "antonyms": [
+            "sciolto",
+            "aperto",
+            "libero"
+        ]
+    },
+    {
+        "word": "creare",
+        "translation": "create",
+        "example": "Stiamo creando un mondo migliore.",
+        "example_en": "We are creating a better world.",
+        "emoji": "✨",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "creare",
+        "synonyms": [
+            "costruire",
+            "formare",
+            "generare"
+        ],
+        "antonyms": [
+            "distruggere",
+            "annientare",
+            "eliminare"
+        ]
+    },
+    {
+        "word": "credere",
+        "translation": "believe",
+        "example": "Credo che sia vero.",
+        "example_en": "I believe it is true.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "credere",
+        "synonyms": [
+            "pensare",
+            "immaginare",
+            "concludere"
+        ],
+        "antonyms": [
+            "disconoscere",
+            "dubitare",
+            "negare"
+        ]
+    },
+    {
+        "word": "crescere",
+        "translation": "grow",
+        "example": "Le piante crescono in primavera.",
+        "example_en": "The plants grow in spring.",
+        "emoji": "🌱",
+        "tags": [
+            "nature"
+        ],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "crescere",
+        "synonyms": [
+            "maturare",
+            "espandersi",
+            "produrre"
+        ],
+        "antonyms": [
+            "diminuire",
+            "calare",
+            "ridursi"
+        ]
+    },
+    {
+        "word": "cui",
+        "translation": "which",
+        "example": "Questo è il libro al cui ho lavorato.",
+        "example_en": "This is the book I worked on.",
+        "emoji": "📖",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "pronoun",
+        "gender": "masculine",
+        "plural": "cui",
+        "synonyms": [
+            "il quale",
+            "la quale",
+            "i quali"
+        ],
+        "antonyms": [
+            "chi",
+            "che",
+            "qualcuno"
+        ]
+    },
+    {
+        "word": "cuoco",
+        "translation": "cook",
+        "example": "Mio padre è un cuoco esperto.",
+        "example_en": "My father is an experienced cook.",
+        "emoji": "🍳",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "cuochi",
+        "synonyms": [
+            "cucinare",
+            "cucina",
+            "preparare"
+        ],
+        "antonyms": [
+            "mangiare",
+            "servire",
+            "divorare"
+        ]
+    },
+    {
+        "word": "cuore",
+        "translation": "heart",
+        "example": "Ho un grande cuore.",
+        "example_en": "I have a big heart.",
+        "emoji": "❤️",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "cuori",
+        "synonyms": [
+            "amore",
+            "passione",
+            "affetto"
+        ],
+        "antonyms": [
+            "egoismo",
+            "odio",
+            "rancore"
+        ]
+    },
+    {
+        "word": "cura",
+        "translation": "care",
+        "example": "Prenditi cura di te stesso.",
+        "example_en": "Take care of yourself.",
+        "emoji": "🤗",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "cure",
+        "synonyms": [
+            "attenzione",
+            "preoccupazione",
+            "attenzioni"
+        ],
+        "antonyms": [
+            "negligenza",
+            "ignoranza",
+            "disinteresse"
+        ]
+    },
+    {
+        "word": "da",
+        "translation": "from",
+        "example": "Vengo da una città lontana.",
+        "example_en": "I come from a distant city.",
+        "emoji": "🌆",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "preposition",
+        "gender": "masculine",
+        "plural": "da",
+        "synonyms": [
+            "di",
+            "da parte di",
+            "dal"
+        ],
+        "antonyms": [
+            "a",
+            "verso",
+            "per"
+        ]
+    },
+    {
+        "word": "danza",
+        "translation": "dance",
+        "example": "Mi piace la danza classica.",
+        "example_en": "I like classical dance.",
+        "emoji": "💃",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "danze",
+        "synonyms": [
+            "ballo",
+            "balletto",
+            "movimento"
+        ],
+        "antonyms": [
+            "immobilità",
+            "calma",
+            "seduta"
+        ]
+    },
+    {
+        "word": "dare",
+        "translation": "give",
+        "example": "Mi ha dato un regalo.",
+        "example_en": "He gave me a gift.",
+        "emoji": "🎁",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "dare",
+        "synonyms": [
+            "offrire",
+            "concedere",
+            "assegnare"
+        ],
+        "antonyms": [
+            "prendere",
+            "rubare",
+            "portare via"
+        ]
+    },
+    {
+        "word": "decidere",
+        "translation": "decide",
+        "example": "Non ho ancora deciso.",
+        "example_en": "I haven't decided yet.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "decidere",
+        "synonyms": [
+            "determinare",
+            "concludere",
+            "discernere"
+        ],
+        "antonyms": [
+            "neutrale",
+            "incerto",
+            "indeciso"
+        ]
+    },
+    {
+        "word": "decimale",
+        "translation": "decimal",
+        "example": "Hanno usato un numero decimale.",
+        "example_en": "They used a decimal number.",
+        "emoji": "🔢",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "decimali",
+        "synonyms": [
+            "frazionario",
+            "numerario",
+            "digitale"
+        ],
+        "antonyms": [
+            "intero",
+            "indivisibile",
+            "integrale"
+        ]
+    },
+    {
+        "word": "denti",
+        "translation": "teeth",
+        "example": "Ho bisogno di andare dal dentista.",
+        "example_en": "I need to go to the dentist.",
+        "emoji": "🦷",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "denti",
+        "synonyms": [
+            "molari",
+            "incisivi",
+            "canini"
+        ],
+        "antonyms": [
+            "gomiti",
+            "spalle",
+            "ginocchia"
+        ]
+    },
+    {
+        "word": "descrivere",
+        "translation": "describe",
+        "example": "Descrivi la tua vacanza.",
+        "example_en": "Describe your vacation.",
+        "emoji": "🎨",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "descrivere",
+        "synonyms": [
+            "rappresentare",
+            "disegnare",
+            "indicare"
+        ],
+        "antonyms": [
+            "nascondere",
+            "ignorare",
+            "mascherare"
+        ]
+    },
+    {
+        "word": "deserto",
+        "translation": "desert",
+        "example": "Il deserto è un luogo molto caldo.",
+        "example_en": "The desert is a very hot place.",
+        "emoji": "🌵",
+        "tags": [
+            "landscape"
+        ],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "deserti",
+        "synonyms": [
+            "desolato",
+            "arido",
+            "inospitale"
+        ],
+        "antonyms": [
+            "lussureggiante"
+        ]
+    },
+    {
+        "word": "desiderare",
+        "translation": "to desire",
+        "example": "Lei desidera una casa sulla spiaggia.",
+        "example_en": "She desires a beach house.",
+        "emoji": "🏠",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "desiderare",
+            "aspirare",
+            "auspicare"
+        ],
+        "antonyms": [
+            "abborrire",
+            "disprezzare",
+            "diffidare"
+        ]
+    },
+    {
+        "word": "desiderio",
+        "translation": "desire",
+        "example": "Ho un desiderio di esplorare il mondo.",
+        "example_en": "I have a desire to explore the world.",
+        "emoji": "🌍",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "desideri",
+        "synonyms": [
+            "aspirazione",
+            "ardore",
+            "brama"
+        ],
+        "antonyms": [
+            "disinteresse",
+            "indifferenza",
+            "repulsione"
+        ]
+    },
+    {
+        "word": "design",
+        "translation": "design",
+        "example": "Il design della casa è unico.",
+        "example_en": "The design of the house is unique.",
+        "emoji": "🏡",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "design",
+        "synonyms": [
+            "disegno",
+            "schema",
+            "progetto"
+        ],
+        "antonyms": [
+            "disordine",
+            "confusione",
+            "disorganizzazione"
+        ]
+    },
+    {
+        "word": "destino",
+        "translation": "destiny",
+        "example": "Il destino ha portato loro insieme.",
+        "example_en": "Destiny brought them together.",
+        "emoji": "🔮",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "destini",
+        "synonyms": [
+            "fato",
+            "sorte",
+            "destinazione"
+        ],
+        "antonyms": [
+            "caos",
+            "caso",
+            "accidente"
+        ]
+    },
+    {
+        "word": "determinare",
+        "translation": "to determine",
+        "example": "Stiamo determinando una soluzione.",
+        "example_en": "We are determining a solution.",
+        "emoji": "🧐",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "definire",
+            "stabilire",
+            "decidere"
+        ],
+        "antonyms": [
+            "neghibire",
+            "negare",
+            "smentire"
+        ]
+    },
+    {
+        "word": "deve",
+        "translation": "must",
+        "example": "Deve fare i compiti prima di uscire.",
+        "example_en": "He must do his homework before going out.",
+        "emoji": "👨‍🏫",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "auxiliary verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "dovrebbe",
+            "è obbligato",
+            "è costretto"
+        ],
+        "antonyms": [
+            "non dovrebbe",
+            "non deve",
+            "non è obbligato"
+        ]
+    },
+    {
+        "word": "di",
+        "translation": "of",
+        "example": "Parlo di te.",
+        "example_en": "I'm talking about you.",
+        "emoji": "🗣",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "preposition",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "di",
+            "da",
+            "da parte di"
+        ],
+        "antonyms": [
+            "per",
+            "contro",
+            "fra"
+        ]
+    },
+    {
+        "word": "dieci",
+        "translation": "ten",
+        "example": "Abbiamo dieci minuti per risolvere il problema.",
+        "example_en": "We have ten minutes to solve the problem.",
+        "emoji": "⏰",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "numeral",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "venti",
+            "trenta",
+            "quaranta"
+        ],
+        "antonyms": [
+            "uno",
+            "due",
+            "tre"
+        ]
+    },
+    {
+        "word": "dietro",
+        "translation": "behind",
+        "example": "Sono dietro di te.",
+        "example_en": "I am behind you.",
+        "emoji": "🤫",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "indietro",
+            "dietro di te",
+            "dietro di me"
+        ],
+        "antonyms": [
+            "davanti",
+            "difronte",
+            "in avanti"
+        ]
+    },
+    {
+        "word": "differire",
+        "translation": "to differ",
+        "example": "Le tue idee differiscono dalle mie.",
+        "example_en": "Your ideas differ from mine.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "discordare",
+            "divergere",
+            "dissentire"
+        ],
+        "antonyms": [
+            "convenire",
+            "concordare",
+            "accordare"
+        ]
+    },
+    {
+        "word": "difficile",
+        "translation": "difficult",
+        "example": "Questo quiz è difficile.",
+        "example_en": "This quiz is difficult.",
+        "emoji": "🤯",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "difficili",
+        "synonyms": [
+            "arduo",
+            "complicato",
+            "difficoltoso"
+        ],
+        "antonyms": [
+            "facile",
+            "semplice",
+            "agevole"
+        ]
+    },
+    {
+        "word": "difficoltà",
+        "translation": "difficulty",
+        "example": "Abbiamo incontrato alcune difficoltà.",
+        "example_en": "We encountered some difficulties.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "femmine",
+        "plural": "difficoltà",
+        "synonyms": [
+            "ostacolo",
+            "problemi",
+            "situazione"
+        ],
+        "antonyms": [
+            "facilità",
+            "vantaggio",
+            "vantaggio"
+        ]
+    },
+    {
+        "word": "dimensione",
+        "translation": "dimension",
+        "example": "Questa stanza ha tre dimensioni.",
+        "example_en": "This room has three dimensions.",
+        "emoji": "📐",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "noun",
+        "gender": "femmine",
+        "plural": "dimensioni",
+        "synonyms": [
+            "spazio",
+            "grandezza",
+            "profondità"
+        ],
+        "antonyms": [
+            "insignificanza",
+            "niente",
+            "nulla"
+        ]
+    },
+    {
+        "word": "dimostrare",
+        "translation": "to demonstrate",
+        "example": "Ho dimostrato la mia competenza.",
+        "example_en": "I demonstrated my competence.",
+        "emoji": "💪",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "mostrare",
+            "evidenziare",
+            "illustrare"
+        ],
+        "antonyms": [
+            "nascondere",
+            "mascherare",
+            "ignorare"
+        ]
+    },
+    {
+        "word": "dipendere",
+        "translation": "to depend",
+        "example": "La mia felicità dipende da te.",
+        "example_en": "My happiness depends on you.",
+        "emoji": "🤗",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "contare su",
+            "basarsi su",
+            "affidarsi a"
+        ],
+        "antonyms": [
+            "indipendere",
+            "non dipendere",
+            "non contare su"
+        ]
+    },
+    {
+        "word": "dipingere",
+        "translation": "to paint",
+        "example": "Ho dipinto un quadro.",
+        "example_en": "I painted a picture.",
+        "emoji": "🎨",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "colorare",
+            "disegnare",
+            "illustrare"
+        ],
+        "antonyms": [
+            "distruggere",
+            "cancellare",
+            "sradicare"
+        ]
+    },
+    {
+        "word": "dire",
+        "translation": "to say",
+        "example": "Ho detto ciò che ho voluto dire.",
+        "example_en": "I said what I wanted to say.",
+        "emoji": "🗣",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "parlare",
+            "esprimere",
+            "comunicare"
+        ],
+        "antonyms": [
+            "tacere",
+            "rimanere in silenzio",
+            "non dire"
+        ]
+    },
+    {
+        "word": "diretto",
+        "translation": "direct",
+        "example": "Ho preso la strada diretta.",
+        "example_en": "I took the direct route.",
+        "emoji": "🚗",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "diretti",
+        "synonyms": [
+            "esplicito",
+            "immediato",
+            "preciso"
+        ],
+        "antonyms": [
+            "indiretto",
+            "circolare",
+            "deviato"
+        ]
+    },
+    {
+        "word": "diritto",
+        "translation": "right",
+        "example": "Ha scelto la strada giusta a destra.",
+        "example_en": "He chose the right road to the right.",
+        "emoji": "➡️",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "diritti",
+        "synonyms": [
+            "giusto",
+            "retto",
+            "legale"
+        ],
+        "antonyms": [
+            "sinistra",
+            "illegale",
+            "errato"
+        ]
+    },
+    {
+        "word": "discorso",
+        "translation": "speech",
+        "example": "Ho ascoltato il discorso con interesse.",
+        "example_en": "I listened to the speech with interest.",
+        "emoji": "🗣",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "discorsi",
+        "synonyms": [
+            "parola",
+            "discussione",
+            "narrazione"
+        ],
+        "antonyms": [
+            "silenzio",
+            "assenza",
+            "calma"
+        ]
+    },
+    {
+        "word": "discussioni",
+        "translation": "discussions",
+        "example": "Abbiamo avuto alcune discussioni interessanti.",
+        "example_en": "We had some interesting discussions.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "femmine",
+        "plural": "discussioni",
+        "synonyms": [
+            "conversazioni",
+            "dialoghi",
+            "dibattiti"
+        ],
+        "antonyms": [
+            "silenzio",
+            "pazienza",
+            "assenza"
+        ]
+    },
+    {
+        "word": "discutere",
+        "translation": "to discuss",
+        "example": "Vogliamo discutere la situazione.",
+        "example_en": "We want to discuss the situation.",
+        "emoji": "🤝",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "parlare",
+            "conversare",
+            "argomentare"
+        ],
+        "antonyms": [
+            "pensare",
+            "ignorare",
+            "evitare"
+        ]
+    },
+    {
+        "word": "disegnare",
+        "translation": "to draw",
+        "example": "Ho disegnato un paesaggio.",
+        "example_en": "I drew a landscape.",
+        "emoji": "🎨",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "dipingere",
+            "raffigurare",
+            "immaginare"
+        ],
+        "antonyms": [
+            "distruggere",
+            "cancellare",
+            "rimuovere"
+        ]
+    },
+    {
+        "word": "dito",
+        "translation": "finger",
+        "example": "Ho un dito rotto.",
+        "example_en": "I have a broken finger.",
+        "emoji": "🤚",
+        "tags": [
+            "body part"
+        ],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "dita",
+        "synonyms": [
+            "pollice",
+            "indice",
+            "medio"
+        ],
+        "antonyms": [
+            "piede",
+            "mano",
+            "avambraccio"
+        ]
+    },
+    {
+        "word": "divertimento",
+        "translation": "fun",
+        "example": "I miei amici e io abbiamo avuto un sacco di divertimento al parco di divertimenti.",
+        "example_en": "My friends and I had a lot of fun at the amusement park.",
+        "emoji": "😃",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "divertimenti",
+        "synonyms": [
+            "piacere",
+            "gioia",
+            "divertimento",
+            "svago"
+        ],
+        "antonyms": [
+            "malinconia",
+            "tristezza",
+            "angoscia"
+        ]
+    },
+    {
+        "word": "divide",
+        "translation": "divide",
+        "example": "Questo fiume divide due stati.",
+        "example_en": "This river divides two states.",
+        "emoji": "➗",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "divide",
+        "synonyms": [
+            "separare",
+            "dividersi",
+            "disunire"
+        ],
+        "antonyms": [
+            "unire",
+            "accorpare",
+            "confondere"
+        ]
+    },
+    {
+        "word": "divisione",
+        "translation": "division",
+        "example": "La divisione della matematica è difficile.",
+        "example_en": "Division in math is hard.",
+        "emoji": "➗",
+        "tags": [
+            "math"
+        ],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "divisioni",
+        "synonyms": [
+            "separazione",
+            "distinzione",
+            "frazione"
+        ],
+        "antonyms": [
+            "unione",
+            "congiunzione",
+            "associazione"
+        ]
+    },
+    {
+        "word": "dizionario",
+        "translation": "dictionary",
+        "example": "Ho usato un dizionario per tradurre questa parola.",
+        "example_en": "I used a dictionary to translate this word.",
+        "emoji": "📖",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "dizionari",
+        "synonyms": [
+            "vocabolario",
+            "glossario",
+            "lessico"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "dolce",
+        "translation": "sweet",
+        "example": "La torta al cioccolato era dolce e deliziosa.",
+        "example_en": "The chocolate cake was sweet and delicious.",
+        "emoji": "😋",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "dolci",
+        "synonyms": [
+            "zuccherino",
+            "soave",
+            "delizioso"
+        ],
+        "antonyms": [
+            "amaro",
+            "acido",
+            "aspro"
+        ]
+    },
+    {
+        "word": "dollaro",
+        "translation": "dollar",
+        "example": "Ho speso cinque dollari per questo.",
+        "example_en": "I spent five dollars on this.",
+        "emoji": "💵",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "dollari",
+        "synonyms": [
+            "moneta",
+            "valuta",
+            "moneta corrente"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "dolore",
+        "translation": "pain",
+        "example": "Ho un dolore al mio fianco destro.",
+        "example_en": "I have a pain in my right side.",
+        "emoji": "🤕",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "dolori",
+        "synonyms": [
+            "sofferenza",
+            "agonia",
+            "tortura"
+        ],
+        "antonyms": [
+            "benessere",
+            "felicità",
+            "gioia"
+        ]
+    },
+    {
+        "word": "domanda",
+        "translation": "question",
+        "example": "Ho una domanda sul test.",
+        "example_en": "I have a question about the test.",
+        "emoji": "❓",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "domande",
+        "synonyms": [
+            "interrogativo",
+            "quiz",
+            "query"
+        ],
+        "antonyms": [
+            "risposta",
+            "soluzione",
+            "risoluzione"
+        ]
+    },
+    {
+        "word": "done",
+        "translation": "done",
+        "example": "Ho fatto. È tutto fatto.",
+        "example_en": "I'm done. It's all done.",
+        "emoji": "✅",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": "masculine",
+        "plural": "done",
+        "synonyms": [
+            "finito",
+            "completato",
+            "concluso"
+        ],
+        "antonyms": [
+            "non fatto",
+            "incompleto",
+            "incompiuto"
+        ]
+    },
+    {
+        "word": "donna",
+        "translation": "woman",
+        "example": "La donna è arrivata in ritardo.",
+        "example_en": "The woman arrived late.",
+        "emoji": "👩",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "donne",
+        "synonyms": [
+            "signora",
+            "femmina",
+            "ragazza"
+        ],
+        "antonyms": [
+            "uomo",
+            "ragazzo",
+            "maschio"
+        ]
+    },
+    {
+        "word": "donne",
+        "translation": "women",
+        "example": "Ci sono molte donne al lavoro oggi.",
+        "example_en": "There are many women working today.",
+        "emoji": "👩‍⚕️",
+        "tags": [
+            "work",
+            "people"
+        ],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "donne",
+        "synonyms": [
+            "signore",
+            "signorine",
+            "femmine"
+        ],
+        "antonyms": [
+            "uomini",
+            "ragazzi",
+            "maschi"
+        ]
+    },
+    {
+        "word": "dopo",
+        "translation": "after",
+        "example": "Andrò a casa dopo l'allenamento.",
+        "example_en": "I will go home after practice.",
+        "emoji": "🏃‍♂️",
+        "tags": [
+            "time"
+        ],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": "masculine",
+        "plural": "dopo",
+        "synonyms": [
+            "successivamente",
+            "dopo di allora",
+            "dopo di quello"
+        ],
+        "antonyms": [
+            "prima",
+            "prima di allora",
+            "prima di quello"
+        ]
+    },
+    {
+        "word": "doppio",
+        "translation": "double",
+        "example": "Ho visto un doppio arcobaleno oggi.",
+        "example_en": "I saw a double rainbow today.",
+        "emoji": "🌈",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "doppi",
+        "synonyms": [
+            "duplice",
+            "gemello",
+            "binario"
+        ],
+        "antonyms": [
+            "singolo",
+            "mono",
+            "unico"
+        ]
+    },
+    {
+        "word": "dove",
+        "translation": "where",
+        "example": "Dove sei andato stasera?",
+        "example_en": "Where did you go tonight?",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": "masculine",
+        "plural": "dove",
+        "synonyms": [
+            "qual",
+            "quale",
+            "dov'è"
+        ],
+        "antonyms": [
+            "quando",
+            "chi",
+            "quali"
+        ]
+    },
+    {
+        "word": "dovrebbe",
+        "translation": "should",
+        "example": "Dovresti andare a letto presto.",
+        "example_en": "You should go to bed early.",
+        "emoji": "🛏",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "dovrebbe",
+        "synonyms": [
+            "potrebbe",
+            "dovrebbe",
+            "dovrebbe"
+        ],
+        "antonyms": [
+            "non dovrebbe",
+            "non può",
+            "non deve"
+        ]
+    },
+    {
+        "word": "dritto",
+        "translation": "straight",
+        "example": "Mantieni la schiena dritta mentre cammini.",
+        "example_en": "Keep your back straight as you walk.",
+        "emoji": "🤚",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "dritti",
+        "synonyms": [
+            "retto",
+            "diritto",
+            "diretto"
+        ],
+        "antonyms": [
+            "curvo",
+            "storto",
+            "obliquo"
+        ]
+    },
+    {
+        "word": "due",
+        "translation": "two",
+        "example": "Abbiamo due gatti.",
+        "example_en": "We have two cats.",
+        "emoji": "2️⃣",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "due",
+        "synonyms": [
+            "paio",
+            "coppia",
+            "duo"
+        ],
+        "antonyms": [
+            "uno",
+            "tre",
+            "quattro"
+        ]
+    },
+    {
+        "word": "durante",
+        "translation": "during",
+        "example": "Dormo durante il giorno.",
+        "example_en": "I sleep during the day.",
+        "emoji": "💤",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "preposition",
+        "gender": "masculine",
+        "plural": "durante",
+        "synonyms": [
+            "mentre",
+            "in",
+            "nel corso"
+        ],
+        "antonyms": [
+            "prima",
+            "dopo",
+            "prima di"
+        ]
+    },
+    {
+        "word": "e",
+        "translation": "and",
+        "example": "È una buona giornata per andare in spiaggia e nuotare.",
+        "example_en": "It's a good day to go to the beach and swim.",
+        "emoji": "🏊",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "conjunction",
+        "gender": "masculine",
+        "plural": "e",
+        "synonyms": [
+            "ed",
+            "e anche",
+            "sia"
+        ],
+        "antonyms": [
+            "ma",
+            "oppure",
+            "tuttavia"
+        ]
+    },
+    {
+        "word": "eccitare",
+        "translation": "excite",
+        "example": "Lui era eccitato per andare al cinema.",
+        "example_en": "He was excited to go to the movies.",
+        "emoji": "😆",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "eccitare",
+        "synonyms": [
+            "emozionare",
+            "entusiasmare",
+            "commuovere"
+        ],
+        "antonyms": [
+            "annoiare",
+            "disinteressare",
+            "deplorare"
+        ]
+    },
+    {
+        "word": "effetto",
+        "translation": "effect",
+        "example": "La luce ha un effetto calmante su di me.",
+        "example_en": "The light has a calming effect on me.",
+        "emoji": "💡",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "effetti",
+        "synonyms": [
+            "conseguenza",
+            "risultato",
+            "impatto"
+        ],
+        "antonyms": [
+            "causa",
+            "proposito",
+            "motivo"
+        ]
+    },
+    {
+        "word": "elemento",
+        "translation": "element",
+        "example": "Il fuoco è un elemento importante.",
+        "example_en": "Fire is an important element.",
+        "emoji": "🔥",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "elementi",
+        "synonyms": [
+            "componente",
+            "base",
+            "caratteristica"
+        ],
+        "antonyms": [
+            "totale",
+            "intero",
+            "insieme"
+        ]
+    },
+    {
+        "word": "elenco",
+        "translation": "list",
+        "example": "Ho creato un elenco delle cose da fare oggi.",
+        "example_en": "I made a list of things to do today.",
+        "emoji": "📝",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "elenchi",
+        "synonyms": [
+            "catalogo",
+            "registro",
+            "elencazione"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "elettrico",
+        "translation": "electric",
+        "example": "Ho appena comprato una macchina elettrica.",
+        "example_en": "I just bought an electric car.",
+        "emoji": "⚡️",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "elettrici",
+        "synonyms": [
+            "energico",
+            "dinamico",
+            "voltico"
+        ],
+        "antonyms": [
+            "meccanico",
+            "analogico",
+            "tradizionale"
+        ]
+    },
+    {
+        "word": "energia",
+        "translation": "energy",
+        "example": "Ho bisogno di più energia per affrontare la giornata.",
+        "example_en": "I need more energy to get through the day.",
+        "emoji": "💪",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "energie",
+        "synonyms": [
+            "fornitura",
+            "potenza",
+            "forza"
+        ],
+        "antonyms": [
+            "stanchezza",
+            "debolezza",
+            "indolenza"
+        ]
+    },
+    {
+        "word": "enorme",
+        "translation": "enormous",
+        "example": "Il castello era enorme.",
+        "example_en": "The castle was enormous.",
+        "emoji": "🏰",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "enormi",
+        "synonyms": [
+            "immensa",
+            "grande",
+            "colossale"
+        ],
+        "antonyms": [
+            "piccolo",
+            "minuscolo",
+            "impercettibile"
+        ]
+    },
+    {
+        "word": "entrambi",
+        "translation": "both",
+        "example": "Entrambi i gemelli hanno la stessa età.",
+        "example_en": "Both twins have the same age.",
+        "emoji": "👩‍👩‍👦",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "pronoun",
+        "gender": "masculine",
+        "plural": "",
+        "synonyms": [
+            "entrambe",
+            "entrambe le parti"
+        ],
+        "antonyms": [
+            "nessuno",
+            "nessuna"
+        ]
+    },
+    {
+        "word": "era",
+        "translation": "was",
+        "example": "Ieri era una bella giornata.",
+        "example_en": "Yesterday was a beautiful day.",
+        "emoji": "🌞",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "stato",
+            "erano",
+            "eravamo"
+        ],
+        "antonyms": [
+            "sarà",
+            "saranno",
+            "saremo"
+        ]
+    },
+    {
+        "word": "erano",
+        "translation": "were",
+        "example": "Ieri erano tutti felici.",
+        "example_en": "Yesterday everyone was happy.",
+        "emoji": "😁",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "stavano",
+            "erano stati"
+        ],
+        "antonyms": [
+            "saranno",
+            "sarà",
+            "saremo"
+        ]
+    },
+    {
+        "word": "erba",
+        "translation": "grass",
+        "example": "Ho visto l'erba fresca.",
+        "example_en": "I saw the fresh grass.",
+        "emoji": "🌱",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "erbacce",
+        "synonyms": [
+            "prato",
+            "verde",
+            "foglie"
+        ],
+        "antonyms": [
+            "asfalto",
+            "cemento",
+            "roccia"
+        ]
+    },
+    {
+        "word": "esatto",
+        "translation": "exact",
+        "example": "Ho detto l'esatto opposto.",
+        "example_en": "I said the exact opposite.",
+        "emoji": "📝",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "esatti",
+        "synonyms": [
+            "preciso",
+            "accurato",
+            "corretto"
+        ],
+        "antonyms": [
+            "approssimativo",
+            "sbagliato",
+            "impreciso"
+        ]
+    },
+    {
+        "word": "esempio",
+        "translation": "example",
+        "example": "Questo è un buon esempio.",
+        "example_en": "This is a good example.",
+        "emoji": "💡",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "esempi",
+        "synonyms": [
+            "modello",
+            "dimostrazione",
+            "illustrazione"
+        ],
+        "antonyms": [
+            "contrario",
+            "opposto",
+            "negazione"
+        ]
+    },
+    {
+        "word": "esercizio",
+        "translation": "exercise",
+        "example": "Ho fatto l'esercizio.",
+        "example_en": "I did the exercise.",
+        "emoji": "🏋️‍♀️",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "esercizi",
+        "synonyms": [
+            "allenamento",
+            "esercizi fisici",
+            "esercitazione"
+        ],
+        "antonyms": [
+            "inattività",
+            "ozio",
+            "pigrizia"
+        ]
+    },
+    {
+        "word": "esperienza",
+        "translation": "experience",
+        "example": "Ho imparato molto dall'esperienza.",
+        "example_en": "I learned a lot from the experience.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "femenine",
+        "plural": "esperienze",
+        "synonyms": [
+            "incontro",
+            "esperimento",
+            "conoscenza"
+        ],
+        "antonyms": [
+            "ignoranza",
+            "incompetenza",
+            "inesperienza"
+        ]
+    },
+    {
+        "word": "esperimento",
+        "translation": "experiment",
+        "example": "Hanno fatto un esperimento scientifico.",
+        "example_en": "They did a scientific experiment.",
+        "emoji": "⚗️",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "esperimenti",
+        "synonyms": [
+            "prova",
+            "studio",
+            "test"
+        ],
+        "antonyms": [
+            "teoria",
+            "convenzione",
+            "dogma"
+        ]
+    },
+    {
+        "word": "essere",
+        "translation": "being",
+        "example": "Tutto ciò che è vivo è un essere.",
+        "example_en": "Everything that is alive is a being.",
+        "emoji": "🤗",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "esistere",
+            "vivere",
+            "esistenza"
+        ],
+        "antonyms": [
+            "morte",
+            "fine",
+            "distruzione"
+        ]
+    },
+    {
+        "word": "essi",
+        "translation": "they",
+        "example": "Essi sono felici.",
+        "example_en": "They are happy.",
+        "emoji": "😃",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "pronoun",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "loro",
+            "loro stessi"
+        ],
+        "antonyms": [
+            "io",
+            "me",
+            "noi"
+        ]
+    },
+    {
+        "word": "esso",
+        "translation": "it",
+        "example": "Essa prese un libro.",
+        "example_en": "It took a book.",
+        "emoji": "📖",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "pronoun",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "lei",
+            "lui",
+            "questo"
+        ],
+        "antonyms": [
+            "noi",
+            "loro",
+            "voi"
+        ]
+    },
+    {
+        "word": "est",
+        "translation": "east",
+        "example": "Il sole sorge a est.",
+        "example_en": "The sun rises in the east.",
+        "emoji": "🌅",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "",
+        "synonyms": [
+            "oriente",
+            "estremo oriente",
+            "levante"
+        ],
+        "antonyms": [
+            "ovest",
+            "nord",
+            "sud"
+        ]
+    },
+    {
+        "word": "estate",
+        "translation": "summer",
+        "example": "L'estate è calda e soleggiata.",
+        "example_en": "Summer is hot and sunny.",
+        "emoji": "☀️",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "femenine",
+        "plural": "",
+        "synonyms": [
+            "calura",
+            "caldo",
+            "sole"
+        ],
+        "antonyms": [
+            "inverno",
+            "freddo",
+            "neve"
+        ]
+    },
+    {
+        "word": "età",
+        "translation": "age",
+        "example": "Ho trent'anni di età.",
+        "example_en": "I am thirty years of age.",
+        "emoji": "🎂",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "femenine",
+        "plural": "",
+        "synonyms": [
+            "anni",
+            "età anagrafica",
+            "vecchiaia"
+        ],
+        "antonyms": [
+            "gioventù",
+            "adolescenza",
+            "infanzia"
+        ]
+    },
+    {
+        "word": "evento",
+        "translation": "event",
+        "example": "Hanno organizzato un evento speciale.",
+        "example_en": "They organized a special event.",
+        "emoji": "🎉",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "eventi",
+        "synonyms": [
+            "accadimento",
+            "occasione",
+            "festa"
+        ],
+        "antonyms": [
+            "calma",
+            "silenzio",
+            "immobilità"
+        ]
+    },
+    {
+        "word": "fa",
+        "translation": "makes",
+        "example": "Lui fa il pasticcere.",
+        "example_en": "He makes the pastry.",
+        "emoji": "🍰",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "crea",
+            "costruisce",
+            "produce"
+        ],
+        "antonyms": [
+            "distrugge",
+            "annulla",
+            "elimina"
+        ]
+    },
+    {
+        "word": "famiglia",
+        "translation": "family",
+        "example": "La mia famiglia è grande.",
+        "example_en": "My family is big.",
+        "emoji": "👪",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "femenine",
+        "plural": "",
+        "synonyms": [
+            "genitori",
+            "parenti",
+            "casa"
+        ],
+        "antonyms": [
+            "straniero",
+            "solitudine",
+            "estraneo"
+        ]
+    },
+    {
+        "word": "famoso",
+        "translation": "famous",
+        "example": "Lui è diventato famoso.",
+        "example_en": "He became famous.",
+        "emoji": "🤩",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "famosi",
+        "synonyms": [
+            "noto",
+            "celebre",
+            "rinomato"
+        ],
+        "antonyms": [
+            "sconosciuto",
+            "ignoto",
+            "anonimo"
+        ]
+    },
+    {
+        "word": "fare",
+        "translation": "do",
+        "example": "Devo fare i compiti.",
+        "example_en": "I have to do my homework.",
+        "emoji": "📝",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "verb",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "agire",
+            "lavorare",
+            "produrre"
+        ],
+        "antonyms": [
+            "non fare",
+            "evitare",
+            "astenersi"
+        ]
+    },
+    {
+        "word": "fatto",
+        "translation": "fact",
+        "example": "Questo non è un fatto reale.",
+        "example_en": "This is not a real fact.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "fatti",
+        "synonyms": [
+            "verità",
+            "certezza",
+            "evidenza"
+        ],
+        "antonyms": [
+            "finzione",
+            "falsa credenza",
+            "teoria"
+        ]
+    },
+    {
+        "word": "fattoria",
+        "translation": "farm",
+        "example": "Andiamo a visitare la fattoria.",
+        "example_en": "Let's go visit the farm.",
+        "emoji": "🐷",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "femenine",
+        "plural": "fattorie",
+        "synonyms": [
+            "fienile",
+            "granaio",
+            "campo"
+        ],
+        "antonyms": [
+            "città",
+            "metropoli",
+            "urbana"
+        ]
+    },
+    {
+        "word": "favorire",
+        "translation": "favor",
+        "example": "Ho favorito la tua candidatura.",
+        "example_en": "I favored your candidacy.",
+        "emoji": "👍",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "verb",
+        "gender": "",
+        "plural": "",
+        "synonyms": [
+            "sostenere",
+            "appoggiare",
+            "promuovere"
+        ],
+        "antonyms": [
+            "ostacolare",
+            "impedire",
+            "rallentare"
+        ]
+    },
+    {
+        "word": "fede",
+        "translation": "faith",
+        "example": "Ho fede nella mia religione.",
+        "example_en": "I have faith in my religion.",
+        "emoji": "✝️",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "femenine",
+        "plural": "",
+        "synonyms": [
+            "credenza",
+            "religione",
+            "devozione"
+        ],
+        "antonyms": [
+            "incredulità",
+            "negazione",
+            "scetticismo"
+        ]
+    },
+    {
+        "word": "felice",
+        "translation": "happy",
+        "example": "Siamo felici di vederti.",
+        "example_en": "We are happy to see you.",
+        "emoji": "😊",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "felici",
+        "synonyms": [
+            "contento",
+            "allegro",
+            "giocondo"
+        ],
+        "antonyms": [
+            "triste",
+            "infelice",
+            "arrabbiato"
+        ]
+    },
+    {
+        "word": "felicità",
+        "translation": "happiness",
+        "example": "La felicità è una sensazione meravigliosa.",
+        "example_en": "Happiness is a wonderful feeling.",
+        "emoji": "😃",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "felicità",
+        "synonyms": [
+            "allegria",
+            "gioia",
+            "contentezza"
+        ],
+        "antonyms": [
+            "tristezza",
+            "malinconia",
+            "infelicità"
+        ]
+    },
+    {
+        "word": "feltro",
+        "translation": "felt",
+        "example": "Ho fatto un cappello di feltro.",
+        "example_en": "I made a felt hat.",
+        "emoji": "🎩",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "feltri",
+        "synonyms": [
+            "lanetta",
+            "feltro sintetico",
+            "feltro acrilico"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "ferro",
+        "translation": "iron",
+        "example": "Ho stirato con il ferro.",
+        "example_en": "I ironed with the iron.",
+        "emoji": "🔨",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "ferri",
+        "synonyms": [
+            "ghisa",
+            "acciaio",
+            "rame"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "ferrovia",
+        "translation": "railway",
+        "example": "La ferrovia collega due città.",
+        "example_en": "The railway connects two cities.",
+        "emoji": "🚂",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "ferrovie",
+        "synonyms": [
+            "linea ferroviaria",
+            "binario",
+            "treno"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "fico",
+        "translation": "fig",
+        "example": "Hanno mangiato fichi secchi.",
+        "example_en": "They ate dried figs.",
+        "emoji": "🌰",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "fichi",
+        "synonyms": [
+            "fico d'India",
+            "fico fresco"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "fiera",
+        "translation": "fair",
+        "example": "Abbiamo visitato la fiera delle palloncine.",
+        "example_en": "We visited the balloon fair.",
+        "emoji": "🎡",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "fiere",
+        "synonyms": [
+            "sagra",
+            "mercato",
+            "esposizione"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "figlio",
+        "translation": "son",
+        "example": "Il figlio di mia sorella è molto energico.",
+        "example_en": "My sister's son is very energetic.",
+        "emoji": "👦",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "figli",
+        "synonyms": [
+            "bambino",
+            "giovane",
+            "ragazzo"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "figura",
+        "translation": "figure",
+        "example": "Ho disegnato una figura con una matita.",
+        "example_en": "I drew a figure with a pencil.",
+        "emoji": "🖌️",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "figure",
+        "synonyms": [
+            "immagine",
+            "rappresentazione",
+            "forma"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "fila",
+        "translation": "row",
+        "example": "I bambini si sono messi in fila per mangiare.",
+        "example_en": "The children lined up to eat.",
+        "emoji": "🙇",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "file",
+        "synonyms": [
+            "riga",
+            "serie",
+            "schiera"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "filo",
+        "translation": "thread",
+        "example": "Ho cucito con un filo di cotone.",
+        "example_en": "I sewed with a cotton thread.",
+        "emoji": "🧵",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "fili",
+        "synonyms": [
+            "corda",
+            "trame",
+            "seta"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "finale",
+        "translation": "final",
+        "example": "Sono andato alla finale del campionato.",
+        "example_en": "I went to the championship final.",
+        "emoji": "🏆",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "finali",
+        "synonyms": [
+            "conclusione",
+            "fine",
+            "ultima parte"
+        ],
+        "antonyms": [
+            "inizio",
+            "primo",
+            "precedente"
+        ]
+    },
+    {
+        "word": "fine",
+        "translation": "end",
+        "example": "La fine è vicina.",
+        "example_en": "The end is near.",
+        "emoji": "🔚",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "fini",
+        "synonyms": [
+            "conclusione",
+            "ultimo",
+            "cessazione"
+        ],
+        "antonyms": [
+            "inizio",
+            "apertura",
+            "primo"
+        ]
+    },
+    {
+        "word": "finestra",
+        "translation": "window",
+        "example": "Ho aperto la finestra per far entrare aria fresca.",
+        "example_en": "I opened the window to let in fresh air.",
+        "emoji": "🚪",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "finestre",
+        "synonyms": [
+            "finestrino",
+            "davanzale",
+            "vetro"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "finitura",
+        "translation": "finish",
+        "example": "La finitura di questa scrivania è eccellente.",
+        "example_en": "The finish of this desk is excellent.",
+        "emoji": "🛠️",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "finitura",
+        "synonyms": [
+            "luccicante",
+            "finitura lucida",
+            "finitura opaca"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "fino",
+        "translation": "until",
+        "example": "Non posso aspettare fino al weekend.",
+        "example_en": "I can't wait until the weekend.",
+        "emoji": "⏳",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "preposition",
+        "gender": "masculine",
+        "plural": "fino",
+        "synonyms": [
+            "prima",
+            "in precedenza",
+            "da qui a"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "fiore",
+        "translation": "flower",
+        "example": "Lei ha comprato dei bellissimi fiori bianchi.",
+        "example_en": "She bought some beautiful white flowers.",
+        "emoji": "🌸",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "fiori",
+        "synonyms": [
+            "petalo",
+            "fiorellino",
+            "bocciolo"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "fiume",
+        "translation": "river",
+        "example": "Il fiume scorre velocemente.",
+        "example_en": "The river flows quickly.",
+        "emoji": "🌊",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "fiumi",
+        "synonyms": [
+            "corso d'acqua",
+            "flusso",
+            "torrente"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "flusso",
+        "translation": "flow",
+        "example": "Il flusso di persone era ininterrotto.",
+        "example_en": "The flow of people was uninterrupted.",
+        "emoji": "🌊",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "flussi",
+        "synonyms": [
+            "corrente",
+            "movimento",
+            "circolazione"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "foglio",
+        "translation": "sheet",
+        "example": "Ho scritto su un foglio di carta.",
+        "example_en": "I wrote on a sheet of paper.",
+        "emoji": "📝",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "fogli",
+        "synonyms": [
+            "carta",
+            "cartoncino",
+            "cartoncino di carta"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "folla",
+        "translation": "crowd",
+        "example": "C'era una grande folla al concerto.",
+        "example_en": "There was a big crowd at the concert.",
+        "emoji": "🎤",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "folle",
+        "synonyms": [
+            "moltitudine",
+            "assembramento",
+            "popolo"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "fondare",
+        "translation": "found",
+        "example": "Hanno fondato una nuova scuola.",
+        "example_en": "They founded a new school.",
+        "emoji": "🏫",
+        "tags": [],
+        "difficulty": 3,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "fondare",
+        "synonyms": [
+            "costituire",
+            "istituire",
+            "organizzare"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "fondo",
+        "translation": "bottom",
+        "example": "C'è una moneta sul fondo della fontana.",
+        "example_en": "There is a coin on the bottom of the fountain.",
+        "emoji": "💰",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "fondi",
+        "synonyms": [
+            "base",
+            "fondamento",
+            "fondazione"
+        ],
+        "antonyms": [
+            "alto",
+            "superficie",
+            "sopra"
+        ]
+    },
+    {
+        "word": "foresta",
+        "translation": "forest",
+        "example": "Abbiamo camminato nella foresta.",
+        "example_en": "We walked in the forest.",
+        "emoji": "🌳",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "foreste",
+        "synonyms": [
+            "selva",
+            "bosco",
+            "giungla"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "forma",
+        "translation": "form",
+        "example": "Ho compilato il modulo in forma digitale.",
+        "example_en": "I filled out the form digitally.",
+        "emoji": "📄",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "forme",
+        "synonyms": [
+            "modulo",
+            "carta",
+            "documento"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "fornire",
+        "translation": "to provide",
+        "example": "Ti forniremo una soluzione.",
+        "example_en": "We will provide you with a solution.",
+        "emoji": "📦",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": "masculine",
+        "plural": "fornire",
+        "synonyms": [
+            "fornire",
+            "dare",
+            "offrire"
+        ],
+        "antonyms": [
+            "richiedere",
+            "rimuovere",
+            "togliere"
+        ]
+    },
+    {
+        "word": "fornitura",
+        "translation": "supply",
+        "example": "Abbiamo bisogno di una fornitura di cibo.",
+        "example_en": "We need a supply of food.",
+        "emoji": "🍴",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "forniture",
+        "synonyms": [
+            "scorta",
+            "magazzino",
+            "provvista"
+        ],
+        "antonyms": [
+            "scarsità",
+            "mancanza"
+        ]
+    },
+    {
+        "word": "foro",
+        "translation": "hole",
+        "example": "C'è un foro nel murale.",
+        "example_en": "There is a hole in the mural.",
+        "emoji": "🕳️",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "fori",
+        "synonyms": [
+            "buco",
+            "cavo"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "forse",
+        "translation": "perhaps",
+        "example": "Forse lo vedremo domani.",
+        "example_en": "Perhaps we will see it tomorrow.",
+        "emoji": "🤔",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "potrebbe essere",
+            "forse"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "forte",
+        "translation": "strong",
+        "example": "Siamo forti insieme.",
+        "example_en": "We are strong together.",
+        "emoji": "💪",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "forti",
+        "synonyms": [
+            "robusto",
+            "solido",
+            "valido"
+        ],
+        "antonyms": [
+            "debole",
+            "fragile",
+            "fiacco"
+        ]
+    },
+    {
+        "word": "forza",
+        "translation": "force",
+        "example": "La forza della gravità.",
+        "example_en": "The force of gravity.",
+        "emoji": "⚡",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "forze",
+        "synonyms": [
+            "potenza",
+            "energia"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "fra",
+        "translation": "between",
+        "example": "Fra le due strade c'è un incrocio.",
+        "example_en": "Between the two roads there is an intersection.",
+        "emoji": "🛣️",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "preposition",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "tra",
+            "in mezzo a"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "frase",
+        "translation": "phrase",
+        "example": "La frase è troppo complicata.",
+        "example_en": "The phrase is too complicated.",
+        "emoji": "💬",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "frasi",
+        "synonyms": [
+            "espressione",
+            "modo di dire"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "fratello",
+        "translation": "brother",
+        "example": "Mio fratello è un bravo ragazzo.",
+        "example_en": "My brother is a good boy.",
+        "emoji": "👨‍👦",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "fratelli",
+        "synonyms": [
+            "fratello maggiore",
+            "fratello minore"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "frazione",
+        "translation": "fraction",
+        "example": "La frazione è di un quarto.",
+        "example_en": "The fraction is one fourth.",
+        "emoji": "➗",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "frazioni",
+        "synonyms": [
+            "parte",
+            "porzione"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "freddo",
+        "translation": "cold",
+        "example": "L'inverno è molto freddo.",
+        "example_en": "Winter is very cold.",
+        "emoji": "❄️",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "freddi",
+        "synonyms": [
+            "gelido",
+            "rigido"
+        ],
+        "antonyms": [
+            "caldo"
+        ]
+    },
+    {
+        "word": "fresco",
+        "translation": "fresh",
+        "example": "Voglio una fragola fresca.",
+        "example_en": "I want a fresh strawberry.",
+        "emoji": "🍓",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "freschi",
+        "synonyms": [
+            "nuovo",
+            "recente"
+        ],
+        "antonyms": [
+            "vecchio"
+        ]
+    },
+    {
+        "word": "fretta",
+        "translation": "hurry",
+        "example": "Non abbiamo fretta.",
+        "example_en": "We are not in a hurry.",
+        "emoji": "🐌",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "frette",
+        "synonyms": [
+            "prudenza",
+            "precipitazione"
+        ],
+        "antonyms": [
+            "calma",
+            "lentezza"
+        ]
+    },
+    {
+        "word": "frontale",
+        "translation": "frontal",
+        "example": "Ha una fronte frontale.",
+        "example_en": "He has a frontal forehead.",
+        "emoji": "😶",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "frontali",
+        "synonyms": [
+            "anteriore",
+            "principale"
+        ],
+        "antonyms": [
+            "retro"
+        ]
+    },
+    {
+        "word": "frutta",
+        "translation": "fruit",
+        "example": "Preferisco la frutta alla verdura.",
+        "example_en": "I prefer fruit over vegetables.",
+        "emoji": "🍉",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "frutta",
+        "synonyms": [
+            "agrume",
+            "dolce"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "fuoco",
+        "translation": "fire",
+        "example": "C'è un fuoco nella stanza.",
+        "example_en": "There is a fire in the room.",
+        "emoji": "🔥",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "fuochi",
+        "synonyms": [
+            "calore",
+            "bruciare"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "fuori",
+        "translation": "out",
+        "example": "Esci fuori.",
+        "example_en": "Get out.",
+        "emoji": "🚪",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "adverb",
+        "gender": null,
+        "plural": null,
+        "synonyms": [
+            "esterno",
+            "esternamente"
+        ],
+        "antonyms": [
+            "dentro"
+        ]
+    },
+    {
+        "word": "futuro",
+        "translation": "future",
+        "example": "Stiamo costruendo il nostro futuro.",
+        "example_en": "We are building our future.",
+        "emoji": "🔮",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "futuri",
+        "synonyms": [
+            "avvenire",
+            "prospettiva"
+        ],
+        "antonyms": [
+            "passato"
+        ]
+    },
+    {
+        "word": "gamba",
+        "translation": "leg",
+        "example": "Ha due gambe corte.",
+        "example_en": "He has two short legs.",
+        "emoji": "🦵",
+        "tags": [
+            "body part"
+        ],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "gambe",
+        "synonyms": [
+            "arto",
+            "stinco"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "gamma",
+        "translation": "range",
+        "example": "La gamma dei prezzi è ampia.",
+        "example_en": "The range of prices is wide.",
+        "emoji": "📊",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "gamme",
+        "synonyms": [
+            "varietà",
+            "ampiezza"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "gara",
+        "translation": "race",
+        "example": "La gara è iniziata.",
+        "example_en": "The race has begun.",
+        "emoji": "🏁",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "gare",
+        "synonyms": [
+            "corsa",
+            "concorso"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "gas",
+        "translation": "gas",
+        "example": "Ho bisogno di gas per la macchina.",
+        "example_en": "I need gas for the car.",
+        "emoji": "⛽️",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "gass",
+        "synonyms": [
+            "combustibile",
+            "benzina"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "gatto",
+        "translation": "cat",
+        "example": "Il gatto è sul divano.",
+        "example_en": "The cat is on the couch.",
+        "emoji": "🐈",
+        "tags": [],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "gatti",
+        "synonyms": [
+            "felino",
+            "micio"
+        ],
+        "antonyms": []
+    },
+    {
+        "word": "generale",
+        "translation": "general",
+        "example": "Il generale ha parlato.",
+        "example_en": "The general has spoken.",
+        "emoji": "🤴",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "adjective",
+        "gender": "masculine",
+        "plural": "generali",
+        "synonyms": [
+            "generico",
+            "comune"
+        ],
+        "antonyms": [
+            "specifico"
+        ]
+    },
+    {
+        "word": "genitore",
+        "translation": "parent",
+        "example": "I genitori mi hanno detto di aspettare.",
+        "example_en": "My parents told me to wait.",
+        "emoji": "👩‍👦‍👦",
+        "tags": [],
+        "difficulty": 2,
+        "part_of_speech": "noun",
+        "gender": "masculine",
+        "plural": "genitori",
+        "synonyms": [
+            "padre",
+            "madre"
+        ],
+        "antonyms": []
+    }
+]

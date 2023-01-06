@@ -1,7 +1,5 @@
 <template>
-    <div
-        class="flex flex-col items-center p-4 h-full md:-0 w-full lg:w-[990px]"
-    >
+    <div class="flex flex-col items-center p-4 w-full lg:w-[990px]">
         <div class="md:my-4 w-full">
             <EloRange :elo="stats.elo" :score="stats.score"></EloRange>
         </div>

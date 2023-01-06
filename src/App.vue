@@ -1,5 +1,8 @@
 <template>
-    <div id="app" class="selection:bg-cyan-500 selection:text-white">
+    <div
+        id="app"
+        class="selection:bg-cyan-500 selection:text-white h-screen overflow-y-scroll bg-slate-100"
+    >
         <IntroPage v-if="settings.firstLoad" />
         <LanguageSelectPage
             v-if="settings.language === null"
@@ -39,7 +42,7 @@
 
         <section
             v-if="settings.language !== null"
-            class="flex flex-col items-center bg-white h-screen bg-slate-100 text-slate-900 md:px-4 md:py-8 pb-16"
+            class="flex flex-col items-center h-screen bg-slate-100 text-slate-900 md:px-4 md:py-8 pb-16"
         >
             <!-- Desktop menu -->
             <div
@@ -225,7 +228,7 @@
 
             <!-- Footer -->
             <div
-                class="hidden md:flex flex-col flex-1 items-center place-content-end mt-2 md:mt-8"
+                class="hidden md:flex flex-col flex-1 items-center place-content-end pt-8"
             >
                 <div
                     class="text-xs md:text-sm text-slate-500 flex gap-2 text-center items-center"

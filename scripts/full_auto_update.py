@@ -356,6 +356,17 @@ def main():
                     setup_results["prompt"] + next_words_string + "\n"
                 )
 
+                # We give the user one chance to input a fixed response
+                if not input_obj:
+                    input_obj = inquirer.prompt(
+                        [
+                            inquirer.Editor(
+                                "input_obj",
+                                message="Invalid response, please input a fixed response",
+                            )
+                        ]
+                    )["input_obj"]
+
                 # If the response is None, we raise an error
                 if not input_obj:
                     raise Exception("Invalid response")

@@ -2,17 +2,30 @@
 ✅ Spanish
 ✅ Italian
 ✅ German
-⌛ Portuguese
-⌛ Dutch
-⌛ Luxembourgish
+✅ Portuguese
+✅ Dutch
+✅ Luxembourgish
 ⌛ Arabic
-Bulgarian
 Czech
+Romanian
+Norwegian
+Swedish
+Danish
+Welsh
+Turkish
+Catalan
 Croatian
 Serbian
 Slovenian
+Vietnamese
+Estonian
+Filipino
+Bosnian
+Albanian
 Greek
-Turkish
+Bulgarian
+Igbo
+Irish
 ❌ Ukranian
 ❌ Russian
 ❌ Polish

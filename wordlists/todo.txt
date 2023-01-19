@@ -1,0 +1,18 @@
+✅ French
+✅ Spanish
+✅ Italian
+✅ German
+⌛ Portuguese
+⌛ Dutch
+⌛ Luxembourgish
+⌛ Arabic
+Bulgarian
+Czech
+Croatian
+Serbian
+Slovenian
+Greek
+Turkish
+❌ Ukranian
+❌ Russian
+❌ Polish

@@ -14,7 +14,7 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROMPT_TEMPLATE = """I am going to send you some words in ${language_english}. I want you to respond exactly with the following message for each word:
+PROMPT_TEMPLATE = """I will send you some words in ${language_english}. Respond exactly with the following message for each word:
 "{"word":"<word>","translation":"<translation>","example":"<example>","example_en":"<example_en>","emoji":"<emoji>","tags":[<tags>],"difficulty":<difficulty>,"part_of_speech":"<part_of_speech>","gender":"<gender>","plural":"<plural>","synonyms":[<synonyms>],"antonyms":[<antonyms>]},"
 
 Where <word> is the word in ${language_english}

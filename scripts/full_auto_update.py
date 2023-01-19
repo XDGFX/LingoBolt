@@ -114,6 +114,9 @@ def get_response(prompt: str) -> str:
 
     response = response_text.strip().strip(",").strip()
 
+    # A common error (for some reason) is ,example_en" instead of ,"example_en"
+    response = response.replace(",example_en", ',"example_en')
+
     # Add square brackets if needed
     if not response.startswith("["):
         response = "[" + response
@@ -183,7 +186,6 @@ def setup():
     ]
 
     # Check if the language has been provided as a command line argument
-
     language = (
         args.language
         or inquirer.prompt(

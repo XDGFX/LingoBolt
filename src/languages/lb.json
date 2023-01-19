@@ -3486,6 +3486,20 @@
         "antonyms": ["bäi"]
     },
     {
+        "word": "froe",
+        "translation": "early",
+        "example": "Ech ginn all Dag fréi erëm.",
+        "example_en": "I get up early every day",
+        "emoji": "🌅",
+        "tags": ["time", "morning"],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["premature", "hasty"],
+        "antonyms": ["delayed"]
+    },
+    {
         "word": "froen",
         "translation": "frost",
         "example": "Et huet ganz froen.",
@@ -4170,6 +4184,20 @@
         "plural": null,
         "synonyms": ["erkenne", "beobacht"],
         "antonyms": ["forget"]
+    },
+    {
+        "word": "gesot",
+        "translation": "said",
+        "example": "Hien huet gesot datt et schwéier géif sinn.",
+        "example_en": "He said it would be hard",
+        "emoji": "🗣️",
+        "tags": ["speaking", "words"],
+        "difficulty": 2,
+        "part_of_speech": "verb",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["mentioned", "declared"],
+        "antonyms": ["unspoken"]
     },
     {
         "word": "gewiicht",
@@ -5558,6 +5586,20 @@
         "antonyms": ["al"]
     },
     {
+        "word": "jonk",
+        "translation": "young",
+        "example": "Hien ass jonk a dynamesch.",
+        "example_en": "He is young and dynamic",
+        "emoji": "🧒",
+        "tags": ["age", "youth"],
+        "difficulty": 1,
+        "part_of_speech": "adjective",
+        "gender": null,
+        "plural": null,
+        "synonyms": ["juvenile", "teen"],
+        "antonyms": ["old"]
+    },
+    {
         "word": "just",
         "translation": "just",
         "example": "Just ech feelen eppes.",
@@ -6774,6 +6816,20 @@
         "plural": null,
         "synonyms": ["niewesten", "bannen"],
         "antonyms": ["riets"]
+    },
+    {
+        "word": "lëscht",
+        "translation": "list",
+        "example": "Ech hunn alles op der Lëscht.",
+        "example_en": "I have everything on the list",
+        "emoji": "📝",
+        "tags": ["schedule", "inventory"],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "Lëschten",
+        "synonyms": ["catalogue", "register"],
+        "antonyms": ["omission"]
     },
     {
         "word": "maachen",
@@ -12838,6 +12894,20 @@
         "antonyms": []
     },
     {
+        "word": "zuel",
+        "translation": "number",
+        "example": "Hien huet e verschidde Zuelen uginn.",
+        "example_en": "He gave several numbers",
+        "emoji": "🔢",
+        "tags": ["digit", "amount"],
+        "difficulty": 1,
+        "part_of_speech": "noun",
+        "gender": "feminine",
+        "plural": "Zuelen",
+        "synonyms": ["quantity", "figure"],
+        "antonyms": ["none"]
+    },
+    {
         "word": "zuelen",
         "translation": "to pay",
         "example": "Ech muss d'Rechnung zuelen.",
@@ -13298,75 +13368,5 @@
         "plural": null,
         "synonyms": ["beneath", "below"],
         "antonyms": ["above"]
-    },
-    {
-        "word": "froe",
-        "translation": "early",
-        "example": "Ech ginn all Dag fréi erëm.",
-        "example_en": "I get up early every day",
-        "emoji": "🌅",
-        "tags": ["time", "morning"],
-        "difficulty": 1,
-        "part_of_speech": "adjective",
-        "gender": null,
-        "plural": null,
-        "synonyms": ["premature", "hasty"],
-        "antonyms": ["delayed"]
-    },
-    {
-        "word": "gesot",
-        "translation": "said",
-        "example": "Hien huet gesot datt et schwéier géif sinn.",
-        "example_en": "He said it would be hard",
-        "emoji": "🗣️",
-        "tags": ["speaking", "words"],
-        "difficulty": 2,
-        "part_of_speech": "verb",
-        "gender": null,
-        "plural": null,
-        "synonyms": ["mentioned", "declared"],
-        "antonyms": ["unspoken"]
-    },
-    {
-        "word": "jonk",
-        "translation": "young",
-        "example": "Hien ass jonk a dynamesch.",
-        "example_en": "He is young and dynamic",
-        "emoji": "🧒",
-        "tags": ["age", "youth"],
-        "difficulty": 1,
-        "part_of_speech": "adjective",
-        "gender": null,
-        "plural": null,
-        "synonyms": ["juvenile", "teen"],
-        "antonyms": ["old"]
-    },
-    {
-        "word": "lëscht",
-        "translation": "list",
-        "example": "Ech hunn alles op der Lëscht.",
-        "example_en": "I have everything on the list",
-        "emoji": "📝",
-        "tags": ["schedule", "inventory"],
-        "difficulty": 1,
-        "part_of_speech": "noun",
-        "gender": "feminine",
-        "plural": "Lëschten",
-        "synonyms": ["catalogue", "register"],
-        "antonyms": ["omission"]
-    },
-    {
-        "word": "zuel",
-        "translation": "number",
-        "example": "Hien huet e verschidde Zuelen uginn.",
-        "example_en": "He gave several numbers",
-        "emoji": "🔢",
-        "tags": ["digit", "amount"],
-        "difficulty": 1,
-        "part_of_speech": "noun",
-        "gender": "feminine",
-        "plural": "Zuelen",
-        "synonyms": ["quantity", "figure"],
-        "antonyms": ["none"]
     }
 ]

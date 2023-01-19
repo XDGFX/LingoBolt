@@ -92,7 +92,7 @@ export default {
     },
     data() {
         return {
-            languages: ["fr", "es", "de", "it"],
+            languages: ["fr", "es", "de", "it", "pt"],
 
             // Only used on mobile
             selectedLanguage: null,
@@ -127,6 +127,7 @@ export default {
                 es: "¡Vamos!",
                 de: "Los geht's!",
                 it: "Andiamo!",
+                pt: "Vamos!",
             }[this.selectedLanguage];
         },
     },

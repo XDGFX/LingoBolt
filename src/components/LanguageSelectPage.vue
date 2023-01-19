@@ -27,23 +27,37 @@
 
             <!-- Desktop list of languages, click to select -->
             <div class="mx-4 md:mx-32 gap-8 justify-center hidden md:flex">
-                <button
-                    v-for="language in languages"
-                    :key="language"
-                    class="w-24 h-24 fib fis rounded-[18px] transition hover:scale-110 relative"
-                    :class="`fi-${language}`"
-                    @click="$emit('set-language', language)"
-                    @mouseover="selectedLanguage = language"
-                    @mouseleave="selectedLanguage = null"
-                >
-                    <!-- New icon -->
-                    <span
-                        v-if="newLanguages.includes(language)"
-                        class="absolute top-0 text-slate-900 font-bold bg-yellow-500 rounded-full px-2 py-1 text-xs translate-x-1/2 -translate-y-1/2"
+                <div v-for="language in languages" :key="language">
+                    <button
+                        class="w-24 h-24 fib fis rounded-[18px] transition hover:scale-110 relative"
+                        :class="`fi-${flagOverrides[language] || language}`"
+                        @click="$emit('set-language', language)"
+                        @mouseover="selectedLanguage = language"
+                        @mouseleave="selectedLanguage = null"
                     >
-                        NEW
-                    </span>
-                </button>
+                        <!-- New icon -->
+                        <span
+                            v-if="newLanguages.includes(language)"
+                            class="absolute top-0 text-slate-900 font-bold bg-yellow-500 rounded-full px-2 py-1 text-xs translate-x-1/2 -translate-y-1/2"
+                        >
+                            NEW
+                        </span>
+                    </button>
+
+                    <!-- Anglisised name -->
+                    <div
+                        class="text-center text-slate-900 transition pt-4"
+                        :class="{
+                            'text-slate-500': selectedLanguage !== language,
+                        }"
+                    >
+                        {{
+                            new Intl.DisplayNames(["en"], {
+                                type: "language",
+                            }).of(language)
+                        }}
+                    </div>
+                </div>
             </div>
 
             <!-- Mobile side scrolling list of languages, snap to each to select
@@ -58,7 +72,7 @@
                     :language="language"
                     :key="language"
                     class="relative language-select-icon w-24 h-24 mx-8 first:ml-[100vw] last:mr-[100vw] shrink-0 snap-center snap-always fib fis rounded-[18px]"
-                    :class="`fi-${language}`"
+                    :class="`fi-${flagOverrides[language] || language}`"
                 >
                     <!-- New icon -->
                     <span
@@ -68,6 +82,16 @@
                         NEW
                     </span>
                 </div>
+            </div>
+
+            <div class="md:hidden flex items-center justify-center">
+                {{
+                    selectedLanguage == null
+                        ? ""
+                        : new Intl.DisplayNames(["en"], {
+                              type: "language",
+                          }).of(selectedLanguage)
+                }}
             </div>
 
             <button
@@ -108,8 +132,13 @@ export default {
     },
     data() {
         return {
-            languages: ["fr", "es", "it", "de", "pt", "nl"],
+            languages: ["fr", "es", "it", "de", "pt", "nl", "lb"],
             newLanguages: ["nl", "lb", "pt"],
+
+            // Update this in Quiz.vue also!
+            flagOverrides: {
+                lb: "lu",
+            },
 
             // Only used on mobile
             selectedLanguage: null,
@@ -146,6 +175,7 @@ export default {
                 de: "Los geht's!",
                 pt: "Vamos!",
                 nl: "Laten we gaan!",
+                lb: "A lass!",
             }[this.selectedLanguage];
         },
     },

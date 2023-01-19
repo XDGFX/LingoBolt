@@ -21,7 +21,7 @@
                         ➜
                         <span
                             class="w-6 h-6 fib fis inline-block rounded"
-                            :class="`fi-${language}`"
+                            :class="`fi-${flagOverrides[language] || language}`"
                         ></span>
                     </div>
                     <div
@@ -30,7 +30,7 @@
                     >
                         <span
                             class="w-6 h-6 fib fis inline-block rounded"
-                            :class="`fi-${language}`"
+                            :class="`fi-${flagOverrides[language] || language}`"
                         ></span>
                         ➜
                         <span
@@ -238,7 +238,7 @@ export default {
         ReactiveText,
         PluieMascot,
     },
-    inject: ["debugMode"],
+    inject: ["debugMode", "flagOverrides"],
     data() {
         return {
             // The word that is currently being displayed
@@ -256,6 +256,10 @@ export default {
             // Random selection between foreign and native mode
             mode: Math.random() > 0.5 ? "foreign" : "native",
             modeTestCount: 0, // Number of tests performed in the current mode
+
+            flagOverrides: {
+                lb: "lu",
+            },
         };
     },
     props: {

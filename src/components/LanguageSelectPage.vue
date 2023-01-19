@@ -26,7 +26,9 @@
             </div>
 
             <!-- Desktop list of languages, click to select -->
-            <div class="mx-4 md:mx-32 gap-8 justify-center hidden md:flex">
+            <div
+                class="mx-4 md:mx-32 gap-8 justify-center hidden md:flex flex-wrap"
+            >
                 <div v-for="language in languages" :key="language">
                     <button
                         class="w-24 h-24 fib fis rounded-[18px] transition hover:scale-110 relative"

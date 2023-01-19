@@ -30,28 +30,44 @@
                 <button
                     v-for="language in languages"
                     :key="language"
-                    class="w-24 h-24 fib fis rounded-[18px] transition hover:scale-110"
+                    class="w-24 h-24 fib fis rounded-[18px] transition hover:scale-110 relative"
                     :class="`fi-${language}`"
                     @click="$emit('set-language', language)"
                     @mouseover="selectedLanguage = language"
                     @mouseleave="selectedLanguage = null"
-                ></button>
+                >
+                    <!-- New icon -->
+                    <span
+                        v-if="newLanguages.includes(language)"
+                        class="absolute top-0 text-slate-900 font-bold bg-yellow-500 rounded-full px-2 py-1 text-xs translate-x-1/2 -translate-y-1/2"
+                    >
+                        NEW
+                    </span>
+                </button>
             </div>
 
             <!-- Mobile side scrolling list of languages, snap to each to select
             -->
             <div
                 ref="languageSelectIcons"
-                class="md:hidden w-full flex overflow-x-auto snap-x snap-mandatory my-4 scrollbar-hide"
+                class="md:hidden w-full py-4 flex overflow-x-auto snap-x snap-mandatory scrollbar-hide"
                 @scroll="checkSelectedLanguage()"
             >
                 <div
                     v-for="language in languages"
                     :language="language"
                     :key="language"
-                    class="language-select-icon w-24 h-24 mx-8 first:ml-[100vw] last:mr-[100vw] shrink-0 snap-center snap-always fib fis rounded-[18px]"
+                    class="relative language-select-icon w-24 h-24 mx-8 first:ml-[100vw] last:mr-[100vw] shrink-0 snap-center snap-always fib fis rounded-[18px]"
                     :class="`fi-${language}`"
-                ></div>
+                >
+                    <!-- New icon -->
+                    <span
+                        v-if="newLanguages.includes(language)"
+                        class="absolute top-0 text-slate-900 font-bold bg-yellow-500 rounded-full px-2 py-1 text-xs translate-x-1/2 -translate-y-1/2"
+                    >
+                        NEW
+                    </span>
+                </div>
             </div>
 
             <button
@@ -93,6 +109,7 @@ export default {
     data() {
         return {
             languages: ["fr", "es", "it", "de", "pt", "nl"],
+            newLanguages: ["nl", "lb", "pt"],
 
             // Only used on mobile
             selectedLanguage: null,

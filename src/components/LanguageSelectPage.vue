@@ -129,22 +129,19 @@ export default {
     name: "LanguageSelectPage",
     inject: ["debugMode"],
     emits: ["set-language"],
+    inject: ["languages", "newLanguages", "flagOverrides"],
     components: {
         PluieMascot,
     },
     data() {
         return {
-            languages: ["fr", "es", "it", "de", "pt", "nl", "lb", "cs", "no"],
-            newLanguages: ["lb", "cs", "no"],
-
-            // Update this in Quiz.vue also!
-            flagOverrides: {
-                lb: "lu",
-                cs: "cz",
-            },
-
             // Only used on mobile
             selectedLanguage: null,
+        };
+    },
+    provide() {
+        return {
+            debugMode: this.debugMode,
         };
     },
     methods: {

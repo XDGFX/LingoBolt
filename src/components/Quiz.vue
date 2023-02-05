@@ -256,10 +256,6 @@ export default {
             // Random selection between foreign and native mode
             mode: Math.random() > 0.5 ? "foreign" : "native",
             modeTestCount: 0, // Number of tests performed in the current mode
-
-            flagOverrides: {
-                lb: "lu",
-            },
         };
     },
     props: {

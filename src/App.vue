@@ -338,11 +338,22 @@ export default {
 
             // User settings
             settings,
+
+            // Languages
+            languages: ["fr", "es", "it", "de", "pt", "nl", "lb", "cs", "no"],
+            newLanguages: ["lb", "cs", "no"],
+            flagOverrides: {
+                lb: "lu",
+                cs: "cz",
+            },
         };
     },
     provide() {
         return {
             debugMode: computed(() => this.debugMode),
+            languages: this.languages,
+            newLanguages: this.newLanguages,
+            flagOverrides: this.flagOverrides,
         };
     },
     created() {

@@ -134,8 +134,8 @@ export default {
     },
     data() {
         return {
-            languages: ["fr", "es", "it", "de", "pt", "nl", "lb", "cs"],
-            newLanguages: ["nl", "lb", "pt", "cs"],
+            languages: ["fr", "es", "it", "de", "pt", "nl", "lb", "cs", "no"],
+            newLanguages: ["lb", "cs", "no"],
 
             // Update this in Quiz.vue also!
             flagOverrides: {
@@ -180,6 +180,7 @@ export default {
                 nl: "Laten we gaan!",
                 lb: "A lass!",
                 cs: "Pojďme!",
+                no: "La oss gå!",
             }[this.selectedLanguage];
         },
     },

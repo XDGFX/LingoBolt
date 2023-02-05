@@ -134,12 +134,13 @@ export default {
     },
     data() {
         return {
-            languages: ["fr", "es", "it", "de", "pt", "nl", "lb"],
-            newLanguages: ["nl", "lb", "pt"],
+            languages: ["fr", "es", "it", "de", "pt", "nl", "lb", "cs"],
+            newLanguages: ["nl", "lb", "pt", "cs"],
 
             // Update this in Quiz.vue also!
             flagOverrides: {
                 lb: "lu",
+                cs: "cz",
             },
 
             // Only used on mobile
@@ -178,6 +179,7 @@ export default {
                 pt: "Vamos!",
                 nl: "Laten we gaan!",
                 lb: "A lass!",
+                cs: "Pojďme!",
             }[this.selectedLanguage];
         },
     },

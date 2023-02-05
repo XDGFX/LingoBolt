@@ -116,6 +116,7 @@ def get_response(prompt: str) -> str:
 
     # A common error (for some reason) is ,example_en" instead of ,"example_en"
     response = response.replace(",example_en", ',"example_en')
+    response = response.replace(",emoji", ',"emoji')
 
     # Add square brackets if needed
     if not response.startswith("["):

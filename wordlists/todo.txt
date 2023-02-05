@@ -6,9 +6,9 @@
 ✅ Dutch
 ✅ Luxembourgish
 ⌛ Arabic
-Czech
-Romanian
-Norwegian
+⌛ Czech
+⌛ Romanian
+⌛ Norwegian
 Swedish
 Danish
 Welsh

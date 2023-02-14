@@ -416,19 +416,21 @@ export default {
                 //
                 // Difficulty Level | Elo
                 // -------------------------
-                // 1                | 0 - 800
-                // 1, 2             | 800 - 1200
-                // 1, 2, 3          | 1200 - 1600
-                // all              | 1600 - 2000
+                // 1                | 0 - 1000
+                // 1, 2             | 1000 - 1500
+                // 1, 2, 3          | 1500 - 2000
+                // all              | 2000+
                 return this.words.filter((word) => {
-                    if (this.settings.stats[this.settings.language].elo < 800) {
+                    if (
+                        this.settings.stats[this.settings.language].elo < 1000
+                    ) {
                         return word.difficulty === 1;
                     } else if (
-                        this.settings.stats[this.settings.language].elo < 1200
+                        this.settings.stats[this.settings.language].elo < 1500
                     ) {
                         return word.difficulty <= 2;
                     } else if (
-                        this.settings.stats[this.settings.language].elo < 1600
+                        this.settings.stats[this.settings.language].elo < 2000
                     ) {
                         return word.difficulty <= 3;
                     } else {

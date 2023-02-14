@@ -392,6 +392,11 @@ export default {
                     this.submitAnswer();
                 } else if (this.page === "result") {
                     this.nextWord();
+
+                    // Focus the answer input
+                    setTimeout(() => {
+                        this.$refs.answerInput.focus();
+                    }, 10);
                 }
             }
         });

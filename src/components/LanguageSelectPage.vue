@@ -109,7 +109,7 @@
                     Language not listed?
                     <a
                         class="text-slate-900 underline decoration-rose-500"
-                        href="https://github.com/XDGFX/the-first-1000/issues/new?title=Add%20language%20%5Blanguage%20name%5D"
+                        href="https://github.com/XDGFX/LingoBolt/issues/new?title=Add%20language%20%5Blanguage%20name%5D"
                         target="_blank"
                     >
                         Suggest one here!</a

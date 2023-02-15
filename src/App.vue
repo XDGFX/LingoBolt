@@ -49,11 +49,11 @@
                 class="w-full lg:w-[990px] hidden md:flex flex-wrap items-center"
             >
                 <h1 class="text-4xl flex-1">
-                    <span
-                        class="text-slate-900 underline decoration-rose-500 whitespace-nowrap"
-                    >
-                        the first 1000
-                    </span>
+                    <img
+                        src="@/assets/logo.svg"
+                        alt="LingoBolt logo"
+                        class="h-12"
+                    />
                 </h1>
 
                 <div v-if="!quizMode" class="flex flex-2 gap-4 items-center">
@@ -259,7 +259,7 @@
                         Notice a mistake?
                         <a
                             class="text-slate-900 underline decoration-rose-500"
-                            href="https://github.com/XDGFX/the-first-1000/issues/new"
+                            href="https://github.com/XDGFX/LingoBolt/issues/new"
                             target="_blank"
                         >
                             Let me know!</a

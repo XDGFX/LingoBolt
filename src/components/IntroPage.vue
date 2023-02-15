@@ -12,21 +12,17 @@
                 v-show="page == 0"
                 class="text-center flex flex-col items-center m-4 md:m-8"
             >
-                <PluieMascot></PluieMascot>
-
                 <!-- Title -->
-                <h1 class="text-2xl md:text-4xl pt-8 pb-4">
-                    <span class="text-slate-500">
-                        When learning a new language,
-                    </span>
-                    <span class="text-slate-900 underline decoration-rose-500"
-                        >the first 1000</span
-                    >
-                    <span class="text-slate-500">
-                        words are the most important.
-                    </span>
-                </h1>
 
+                <div class="text-2xl md:text-4xl mb-12">Hi there!</div>
+                <div class="text-2xl">Welcome to...</div>
+                <img
+                    src="@/assets/logo.svg"
+                    class="h-24 mb-12"
+                    alt="LingoBolt logo"
+                />
+
+                <PluieMascot></PluieMascot>
                 <!-- Subtitle -->
                 <h2 class="text-xl md:text-2xl pb-12">
                     I'm here to help you learn your first 1000 words of a new

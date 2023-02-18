@@ -1,13 +1,8 @@
 <template>
     <div
         id="app"
-        class="selection:bg-cyan-500 selection:text-white h-screen overflow-y-scroll bg-slate-100"
+        class="selection:bg-red-500 selection:text-white h-screen overflow-y-scroll bg-slate-100"
     >
-        <IntroPage v-if="settings.firstLoad" />
-        <LanguageSelectPage
-            v-if="settings.language === null"
-            @set-language="setLanguage($event)"
-        />
         <!-- Debug mode window hover -->
         <div
             v-if="debugMode"
@@ -40,239 +35,49 @@
             </code>
         </div>
 
-        <section
-            v-if="settings.language !== null"
-            class="flex flex-col items-center h-screen bg-slate-100 text-slate-900 md:px-4 md:py-8 pb-16"
+        <router-view />
+
+        <!-- Footer -->
+        <div
+            class="hidden md:flex flex-col flex-1 items-center place-content-end pt-8"
         >
-            <!-- Desktop menu -->
             <div
-                class="w-full lg:w-[990px] hidden md:flex flex-wrap items-center"
+                class="text-xs md:text-sm text-slate-500 flex gap-2 text-center items-center"
             >
-                <h1 class="text-4xl flex-1">
-                    <img
-                        src="@/assets/logo.svg"
-                        alt="LingoBolt logo"
-                        class="h-12"
-                    />
-                </h1>
+                <div>
+                    Made with ❤️ by
 
-                <div v-if="!quizMode" class="flex flex-2 gap-4 items-center">
-                    <!-- Search box -->
-                    <input
-                        v-model="search"
-                        class="h-12 shrink rounded-full border-2 border-slate-200 p-4 text-2xl focus:border-rose-500 outline-none"
-                        type="text"
-                        placeholder="Search"
-                    />
-
-                    <!-- Hide translations -->
-                    <button
-                        class="h-12 w-12 flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white hover:bg-slate-100 outline-none"
-                        @click="hideTranslations = !hideTranslations"
-                        title="Hide translations"
+                    <a
+                        class="text-slate-900 underline decoration-rose-500"
+                        href="https://github.com/xdgfx"
+                        target="_blank"
                     >
-                        <span>🔖</span>
-                    </button>
-
-                    <span
-                        class="text-slate-300 text-4xl select-none -translate-y-1"
-                        >·</span
+                        xdgfx</a
                     >
-
-                    <!-- Quiz button -->
-                    <button
-                        class="h-12 w-12 flex justify-center items-center rounded-full border-2 border-slate-200 text-slate-500 p-4 text-2xl bg-white hover:bg-slate-100 outline-none"
-                        @click="quizMode = true"
-                        title="Practice"
-                    >
-                        <span class="translate-y-px"> 🎓 </span>
-
-                        <!-- Notification circle -->
-                        <div
-                            v-if="settings.firstLoad"
-                            class="absolute h-4 w-4 translate-x-full -translate-y-full"
-                        >
-                            <div
-                                class="h-4 w-4 rounded-full bg-cyan-400 animate-ping"
-                            ></div>
-                            <div
-                                class="h-4 w-4 rounded-full bg-cyan-400 -translate-y-full"
-                            ></div>
-                        </div>
-                    </button>
-
-                    <!-- Language select -->
-                    <button
-                        class="h-12 w-12 flex justify-center items-center rounded-full border-2 border-slate-200 p-4 text-2xl bg-white hover:bg-slate-100 outline-none"
-                        @click="settings.language = null"
-                        title="Change language"
-                    >
-                        <span class="translate-y-px">🌐</span>
-                    </button>
                 </div>
-
-                <div v-if="quizMode" class="flex flex-2 gap-4 items-center">
-                    <!-- Home button -->
-                    <button
-                        v-if="quizMode"
-                        class="h-12 w-12 flex justify-center items-center rounded-full border-2 border-slate-200 text-slate-500 p-4 text-2xl bg-white hover:bg-slate-100 outline-none"
-                        @click="quizMode = false"
-                        title="Home"
+                ·
+                <div>
+                    <a
+                        class="text-slate-900"
+                        href="https://ko-fi.com/callumm"
+                        target="_blank"
                     >
-                        <span class="translate-y-px"> 🏠 </span>
-                    </button>
+                        Buy me a coffee ☕</a
+                    >
+                </div>
+                ·
+                <div>
+                    Notice a mistake?
+                    <a
+                        class="text-slate-900 underline decoration-rose-500"
+                        href="https://github.com/XDGFX/LingoBolt/issues/new"
+                        target="_blank"
+                    >
+                        Let me know!</a
+                    >
                 </div>
             </div>
-
-            <carousel
-                v-if="!quizMode"
-                :words="wordsFiltered"
-                :wordScores="settings.stats[settings.language].wordScores"
-                :hide-translations="hideTranslations"
-            ></carousel>
-
-            <!-- Quiz -->
-            <quiz
-                v-if="quizMode"
-                :words="wordsFiltered"
-                :stats="settings.stats[settings.language]"
-                :language="settings.language"
-                @test-result="onTestResult"
-            ></quiz>
-
-            <!-- Mobile menu -->
-            <div
-                class="fixed bottom-0 w-full z-[999] md:hidden flex justify-around bg-slate-200 p-2 border-t-2 rounded-t-[24px] border-slate-300"
-            >
-                <div
-                    v-if="!quizMode"
-                    class="flex gap-4 items-center justify-between w-full"
-                >
-                    <!-- Search box -->
-                    <input
-                        v-model="search"
-                        class="h-12 w-12 shrink focus:w-full peer transition-all flex justify-center p-4 rounded-full border-2 border-slate-200 outline-none text-2xl bg-white"
-                        type="text"
-                    />
-
-                    <!-- Div which overlays the previous input -->
-                    <div
-                        v-if="search === ''"
-                        class="h-12 w-12 peer-focus:hidden pointer-events-none absolute flex justify-center items-center rounded-full border-2 border-slate-200 text-2xl bg-white"
-                    >
-                        <span>🔎</span>
-                    </div>
-
-                    <!-- Clear search button -->
-                    <button
-                        v-else
-                        class="h-12 w-12 peer-focus:hidden absolute flex justify-center items-center rounded-full border-2 border-slate-200 text-2xl bg-white"
-                        @click="search = ''"
-                    >
-                        <span>❌</span>
-                    </button>
-
-                    <!-- Hide translations -->
-                    <button
-                        class="h-12 w-12 peer-focus:hidden flex justify-center items-center rounded-full border-2 border-slate-200 text-2xl bg-white"
-                        @click="hideTranslations = !hideTranslations"
-                        title="Hide translations"
-                    >
-                        🔖
-                    </button>
-
-                    <!-- Quiz button -->
-                    <button
-                        class="h-12 w-12 peer-focus:hidden flex justify-center items-center rounded-full border-2 border-slate-200 text-2xl bg-white"
-                        @click="quizMode = true"
-                        title="Practice"
-                    >
-                        <span class="translate-y-px"> 🎓 </span>
-
-                        <!-- Notification circle -->
-                        <div
-                            v-if="settings.firstLoad"
-                            class="absolute h-4 w-4 translate-x-full -translate-y-full"
-                        >
-                            <div
-                                class="h-4 w-4 rounded-full bg-cyan-400 animate-ping"
-                            ></div>
-                            <div
-                                class="h-4 w-4 rounded-full bg-cyan-400 -translate-y-full"
-                            ></div>
-                        </div>
-                    </button>
-
-                    <!-- Language select -->
-                    <button
-                        class="h-12 w-12 peer-focus:hidden flex justify-center items-center rounded-full border-2 border-slate-200 text-2xl bg-white"
-                        @click="settings.language = null"
-                        title="Change language"
-                    >
-                        <span class="translate-y-px">🌐</span>
-                    </button>
-                </div>
-
-                <div v-if="quizMode" class="flex flex-2 gap-4 items-center">
-                    <!-- Home button -->
-                    <button
-                        v-if="quizMode"
-                        class="h-12 w-12 flex justify-center items-center rounded-full border-2 border-slate-200 text-2xl bg-white"
-                        @click="quizMode = false"
-                        title="Home"
-                    >
-                        <span class="translate-y-px">🏠</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div
-                class="hidden md:flex flex-col flex-1 items-center place-content-end pt-8"
-            >
-                <div
-                    class="text-xs md:text-sm text-slate-500 flex gap-2 text-center items-center"
-                >
-                    <div>
-                        Made with ❤️ by
-
-                        <a
-                            class="text-slate-900 underline decoration-rose-500"
-                            href="https://github.com/xdgfx"
-                            target="_blank"
-                        >
-                            xdgfx</a
-                        >
-                    </div>
-                    ·
-                    <div>
-                        <a
-                            class="text-slate-900"
-                            href="https://ko-fi.com/callumm"
-                            target="_blank"
-                        >
-                            Buy me a coffee ☕</a
-                        >
-                    </div>
-                    ·
-                    <div>
-                        Notice a mistake?
-                        <a
-                            class="text-slate-900 underline decoration-rose-500"
-                            href="https://github.com/XDGFX/LingoBolt/issues/new"
-                            target="_blank"
-                        >
-                            Let me know!</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Spacer for mobile menu -->
-        <!-- <div
-            class="bottom-0 shrink-0 w-full pointer-events-none md:hidden m-2 h-12"
-        ></div> -->
+        </div>
     </div>
 </template>
 

@@ -91,38 +91,6 @@ import LanguageSelectPage from "@/components/LanguageSelectPage.vue";
 import Carousel from "@/components/Carousel.vue";
 import Quiz from "@/components/Quiz.vue";
 
-// Default settings object
-const defaultSettings = {
-    firstLoad: true, // If this is the first time the user has loaded the page
-    language: null, // The language the user is learning
-    stats: {}, // The user's stats for each language
-    hideTranslations: false,
-};
-
-// Stats object used for initialising new languages
-const defaultStats = {
-    elo: 500, // -2 for each wrong answer, +2 for each correct answer
-    score: 0, // +10 for each correct answer
-    count: 0, // Number of words the user has been tested on
-    wordScores: null,
-};
-
-let settings = JSON.parse(localStorage.getItem("settings"));
-
-// If settings is defined, set firstLoad to false
-if (settings) {
-    settings.firstLoad = false;
-} else {
-    settings = defaultSettings;
-}
-
-// Make sure all the requred keys are present
-for (const key in defaultSettings) {
-    if (!(key in settings)) {
-        settings[key] = defaultSettings[key];
-    }
-}
-
 export default {
     name: "App",
     components: {

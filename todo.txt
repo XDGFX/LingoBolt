@@ -1,0 +1,3 @@
+- Implement Vue Router for pagination
+- Implement virtual scrolling with pagination for words list
+- Implement Pinia for state management (settings)

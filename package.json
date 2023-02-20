@@ -13,6 +13,7 @@
         "flag-icons": "^6.6.6",
         "fuse.js": "^6.6.2",
         "js-confetti": "^0.11.0",
+        "pinia": "^2.0.30",
         "twemoji": "^14.0.2",
         "vue": "^3.2.45",
         "vue-router": "^4.1.6",
